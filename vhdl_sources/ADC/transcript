@@ -1,0 +1,652 @@
+# vsim . 
+# Start time: 13:33:11 on Mar 18,2024
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+# End time: 13:33:11 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlib work
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:20 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture Behavioral of mux
+# End time: 13:33:20 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:24 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder
+# -- Compiling architecture Behavioral of decoder
+# End time: 13:33:24 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:40 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg1bit
+# -- Compiling architecture Behavioral of reg1bit
+# End time: 13:33:40 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:42 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd(73): (vcom-1436) Actual expression (infix expression) of formal "d" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd(99): VHDL Compiler exiting
+# End time: 13:33:42 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:47 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 13:35:47 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:50 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(63): (vcom-1136) Unknown identifier "to_unsigned".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(63): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(74): VHDL Compiler exiting
+# End time: 13:35:50 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:48 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(63): (vcom-1136) Unknown identifier "unsigned".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(63): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(74): VHDL Compiler exiting
+# End time: 13:36:48 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:38:05 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(66): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1446)
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1454)
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(66): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(77): VHDL Compiler exiting
+# End time: 13:38:05 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:08 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(66): (vcom-1078) Identifier "unsigned" is not directly visible.
+#    Potentially visible declarations are:
+#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+#         ieee.std_logic_arith.UNSIGNED (type declaration)
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(66): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd(77): VHDL Compiler exiting
+# End time: 13:39:08 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:43 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 13:39:43 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:53 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 13:39:53 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:54 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg1bit
+# -- Compiling architecture Behavioral of reg1bit
+# End time: 13:39:54 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:55 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture Behavioral of mux
+# End time: 13:39:55 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:56 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder
+# -- Compiling architecture Behavioral of decoder
+# End time: 13:39:56 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:58 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 13:39:58 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.adc_test -t 10ps
+# vsim work.adc_test -t 10ps 
+# Start time: 13:40:17 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.mux(behavioral)
+# Loading work.reg1bit(behavioral)
+add wave -position insertpoint sim:/adc_test/*
+add wave -position insertpoint sim:/adc_test/adc/*
+run 100 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+run 1000 ns
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:45:33 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 13:45:33 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.adc_test -t 10ps
+# End time: 13:45:41 on Mar 18,2024, Elapsed time: 0:05:24
+# Errors: 0, Warnings: 1
+# vsim work.adc_test -t 10ps 
+# Start time: 13:45:41 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.mux(behavioral)
+# Loading work.reg1bit(behavioral)
+add wave -position insertpoint sim:/adc_test/adc/*
+add wave -position insertpoint sim:/adc_test/*
+run 1000 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:44 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 13:46:44 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.adc_test -t 10ps
+# End time: 13:46:47 on Mar 18,2024, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 1
+# vsim work.adc_test -t 10ps 
+# Start time: 13:46:47 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.mux(behavioral)
+# Loading work.reg1bit(behavioral)
+add wave -position insertpoint sim:/adc_test/adc/*
+add wave -position insertpoint sim:/adc_test/*
+run 1000 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:48:36 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 13:48:36 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.adc_test -t 10ps
+# End time: 13:48:40 on Mar 18,2024, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 1
+# vsim work.adc_test -t 10ps 
+# Start time: 13:48:40 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.mux(behavioral)
+# Loading work.reg1bit(behavioral)
+add wave -position insertpoint sim:/adc_test/adc/*
+add wave -position insertpoint sim:/adc_test/*
+run 500 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:00 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 13:53:00 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.adc_test -t 10ps
+# End time: 13:53:09 on Mar 18,2024, Elapsed time: 0:04:29
+# Errors: 0, Warnings: 1
+# vsim work.adc_test -t 10ps 
+# Start time: 13:53:09 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.mux(behavioral)
+# Loading work.reg1bit(behavioral)
+add wave -position insertpoint sim:/adc_test/adc/*
+add wave -position insertpoint sim:/adc_test/*
+run 500 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 130 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 170 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 190 ns  Iteration: 3  Instance: /adc_test
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:21 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 13:57:21 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.adc_test -t 10ps
+# End time: 13:57:26 on Mar 18,2024, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 9
+# vsim work.adc_test -t 10ps 
+# Start time: 13:57:26 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.mux(behavioral)
+# Loading work.reg1bit(behavioral)
+add wave -position insertpoint sim:/adc_test/adc/*
+add wave -position insertpoint sim:/adc_test/*
+run 500 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 130 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 170 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 190 ns  Iteration: 3  Instance: /adc_test
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:58:48 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 13:58:48 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.adc_test -t 10ps
+# End time: 13:58:52 on Mar 18,2024, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 9
+# vsim work.adc_test -t 10ps 
+# Start time: 13:58:52 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.reg1bit(behavioral)
+add wave -position insertpoint sim:/adc_test/adc/*
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:01:19 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder
+# -- Compiling architecture Behavioral of decoder
+# End time: 14:01:19 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:01:19 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture Behavioral of mux
+# End time: 14:01:19 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:01:19 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg1bit
+# -- Compiling architecture Behavioral of reg1bit
+# End time: 14:01:19 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:01:19 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 14:01:19 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:01:19 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 14:01:19 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:01:19 on Mar 18,2024, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 0
+# vsim work.adc_test -t 10ps 
+# Start time: 14:01:19 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.reg1bit(behavioral)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 130 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 170 ns  Iteration: 3  Instance: /adc_test
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 190 ns  Iteration: 3  Instance: /adc_test
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:03 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder
+# -- Compiling architecture Behavioral of decoder
+# End time: 14:03:03 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:03 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture Behavioral of mux
+# End time: 14:03:03 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:03 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg1bit
+# -- Compiling architecture Behavioral of reg1bit
+# End time: 14:03:03 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:04 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 14:03:04 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:04 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 14:03:04 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:03:04 on Mar 18,2024, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 9
+# vsim work.adc_test -t 10ps 
+# Start time: 14:03:04 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.reg1bit(behavioral)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:56 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder
+# -- Compiling architecture Behavioral of decoder
+# End time: 14:03:56 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:56 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux
+# -- Compiling architecture Behavioral of mux
+# End time: 14:03:56 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:56 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg1bit
+# -- Compiling architecture Behavioral of reg1bit
+# End time: 14:03:56 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:56 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture Behavioral of SAR_ADC
+# End time: 14:03:56 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:03:56 on Mar 18,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 14:03:56 on Mar 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:03:57 on Mar 18,2024, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 1
+# vsim work.adc_test -t 10ps 
+# Start time: 14:03:57 on Mar 18,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(behavioral)
+# Loading work.decoder(behavioral)
+# Loading work.reg1bit(behavioral)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test

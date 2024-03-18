@@ -1,0 +1,209 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC
+Eadc_test
+Z1 w1710767032
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+Z6 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+l0
+L6
+V@;h7GN8NUSm_V4l_T5d?f3
+!s100 ??2V>_6o`Ui1l5NjkeX0:2
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1710767036
+!i10b 1
+Z9 !s108 1710767036.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd|
+Z11 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Atest
+R2
+R3
+R4
+Z14 DEx4 work 8 adc_test 0 22 @;h7GN8NUSm_V4l_T5d?f3
+l33
+L10
+V>d<aDDjW=JB1UE:OYCLho3
+!s100 J=4PEeI;161^C?QE?5eeJ2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edecoder
+Z15 w1710763869
+R3
+R4
+R0
+Z16 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd
+Z17 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd
+l0
+L5
+VEaI8U;DJX`S20kK;7@WVb2
+!s100 TUl>`h]7dZ5??ITgRf?H70
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd|
+Z19 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/encoder.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 7 decoder 0 22 EaI8U;DJX`S20kK;7@WVb2
+l15
+L13
+VA2`@6XZIADSMo7o4mn`IA3
+!s100 GhdnccQI:BV[eAYBDPR^K1
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Emux
+Z20 w1710763398
+R3
+R4
+R0
+Z21 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd
+Z22 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd
+l0
+L4
+VKTLeL;h`EZT1m5coZ:F^^2
+!s100 RlDX_`S?8FYH3Y1>YZ]`U1
+R7
+32
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd|
+Z24 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mux.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 3 mux 0 22 KTLeL;h`EZT1m5coZ:F^^2
+l12
+L11
+Vdl=Zn<O2>^[LGX9eIf=n:0
+!s100 a5z4kDNU=l5g5an:Q3L1U3
+R7
+32
+R8
+!i10b 1
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Ereg1bit
+Z25 w1710763807
+R3
+R4
+R0
+Z26 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd
+Z27 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd
+l0
+L5
+V1>_MDKcm9B@JVI@8E8DcV2
+!s100 ^WGi=Kk30^=1L^SlB_a[j3
+R7
+32
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd|
+Z29 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/reg1bit.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 7 reg1bit 0 22 1>_MDKcm9B@JVI@8E8DcV2
+l14
+L12
+VVA<`TaM8:gn?>RniQL75N0
+!s100 Laa2@Pa;l;2oWl@QcT6T82
+R7
+32
+R8
+!i10b 1
+R9
+R28
+R29
+!i113 1
+R12
+R13
+Esar_adc
+Z30 w1710766979
+R2
+R3
+R4
+R0
+Z31 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+Z32 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+l0
+L5
+VBokgRPgM7?MOz@PogojZI3
+!s100 6E>EVMg6DBJ:mWF__eXM:0
+R7
+32
+R8
+!i10b 1
+R9
+Z33 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd|
+Z34 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 sar_adc 0 22 BokgRPgM7?MOz@PogojZI3
+l49
+L18
+VkgC217CCFF_c4UmWb<:aO2
+!s100 S:;nJO<48ca<66S584j8P3
+R7
+32
+R8
+!i10b 1
+R9
+R33
+R34
+!i113 1
+R12
+R13
