@@ -17,7 +17,8 @@ architecture test of adc_test is
             clk             : in STD_LOGIC;            
             start           : in STD_LOGIC;          
             comparator      : in STD_LOGIC; 
-            digital_out     : out STD_LOGIC_VECTOR(RESOLUTION - 1 downto 0);  
+            to_dac          : out STD_LOGIC_VECTOR(RESOLUTION - 1 downto 0); 
+            digital_out     : out STD_LOGIC_VECTOR(RESOLUTION - 1 downto 0); 
             done            : out STD_LOGIC            
         );
     end component;
@@ -25,8 +26,11 @@ architecture test of adc_test is
     signal clk              : std_logic := '0';
     signal start_s          : std_logic := '0';
     signal comparator_s     : std_logic := '0';
+    signal to_dac_s         : std_logic_vector(7 downto 0);
     signal digital_out_s    : std_logic_vector(7 downto 0);
     signal done_s           : std_logic := '0';
+
+  --  signal prova             : std_logic_vector(7 downto 0) := "01000000";
 
     signal starting_value   : integer := 12;
 
@@ -40,6 +44,7 @@ architecture test of adc_test is
             clk             => clk,
             start           => start_s,
             comparator      => comparator_s,
+            to_dac          => to_dac_s,
             digital_out     => digital_out_s,
             done            => done_s
         );
@@ -53,7 +58,9 @@ architecture test of adc_test is
 
         start_s <= '0', '1' after 20 ns, '0' after 40 ns;
 
-        comparator_s <= '1' when starting_value > to_integer(unsigned(digital_out_s))  else '0';
+   --     prova <= prova and '1' after 20 ns, prova and '0' after 40 ns;
+
+        comparator_s <= '1' when starting_value >= to_integer(unsigned(to_dac_s))  else '0';
         
 
 
