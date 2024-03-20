@@ -1,11 +1,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
+use work.mypackage.all;
 
 entity SAR_ADC is
-    generic (
-        RESOLUTION : integer := 8  -- ADC resolution (bits)
-    );
     Port (
         clk             : in STD_LOGIC;            
         start           : in STD_LOGIC;          
@@ -25,9 +23,6 @@ architecture Behavioral of SAR_ADC is
     signal counter                  : std_logic_vector(2 downto 0);
     signal mask                     : std_logic_vector(RESOLUTION - 1 downto 0); 
     signal result_reg               : std_logic_vector(RESOLUTION - 1 downto 0);  
---    signal decoder_out              : std_logic_vector(RESOLUTION - 1 downto 0);
---    signal or_out                   : std_logic_vector(RESOLUTION - 1 downto 0);
-
 
 
     begin
