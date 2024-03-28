@@ -12,7 +12,7 @@ entity spi_interface is
         sel         : in std_logic;   --non è detto che serva 
             --lato-periferica
         data_in     : in std_logic_vector(7 downto 0);
-        data_out    : out std_logic_vector(7 downto 0); --in realtà non collegato
+        data_out    : out std_logic_vector(7 downto 0);
     );
 end spi_interface;
 

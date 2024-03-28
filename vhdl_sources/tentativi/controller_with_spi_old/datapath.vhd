@@ -11,6 +11,8 @@ entity datapath is
         motor1_out      : out std_logic;
         motor2_out      : out std_logic;
         dac_out         : out std_logic_vector(RESOLUTION - 1 downto 0);
+        control         : in std_logic;
+        status          : out std_logic;
         data_for_mcu    : out std_logic_vector(RESOLUTION - 1 downto 0);
         
     );
@@ -78,8 +80,6 @@ architecture beh of datapath is
             digital_out     => sensor_in_s,
             done            => sensor_done_s
         );
-
-    data_for_mcu <= sensor_done_s;      --everytime the sensor is done, the mcu can read the data
 
 
 
