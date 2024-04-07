@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC
+Eadc_test
+Z1 w1712338321
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 work 9 mypackage 0 22 M5OaaO^:^1>1>:J:07UQP2
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+Z9 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd
+l0
+L7
+Vo7Y5<e0I8@U4mAM8SaLYV2
+!s100 VIWY=McA]diRCTlRGB`Pk3
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1712338332
+!i10b 1
+Z12 !s108 1712338332.000000
+Z13 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd|
+Z14 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/adc_test.vhd|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Atest
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 adc_test 0 22 o7Y5<e0I8@U4mAM8SaLYV2
+l35
+L11
+V_UooJ5XgQk<7ne9@_?bh<1
+!s100 zLQ5_o;BnifGlUnkXWhMP1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Pmypackage
+R2
+R3
+R6
+R7
+w1711016525
+R0
+8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mypackage.vhd
+FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mypackage.vhd
+l0
+L5
+VM5OaaO^:^1>1>:J:07UQP2
+!s100 Z87>1I@o]B8DK6=;OoNaE3
+R10
+32
+!s110 1712337717
+!i10b 1
+!s108 1712337717.000000
+!s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mypackage.vhd|
+!s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/mypackage.vhd|
+!i113 1
+R15
+R16
+Esar_adc
+Z17 w1712338563
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+Z18 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+Z19 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd
+l0
+L6
+VdF9K>43W9DCf`E0Q1RMWR2
+!s100 HX>EGmM3h>[6IM6GWHLc32
+R10
+32
+Z20 !s110 1712338572
+!i10b 1
+Z21 !s108 1712338572.000000
+Z22 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd|
+Z23 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/SAR_ADC.vhd|
+!i113 1
+R15
+R16
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+R7
+Z24 DEx4 work 7 sar_adc 0 22 dF9K>43W9DCf`E0Q1RMWR2
+l30
+L18
+VY;R60d@]lij815dY=M`Kk3
+!s100 oRN3I^nG<Uhj7g0Cj`YB_1
+R10
+32
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R15
+R16

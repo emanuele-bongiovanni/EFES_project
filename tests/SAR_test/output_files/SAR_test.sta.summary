@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'SAR_ADC:ADC|counter[0]'
+Slack : -8.723
+TNS   : -92.572
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -7.948
+TNS   : -14.854
+
+Type  : Slow 1100mV 85C Model Setup 'SAR_ADC:ADC|curr_state.fin'
+Slack : -7.712
+TNS   : -49.930
+
+Type  : Slow 1100mV 85C Model Setup 'KEY_N[0]'
+Slack : -6.254
+TNS   : -78.894
+
+Type  : Slow 1100mV 85C Model Setup 'SAR_ADC:ADC|done'
+Slack : -1.346
+TNS   : -9.262
+
+Type  : Slow 1100mV 85C Model Hold 'KEY_N[0]'
+Slack : -4.267
+TNS   : -36.711
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'SAR_ADC:ADC|done'
+Slack : 0.862
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'SAR_ADC:ADC|counter[0]'
+Slack : 2.551
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'SAR_ADC:ADC|curr_state.fin'
+Slack : 3.875
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|done'
+Slack : -0.394
+TNS   : -4.264
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -2.076
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY_N[0]'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|counter[0]'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|curr_state.fin'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'SAR_ADC:ADC|counter[0]'
+Slack : -8.483
+TNS   : -89.551
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -7.446
+TNS   : -13.568
+
+Type  : Slow 1100mV 0C Model Setup 'SAR_ADC:ADC|curr_state.fin'
+Slack : -7.406
+TNS   : -48.551
+
+Type  : Slow 1100mV 0C Model Setup 'KEY_N[0]'
+Slack : -6.065
+TNS   : -77.919
+
+Type  : Slow 1100mV 0C Model Setup 'SAR_ADC:ADC|done'
+Slack : -1.388
+TNS   : -9.532
+
+Type  : Slow 1100mV 0C Model Hold 'KEY_N[0]'
+Slack : -4.065
+TNS   : -33.232
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.089
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'SAR_ADC:ADC|done'
+Slack : 0.855
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'SAR_ADC:ADC|counter[0]'
+Slack : 2.535
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'SAR_ADC:ADC|curr_state.fin'
+Slack : 3.701
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|done'
+Slack : -0.394
+TNS   : -4.198
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -2.270
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY_N[0]'
+Slack : 0.029
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|counter[0]'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|curr_state.fin'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'SAR_ADC:ADC|curr_state.fin'
+Slack : -5.201
+TNS   : -27.016
+
+Type  : Fast 1100mV 85C Model Setup 'SAR_ADC:ADC|counter[0]'
+Slack : -5.110
+TNS   : -47.746
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.850
+TNS   : -10.522
+
+Type  : Fast 1100mV 85C Model Setup 'KEY_N[0]'
+Slack : -4.040
+TNS   : -40.027
+
+Type  : Fast 1100mV 85C Model Setup 'SAR_ADC:ADC|done'
+Slack : -0.759
+TNS   : -5.010
+
+Type  : Fast 1100mV 85C Model Hold 'KEY_N[0]'
+Slack : -2.488
+TNS   : -22.736
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'SAR_ADC:ADC|done'
+Slack : 0.708
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'SAR_ADC:ADC|counter[0]'
+Slack : 1.414
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'SAR_ADC:ADC|curr_state.fin'
+Slack : 2.362
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY_N[0]'
+Slack : -0.193
+TNS   : -5.106
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.084
+TNS   : -0.332
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|done'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|counter[0]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|curr_state.fin'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'SAR_ADC:ADC|counter[0]'
+Slack : -4.566
+TNS   : -42.640
+
+Type  : Fast 1100mV 0C Model Setup 'SAR_ADC:ADC|curr_state.fin'
+Slack : -4.405
+TNS   : -24.439
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -4.111
+TNS   : -8.618
+
+Type  : Fast 1100mV 0C Model Setup 'KEY_N[0]'
+Slack : -3.341
+TNS   : -33.860
+
+Type  : Fast 1100mV 0C Model Setup 'SAR_ADC:ADC|done'
+Slack : -0.679
+TNS   : -4.422
+
+Type  : Fast 1100mV 0C Model Hold 'KEY_N[0]'
+Slack : -2.288
+TNS   : -20.041
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.050
+TNS   : -0.064
+
+Type  : Fast 1100mV 0C Model Hold 'SAR_ADC:ADC|done'
+Slack : 0.686
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'SAR_ADC:ADC|counter[0]'
+Slack : 1.384
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'SAR_ADC:ADC|curr_state.fin'
+Slack : 2.227
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY_N[0]'
+Slack : -0.188
+TNS   : -6.492
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.084
+TNS   : -0.330
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|done'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|counter[0]'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|curr_state.fin'
+Slack : 0.402
+TNS   : 0.000
+
+------------------------------------------------------------

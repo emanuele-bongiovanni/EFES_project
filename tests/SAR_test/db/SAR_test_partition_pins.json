@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HEX0_N[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY_N[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

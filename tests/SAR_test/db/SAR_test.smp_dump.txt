@@ -1,0 +1,7 @@
+
+State Machine - |SAR_test|SAR_ADC:ADC|curr_state
+Name curr_state.fin curr_state.update curr_state.evaluate curr_state.idle 
+curr_state.idle 0 0 0 0 
+curr_state.evaluate 0 0 1 1 
+curr_state.update 0 1 0 1 
+curr_state.fin 1 0 0 1 
