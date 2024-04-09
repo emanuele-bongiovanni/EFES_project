@@ -4,20 +4,21 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity SAR_DP is
     generic(
-        NBIT        : integer := 8;
+        NBIT        : integer := 8
     );
     Port (
         clk             : in std_logic; 
-        rst             : in std_logic;   
+        rst             : in std_logic;     -- in realtà i reset dei vari componenti è il segnale di init; qui rst serve solo per il registro del valore finale
         from_comp       : in std_logic;
-        start           : in std_logic;
+        init            : in std_logic;
         final_value_en  : in std_logic;
         mask_shift      : in std_logic;
-        data_enable     : in std_logic;
+        counter_en      : in std_logic;
+        data_en         : in std_logic;
 
         count_zero      : out std_logic;
         final_value     : out std_logic_vector(NBIT -1 downto 0);
-        to_dac          : out std_logic_vector(NBIT -1 downto 0);
+        to_dac          : out std_logic_vector(NBIT -1 downto 0)
     );
 end SAR_DP;
 
@@ -44,7 +45,6 @@ architecture struct of SAR_DP is
         port (
             clk:        in std_logic;
             rst:        in std_logic;
-            start:      in std_logic;
             shift:      in std_logic;
             d_out:      out std_logic_vector(NBIT-1 downto 0)    
         );
@@ -52,13 +52,26 @@ architecture struct of SAR_DP is
 
     component counter is
         generic(
-            NBIT        : integer := 8;
+            NBIT        : integer := 8
         );
         Port (
             clk         : in std_logic;
             rst         : in std_logic;
-            start       : in std_logic;
+            enable      : in std_logic;
             zero        : out std_logic                   
+        );
+    end component;
+
+    component final_reg is
+        generic(
+            NBIT    : integer := 8
+        );
+        port(
+            clk     : in std_logic;
+            rst     : in std_logic;
+            enable  : in std_logic;
+            inp     : in std_logic_vector(NBIT -1 downto 0);
+            outp    : out std_logic_vector(NBIT -1 downto 0)
         );
     end component;
 
@@ -74,8 +87,7 @@ architecture struct of SAR_DP is
         mask : mask_reg generic map(NBIT) 
         port map(
             clk => clk,
-            rst => rst,
-            start => start,
+            rst => init,
             shift => mask_shift,
             d_out => mask_value
         );
@@ -83,8 +95,8 @@ architecture struct of SAR_DP is
         data_reg : register_Nbit generic map(NBIT)
         port map(
             clk => clk,
-            rst => rst,
-            enable => data_enable,
+            rst => init,
+            enable => data_en,
             inp => updated_value,
             outp => current_value
         );
@@ -92,8 +104,8 @@ architecture struct of SAR_DP is
         count: counter generic map (NBIT)
         port map (
             clk => clk,
-            rst => rst,
-            start => start,
+            rst => init,
+            enable => counter_en,
             zero => count_zero
         );
 
@@ -102,10 +114,10 @@ architecture struct of SAR_DP is
         end generate;
 
         updated_value <= comp_value or current_value;           --il vettore viene usato per aggiornare il valore attuale
-        to_dac <= mask_value or current_value                   -- il valore attuale, con la maschera, viene inviato al dac per la nuova valutazione
+        to_dac <= mask_value or current_value;                 -- il valore attuale, con la maschera, viene inviato al dac per la nuova valutazione
 
 
-        final_value : register_Nbit generic map(NBIT)
+        final_val : final_reg generic map(NBIT)
         port map(
             clk => clk,
             rst => rst,

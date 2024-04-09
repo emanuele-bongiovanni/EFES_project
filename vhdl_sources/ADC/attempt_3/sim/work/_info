@@ -1,0 +1,338 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/sim
+Eadc_test
+Z1 w1712681627
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd
+Z6 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd
+l0
+L6
+V@;h7GN8NUSm_V4l_T5d?f3
+!s100 ??2V>_6o`Ui1l5NjkeX0:2
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1712682928
+!i10b 1
+Z9 !s108 1712682928.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd|
+Z11 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Atest
+R2
+R3
+R4
+Z14 DEx4 work 8 adc_test 0 22 @;h7GN8NUSm_V4l_T5d?f3
+l40
+L10
+Z15 VU[AfFRE:PR:AGGhe3cFjW1
+Z16 !s100 79Xj?amCR5^9a[47_FRZL0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecounter
+Z17 w1712678814
+R2
+R3
+R4
+R0
+Z18 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd
+Z19 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd
+l0
+L6
+V=zad[<Rk=n6f3Ko_<CYH:3
+!s100 0G>AZ<6MlWWk@ROLWSmmj0
+R7
+32
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd|
+Z21 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+R4
+DEx4 work 7 counter 0 22 =zad[<Rk=n6f3Ko_<CYH:3
+l23
+L19
+VaOconi:OYeR91OF=GfiKW1
+!s100 :8?z^Z<jS>_oVIVhCU:`62
+R7
+32
+R8
+!i10b 1
+R9
+R20
+R21
+!i113 1
+R12
+R13
+Efinal_reg
+Z22 w1712682920
+R2
+R3
+R4
+R0
+Z23 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/final_reg.vhd
+Z24 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/final_reg.vhd
+l0
+L7
+V8D^ZB;o7m0HH5RgVf`O>]2
+!s100 Jz_FN[m0VJfa]jG9?:Uz<0
+R7
+32
+R8
+!i10b 1
+R9
+Z25 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/final_reg.vhd|
+Z26 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/final_reg.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+R4
+DEx4 work 9 final_reg 0 22 8D^ZB;o7m0HH5RgVf`O>]2
+l23
+L21
+VVmUSdA@L`BO[Hbeil:BlB0
+!s100 W8LmU?BgI5fFX2DBfnHXZ0
+R7
+32
+R8
+!i10b 1
+R9
+R25
+R26
+!i113 1
+R12
+R13
+Emask_reg
+Z27 w1712678789
+R2
+R3
+R4
+R0
+Z28 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd
+Z29 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd
+l0
+L6
+VQIBH6ZiiUG@FT9h6ad_Ka2
+!s100 RJ2:5lN8YRDa1kVQnY11:1
+R7
+32
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd|
+Z31 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+R4
+DEx4 work 8 mask_reg 0 22 QIBH6ZiiUG@FT9h6ad_Ka2
+l23
+L19
+V[]0M0k6^@D2Zdf>0176J=0
+!s100 Q>cPa]ZEQ5cdgLAagK6VE1
+R7
+32
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 1
+R12
+R13
+Eregister_nbit
+Z32 w1712515255
+R2
+R3
+R4
+R0
+Z33 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd
+Z34 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd
+l0
+L7
+Vge@I^VXg2fN7P0RoUMjbQ1
+!s100 XAf]2<Yo57Khz0@Z;]5If2
+R7
+32
+R8
+!i10b 1
+R9
+Z35 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd|
+Z36 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+R4
+DEx4 work 13 register_nbit 0 22 ge@I^VXg2fN7P0RoUMjbQ1
+l23
+L21
+V=^h1X?L@YH8=hXFYYa;i;1
+!s100 e=^FfPW9C@V>AL9YGlAMY0
+R7
+32
+R8
+!i10b 1
+R9
+R35
+R36
+!i113 1
+R12
+R13
+Esar_adc
+Z37 w1712682794
+R2
+R3
+R4
+R0
+Z38 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd
+Z39 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd
+l0
+L5
+VhCRB_dWOZ1mL4O5NFMVXQ3
+!s100 V4G5UEm4OXM`]<@zOc8jY1
+R7
+32
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd|
+Z41 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 7 sar_adc 0 22 hCRB_dWOZ1mL4O5NFMVXQ3
+l73
+L21
+V2_T:4P<PBh?HiYmWjRMfF3
+!s100 eA>nnzczVZDm_>KRiQA6o0
+R7
+32
+R8
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13
+Esar_cu
+Z42 w1712681914
+R2
+R3
+R4
+R0
+Z43 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd
+Z44 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd
+l0
+L7
+Van@hhiSEIz>NHz1Hi@5Ud2
+!s100 91QPaCLakWN5QJ;eHBl;[3
+R7
+32
+R8
+!i10b 1
+R9
+Z45 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd|
+Z46 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd|
+!i113 1
+R12
+R13
+Afsm
+R2
+R3
+R4
+DEx4 work 6 sar_cu 0 22 an@hhiSEIz>NHz1Hi@5Ud2
+l30
+L23
+Vh5h7B;U=z4W11@P2J^NEZ1
+!s100 hjX3JIK7g@7jEk:DTD;^A2
+R7
+32
+R8
+!i10b 1
+R9
+R45
+R46
+!i113 1
+R12
+R13
+Esar_dp
+Z47 w1712682766
+R2
+R3
+R4
+R0
+Z48 8D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd
+Z49 FD:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd
+l0
+L5
+V4_j_5O<lDG[<?a8]K1Hc>1
+!s100 @39cFbn5dK11ER:75HMW30
+R7
+32
+R8
+!i10b 1
+R9
+Z50 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd|
+Z51 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd|
+!i113 1
+R12
+R13
+Astruct
+R2
+R3
+R4
+DEx4 work 6 sar_dp 0 22 4_j_5O<lDG[<?a8]K1Hc>1
+l84
+L26
+V1CTQKG@9c0SL1ok[Kb0IV3
+!s100 D6amnzFEYfLE]=ZFf3^0k1
+R7
+32
+R8
+!i10b 1
+R9
+R50
+R51
+!i113 1
+R12
+R13

@@ -10,7 +10,6 @@ entity mask_reg is
     port (
         clk:        in std_logic;
         rst:        in std_logic;
-        start:      in std_logic;
         shift:      in std_logic;
         d_out:      out std_logic_vector(NBIT-1 downto 0)    
     );
@@ -26,14 +25,10 @@ architecture beh of mask_reg is
         process(clk, rst)
         begin
             if (rst = '1') then
-                value <= (others => '0');
-            elsif (rising_edge(clk)) then
-                if (start = '1') then
-                    value(NBIT-1) <= '1';
-                    value(NBIT-2 downto 0) <= (others => '0');
-                elsif (shift = '1') then
-                    value <= '0' & value(NBIT-1 downto 1);                    
-                end if ;
+                value(NBIT-1) <= '1';
+                value(NBIT-2 downto 0) <= (others => '0');
+            elsif (rising_edge(clk) and shift = '1') then
+                value <= '0' & value(NBIT-1 downto 1);                    
             end if ;
         end process;
 

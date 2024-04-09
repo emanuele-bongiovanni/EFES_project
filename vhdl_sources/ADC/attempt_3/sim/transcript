@@ -1,0 +1,1548 @@
+# vsim . 
+# Start time: 18:05:29 on Apr 09,2024
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+# End time: 18:05:29 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:05:35 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd(9): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# End time: 18:05:35 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:06:17 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd(9): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# End time: 18:06:17 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:06:40 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd(31): near "value": (vcom-1576) expecting THEN.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd(35): near "if": (vcom-1576) expecting PROCESS.
+# End time: 18:06:40 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:24 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:07:24 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:24 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:07:24 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:24 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:07:24 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:24 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd(19): near ")": (vcom-1576) expecting IDENTIFIER.
+# End time: 18:07:24 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:52 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:07:52 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:52 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:07:52 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:52 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:07:52 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:07:52 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd(37): near "curr_state": (vcom-1576) expecting THEN.
+# End time: 18:07:52 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:08:12 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:08:12 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:08:12 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd(61): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd(61): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd(74): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd(74): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd(101): VHDL Compiler exiting
+# End time: 18:08:13 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:43 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:08:43 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:43 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:08:44 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:44 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:08:44 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:44 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:08:44 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:08:44 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(55): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# End time: 18:08:44 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:00 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:09:00 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:00 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:09:00 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:00 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:09:00 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:00 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:09:00 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:00 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(85): (vcom-1136) Unknown identifier "data_enable".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(106): near "final_value": (vcom-1576) expecting ';'.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(115): VHDL Compiler exiting
+# End time: 18:09:00 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:58 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:10:58 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:58 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:10:58 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:58 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:10:58 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:58 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:10:58 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:58 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(106): near "final_value": (vcom-1576) expecting ';'.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(115): VHDL Compiler exiting
+# End time: 18:10:58 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:59 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:11:59 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:59 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:11:59 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:59 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:11:59 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:59 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:11:59 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:59 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(106): near "final_val": (vcom-1576) expecting ';'.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd(115): VHDL Compiler exiting
+# End time: 18:11:59 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:11 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:12:11 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:11 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:12:12 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:12:12 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:12:12 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:12:12 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:12 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(44): near "Port": (vcom-1576) expecting ';'.
+# End time: 18:12:12 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:12:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:12:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:12:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:12:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:12:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:12:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(77): (vcom-1136) Unknown identifier "from_comp".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(78): (vcom-1136) Unknown identifier "init".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(79): (vcom-1136) Unknown identifier "final_value_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(80): (vcom-1136) Unknown identifier "mask_shift".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(81): (vcom-1136) Unknown identifier "counter_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(82): (vcom-1136) Unknown identifier "data_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(83): (vcom-1136) Unknown identifier "count_zero".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(84): (vcom-1136) Unknown identifier "final_value".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(76): (vcom-1436) Actual expression (infix expression) of formal "clk" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(77): (vcom-1436) Actual expression (infix expression) of formal "from_comp" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(78): (vcom-1436) Actual expression (infix expression) of formal "init" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(79): (vcom-1436) Actual expression (infix expression) of formal "final_value_en" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(80): (vcom-1436) Actual expression (infix expression) of formal "mask_shift" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(81): (vcom-1436) Actual expression (infix expression) of formal "counter_en" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(82): (vcom-1436) Actual expression (infix expression) of formal "data_en" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(83): (vcom-1454) Formal "count_zero" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(84): (vcom-1454) Formal "final_value" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(85): (vcom-1454) Formal "to_dac" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(91): (vcom-1136) Unknown identifier "rst".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(91): (vcom-1136) Unknown identifier "rst".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(93): (vcom-1136) Unknown identifier "count_zero".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(94): (vcom-1136) Unknown identifier "init".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(95): (vcom-1136) Unknown identifier "mask_shift".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(96): (vcom-1136) Unknown identifier "data_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(97): (vcom-1136) Unknown identifier "count_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(98): (vcom-1136) Unknown identifier "final_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(90): (vcom-1436) Actual expression (infix expression) of formal "clk" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(91): (vcom-1436) Actual expression (infix expression) of formal "rst" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(92): (vcom-1436) Actual expression (infix expression) of formal "start" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(93): (vcom-1436) Actual expression (infix expression) of formal "count_zero" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(94): (vcom-1454) Formal "init" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(95): (vcom-1454) Formal "mask_shift" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(96): (vcom-1454) Formal "data_en" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(97): (vcom-1454) Formal "count_en" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(98): (vcom-1454) Formal "final_en" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(104): VHDL Compiler exiting
+# End time: 18:12:28 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 36, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:13:31 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:13:31 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:13:31 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:13:32 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:13:32 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:13:32 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:13:32 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:13:32 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:13:32 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:13:32 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:13:32 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(91): (vcom-1136) Unknown identifier "rst".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(91): (vcom-1136) Unknown identifier "rst".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(93): (vcom-1136) Unknown identifier "count_zero".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(94): (vcom-1136) Unknown identifier "init".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(95): (vcom-1136) Unknown identifier "mask_shift".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(96): (vcom-1136) Unknown identifier "data_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(97): (vcom-1136) Unknown identifier "count_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(98): (vcom-1136) Unknown identifier "final_en".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(90): (vcom-1436) Actual expression (infix expression) of formal "clk" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(91): (vcom-1436) Actual expression (infix expression) of formal "rst" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(92): (vcom-1436) Actual expression (infix expression) of formal "start" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(93): (vcom-1436) Actual expression (infix expression) of formal "count_zero" is not globally static.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(94): (vcom-1454) Formal "init" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(95): (vcom-1454) Formal "mask_shift" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(96): (vcom-1454) Formal "data_en" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(97): (vcom-1454) Formal "count_en" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(98): (vcom-1454) Formal "final_en" of mode OUT cannot be associated with an expression.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(104): VHDL Compiler exiting
+# End time: 18:13:32 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:06 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:14:06 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:07 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:14:07 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:07 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:14:07 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:07 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:14:07 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:07 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:14:07 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:14:07 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(91): (vcom-1136) Unknown identifier "rst".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd(104): VHDL Compiler exiting
+# End time: 18:14:07 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:08 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:53:08 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:08 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:53:09 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:09 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:53:09 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:09 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:53:09 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:09 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:53:09 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:09 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 18:53:09 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:09 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.mypackage.
+# ** Error (suppressible): D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd(4): (vcom-1195) Cannot find expanded name "work.mypackage".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd(4): Unknown expanded name.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd(7): VHDL Compiler exiting
+# End time: 18:53:09 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:53:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:53:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:53:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:53:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:53:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 18:53:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:27 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd(15): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# End time: 18:53:27 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:39 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:53:39 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:39 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:53:39 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:39 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:53:39 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:39 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:53:39 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:39 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:53:39 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:39 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 18:53:40 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:40 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd(15): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
+# End time: 18:53:40 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vcom failed.
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:53:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:53:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:53:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:53:50 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:50 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:53:50 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:50 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 18:53:50 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:53:50 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 18:53:50 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.adc_test -t 10ps 
+# Start time: 18:53:50 on Apr 09,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(struct)
+# Loading work.sar_dp(struct)
+# Loading work.mask_reg(beh)
+# Loading work.register_nbit(beh)
+# Loading work.counter(beh)
+# Loading work.sar_cu(fsm)
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+add wave -position insertpoint sim:/adc_test/adc/control_unit/*
+
+restart 
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+run 500 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+run 500 ns
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:42 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 18:58:42 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:42 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 18:58:42 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:42 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 18:58:42 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:42 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 18:58:42 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:42 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 18:58:42 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:42 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 18:58:42 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:58:42 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 18:58:42 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:58:43 on Apr 09,2024, Elapsed time: 0:04:53
+# Errors: 0, Warnings: 4
+# vsim work.adc_test -t 10ps 
+# Start time: 18:58:43 on Apr 09,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(struct)
+# Loading work.sar_dp(struct)
+# Loading work.mask_reg(beh)
+# Loading work.register_nbit(beh)
+# Loading work.counter(beh)
+# Loading work.sar_cu(fsm)
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+add wave -position insertpoint sim:/adc_test/adc/control_unit/*
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+run 500 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+add wave -position insertpoint sim:/adc_test/adc/sar/*
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+restart
+run 500 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+add wave -position insertpoint sim:/adc_test/adc/sar/final_val/*
+add wave -position insertpoint sim:/adc_test/adc/sar/data_reg/*
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:25 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 19:13:25 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:25 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 19:13:25 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:25 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 19:13:25 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:25 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 19:13:25 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:25 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 19:13:25 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:25 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 19:13:26 on Apr 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:13:26 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 19:13:26 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:13:26 on Apr 09,2024, Elapsed time: 0:14:43
+# Errors: 0, Warnings: 6
+# vsim work.adc_test -t 10ps 
+# Start time: 19:13:26 on Apr 09,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(struct)
+# Loading work.sar_dp(struct)
+# Loading work.mask_reg(beh)
+# Loading work.register_nbit(beh)
+# Loading work.counter(beh)
+# ** Warning: (vsim-3473) Component instance "final_val : final_reg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test/adc/sar File: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd
+# Loading work.sar_cu(fsm)
+# ** Warning: (vsim-8684) No drivers exist on out port /adc_test/adc/sar/final_value, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adc_test/digital_out_s.
+# ** Warning: (vsim-8684) No drivers exist on out port /adc_test/adc/digital_out, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adc_test/digital_out_s.
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/final_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:14:49 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 19:14:49 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:14:50 on Apr 09,2024, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 5
+# vsim work.adc_test -t 10ps 
+# Start time: 19:14:50 on Apr 09,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(struct)
+# Loading work.sar_dp(struct)
+# Loading work.mask_reg(beh)
+# Loading work.register_nbit(beh)
+# Loading work.counter(beh)
+# ** Warning: (vsim-3473) Component instance "final_val : final_reg" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test/adc/sar File: D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd
+# Loading work.sar_cu(fsm)
+# ** Warning: (vsim-8684) No drivers exist on out port /adc_test/adc/sar/final_value, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adc_test/digital_out_s.
+# ** Warning: (vsim-8684) No drivers exist on out port /adc_test/adc/digital_out, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /adc_test/digital_out_s.
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+source compile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture beh of counter
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/mask_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mask_reg
+# -- Compiling architecture beh of mask_reg
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/register_Nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_Nbit
+# -- Compiling architecture beh of register_Nbit
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_CU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_CU
+# -- Compiling architecture fsm of SAR_CU
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/final_reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity final_reg
+# -- Compiling architecture beh of final_reg
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_DP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_DP
+# -- Compiling architecture struct of SAR_DP
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/SAR_ADC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SAR_ADC
+# -- Compiling architecture struct of SAR_ADC
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:15:28 on Apr 09,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/attempt_3/adc_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adc_test
+# -- Compiling architecture test of adc_test
+# End time: 19:15:28 on Apr 09,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:15:29 on Apr 09,2024, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 5
+# vsim work.adc_test -t 10ps 
+# Start time: 19:15:29 on Apr 09,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_test(test)
+# Loading work.sar_adc(struct)
+# Loading work.sar_dp(struct)
+# Loading work.mask_reg(beh)
+# Loading work.register_nbit(beh)
+# Loading work.counter(beh)
+# Loading work.final_reg(beh)
+# Loading work.sar_cu(fsm)
+# ** Warning: (vsim-8683) Uninitialized out port /adc_test/adc/done has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /adc_test
+# End time: 19:16:08 on Apr 09,2024, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 2
