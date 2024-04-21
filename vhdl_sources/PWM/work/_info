@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documenti/GitHub/EFES_project/vhdl_sources/PWM
+Epwm_module
+Z1 w1713100527
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_module.vhd
+Z6 FD:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_module.vhd
+l0
+L11
+VfH9l=TXDNOC]T2>i?YObZ0
+!s100 g^P^naGR=WgVG6GD^F_]I1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1713100534
+!i10b 1
+Z9 !s108 1713100534.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_module.vhd|
+Z11 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_module.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+DEx4 work 10 pwm_module 0 22 fH9l=TXDNOC]T2>i?YObZ0
+l25
+L20
+VbUj>T=P=gIQgB>VDE?dXV2
+!s100 ShC0glRalNIkzX_PHglmb3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Epwm_test
+Z14 w1713100234
+R2
+R3
+R4
+R0
+Z15 8D:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_test.vhd
+Z16 FD:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_test.vhd
+l0
+L5
+VfiGNem3i6D<9cJ65:dbAN3
+!s100 [bC_gh`DICzU0[lU^kQKz1
+R7
+32
+Z17 !s110 1713100539
+!i10b 1
+Z18 !s108 1713100539.000000
+Z19 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_test.vhd|
+Z20 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/PWM/PWM_test.vhd|
+!i113 1
+R12
+R13
+Atest
+R2
+R3
+R4
+Z21 DEx4 work 8 pwm_test 0 22 fiGNem3i6D<9cJ65:dbAN3
+l28
+L8
+Z22 VE<V8cH]_2K^HW^OM`[CPP0
+Z23 !s100 ooG]LkO7Sh2[AS[l1cTRl0
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13

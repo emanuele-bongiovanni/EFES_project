@@ -1,0 +1,229 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : -5.734
+TNS   : -103.348
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -5.414
+TNS   : -121.791
+
+Type  : Slow 1100mV 85C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -3.726
+TNS   : -230.868
+
+Type  : Slow 1100mV 85C Model Setup 'prox_sensor:sensor|curr_state.RES'
+Slack : -2.840
+TNS   : -56.555
+
+Type  : Slow 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.889
+TNS   : -12.189
+
+Type  : Slow 1100mV 85C Model Hold 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 1.791
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -1.830
+TNS   : -101.100
+
+Type  : Slow 1100mV 85C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : -2.225
+TNS   : -96.488
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.601
+TNS   : -34.182
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : -5.867
+TNS   : -105.624
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -5.506
+TNS   : -121.565
+
+Type  : Slow 1100mV 0C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -3.566
+TNS   : -228.477
+
+Type  : Slow 1100mV 0C Model Setup 'prox_sensor:sensor|curr_state.RES'
+Slack : -2.706
+TNS   : -54.268
+
+Type  : Slow 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.828
+TNS   : -10.847
+
+Type  : Slow 1100mV 0C Model Hold 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.275
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 1.796
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -1.766
+TNS   : -100.249
+
+Type  : Slow 1100mV 0C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : -2.225
+TNS   : -95.678
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.677
+TNS   : -31.735
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.508
+TNS   : -52.101
+
+Type  : Fast 1100mV 85C Model Setup 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : -2.989
+TNS   : -52.903
+
+Type  : Fast 1100mV 85C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -1.959
+TNS   : -114.848
+
+Type  : Fast 1100mV 85C Model Setup 'prox_sensor:sensor|curr_state.RES'
+Slack : -1.349
+TNS   : -24.734
+
+Type  : Fast 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.648
+TNS   : -9.450
+
+Type  : Fast 1100mV 85C Model Hold 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.260
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 1.054
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -1.015
+TNS   : -58.422
+
+Type  : Fast 1100mV 85C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.268
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : -1.702
+TNS   : -37.461
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.758
+TNS   : -23.986
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.961
+TNS   : -44.042
+
+Type  : Fast 1100mV 0C Model Setup 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : -2.838
+TNS   : -50.363
+
+Type  : Fast 1100mV 0C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -1.695
+TNS   : -100.791
+
+Type  : Fast 1100mV 0C Model Setup 'prox_sensor:sensor|curr_state.RES'
+Slack : -1.150
+TNS   : -21.440
+
+Type  : Fast 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.605
+TNS   : -8.805
+
+Type  : Fast 1100mV 0C Model Hold 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 1.025
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -0.892
+TNS   : -51.981
+
+Type  : Fast 1100mV 0C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : -1.702
+TNS   : -37.444
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.822
+TNS   : -28.432
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.RES'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'prox_sensor:sensor|curr_state.FIN_1'
+Slack : 0.406
+TNS   : 0.000
+
+------------------------------------------------------------

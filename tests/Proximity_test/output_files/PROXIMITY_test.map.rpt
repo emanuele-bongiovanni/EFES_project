@@ -1,0 +1,691 @@
+Analysis & Synthesis report for PROXIMITY_test
+Mon Apr 15 20:45:43 2024
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |PROXIMITY_test|prox_sensor:sensor|curr_state
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Parameter Settings for User Entity Instance: register_Nbit:out_reg
+ 15. Port Connectivity Checks: "register_Nbit:out_reg"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++---------------------------------+----------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Apr 15 20:45:43 2024              ;
+; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Standard Edition ;
+; Revision Name                   ; PROXIMITY_test                                     ;
+; Top-level Entity Name           ; PROXIMITY_test                                     ;
+; Family                          ; Cyclone V                                          ;
+; Logic utilization (in ALMs)     ; N/A                                                ;
+; Total registers                 ; 115                                                ;
+; Total pins                      ; 93                                                 ;
+; Total virtual pins              ; 0                                                  ;
+; Total block memory bits         ; 0                                                  ;
+; Total DSP Blocks                ; 1                                                  ;
+; Total HSSI RX PCSs              ; 0                                                  ;
+; Total HSSI PMA RX Deserializers ; 0                                                  ;
+; Total HSSI TX PCSs              ; 0                                                  ;
+; Total HSSI PMA TX Serializers   ; 0                                                  ;
+; Total PLLs                      ; 0                                                  ;
+; Total DLLs                      ; 0                                                  ;
++---------------------------------+----------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; PROXIMITY_test     ; PROXIMITY_test     ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.02        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processors 3-12        ;   0.2%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+; register_Nbit.vhd                ; yes             ; User VHDL File  ; D:/Documenti/GitHub/EFES_project/tests/Proximity_test/register_Nbit.vhd   ;         ;
+; start_counter.vhd                ; yes             ; User VHDL File  ; D:/Documenti/GitHub/EFES_project/tests/Proximity_test/start_counter.vhd   ;         ;
+; prox_sensor.vhd                  ; yes             ; User VHDL File  ; D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd     ;         ;
+; PROXIMITY_test.vhd               ; yes             ; User VHDL File  ; D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd  ;         ;
+; measure_counter.vhd              ; yes             ; User VHDL File  ; D:/Documenti/GitHub/EFES_project/tests/Proximity_test/measure_counter.vhd ;         ;
+; hexdisp7seg.vhd                  ; yes             ; User VHDL File  ; D:/Documenti/GitHub/EFES_project/tests/Proximity_test/hexdisp7seg.vhd     ;         ;
+; clk_div.vhd                      ; yes             ; User VHDL File  ; D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd         ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                ;
++---------------------------------------------+------------------------------+
+; Resource                                    ; Usage                        ;
++---------------------------------------------+------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 114                          ;
+;                                             ;                              ;
+; Combinational ALUT usage for logic          ; 214                          ;
+;     -- 7 input functions                    ; 0                            ;
+;     -- 6 input functions                    ; 13                           ;
+;     -- 5 input functions                    ; 4                            ;
+;     -- 4 input functions                    ; 32                           ;
+;     -- <=3 input functions                  ; 165                          ;
+;                                             ;                              ;
+; Dedicated logic registers                   ; 115                          ;
+;                                             ;                              ;
+; I/O pins                                    ; 93                           ;
+;                                             ;                              ;
+; Total DSP Blocks                            ; 1                            ;
+;                                             ;                              ;
+; Maximum fan-out node                        ; clk_div:clk_divisor|internal ;
+; Maximum fan-out                             ; 84                           ;
+; Total fan-out                               ; 1238                         ;
+; Average fan-out                             ; 2.24                         ;
++---------------------------------------------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name     ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------+--------------+
+; |PROXIMITY_test                ; 214 (2)             ; 115 (2)                   ; 0                 ; 1          ; 93   ; 0            ; |PROXIMITY_test                           ; PROXIMITY_test  ; work         ;
+;    |clk_div:clk_divisor|       ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|clk_div:clk_divisor       ; clk_div         ; work         ;
+;    |hexdisp7seg:h0|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|hexdisp7seg:h0            ; hexdisp7seg     ; work         ;
+;    |hexdisp7seg:h1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|hexdisp7seg:h1            ; hexdisp7seg     ; work         ;
+;    |hexdisp7seg:h2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|hexdisp7seg:h2            ; hexdisp7seg     ; work         ;
+;    |hexdisp7seg:h3|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|hexdisp7seg:h3            ; hexdisp7seg     ; work         ;
+;    |hexdisp7seg:h4|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|hexdisp7seg:h4            ; hexdisp7seg     ; work         ;
+;    |measure_counter:measure|   ; 21 (21)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|measure_counter:measure   ; measure_counter ; work         ;
+;    |prox_sensor:sensor|        ; 74 (74)             ; 7 (7)                     ; 0                 ; 1          ; 0    ; 0            ; |PROXIMITY_test|prox_sensor:sensor        ; prox_sensor     ; work         ;
+;    |register_Nbit:out_reg|     ; 0 (0)               ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|register_Nbit:out_reg     ; register_Nbit   ; work         ;
+;    |start_counter:start_count| ; 42 (42)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |PROXIMITY_test|start_counter:start_count ; start_counter   ; work         ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 27x27               ; 1           ;
+; Total number of DSP blocks      ; 1           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |PROXIMITY_test|prox_sensor:sensor|curr_state                                                                                                           ;
++-------------------------+------------------+------------------+----------------------+-------------------------+---------------------+-----------------+----------------+
+; Name                    ; curr_state.FIN_2 ; curr_state.FIN_1 ; curr_state.MEASURING ; curr_state.WAITING_ECHO ; curr_state.STARTING ; curr_state.IDLE ; curr_state.RES ;
++-------------------------+------------------+------------------+----------------------+-------------------------+---------------------+-----------------+----------------+
+; curr_state.RES          ; 0                ; 0                ; 0                    ; 0                       ; 0                   ; 0               ; 0              ;
+; curr_state.IDLE         ; 0                ; 0                ; 0                    ; 0                       ; 0                   ; 1               ; 1              ;
+; curr_state.STARTING     ; 0                ; 0                ; 0                    ; 0                       ; 1                   ; 0               ; 1              ;
+; curr_state.WAITING_ECHO ; 0                ; 0                ; 0                    ; 1                       ; 0                   ; 0               ; 1              ;
+; curr_state.MEASURING    ; 0                ; 0                ; 1                    ; 0                       ; 0                   ; 0               ; 1              ;
+; curr_state.FIN_1        ; 0                ; 1                ; 0                    ; 0                       ; 0                   ; 0               ; 1              ;
+; curr_state.FIN_2        ; 1                ; 0                ; 0                    ; 0                       ; 0                   ; 0               ; 1              ;
++-------------------------+------------------+------------------+----------------------+-------------------------+---------------------+-----------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                 ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; prox_sensor:sensor|distance[0]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|terminated                       ; prox_sensor:sensor|terminated       ; yes                    ;
+; prox_sensor:sensor|distance[1]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[2]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[3]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[4]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[5]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[6]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[7]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[8]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[9]                      ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[10]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[11]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[12]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[13]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[14]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[15]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[17]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[16]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|distance[18]                     ; prox_sensor:sensor|WideOr0          ; yes                    ;
+; prox_sensor:sensor|trigger                          ; prox_sensor:sensor|curr_state.RES   ; yes                    ;
+; prox_sensor:sensor|dist_value[11]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[12]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[13]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[14]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[15]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[16]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[17]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[18]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[19]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[20]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[21]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[22]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[23]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[24]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[25]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[26]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[28]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[27]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|dist_value[29]                   ; prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; prox_sensor:sensor|start_en                         ; prox_sensor:sensor|curr_state.RES   ; yes                    ;
+; prox_sensor:sensor|init_start                       ; prox_sensor:sensor|curr_state.RES   ; yes                    ;
+; prox_sensor:sensor|init_measure                     ; prox_sensor:sensor|curr_state.RES   ; yes                    ;
+; prox_sensor:sensor|measure_en                       ; prox_sensor:sensor|curr_state.RES   ; yes                    ;
+; Number of user-specified and inferred latches = 44  ;                                     ;                        ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; register_Nbit:out_reg|outp[19..23]    ; Stuck at GND due to stuck port data_in ;
+; start_f2                              ; Merged with start_f1                   ;
+; Total Number of Removed Registers = 6 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 115   ;
+; Number of registers using Synchronous Clear  ; 30    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 115   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 72    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; start_counter:start_count|value[1]     ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: register_Nbit:out_reg ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; nbit           ; 32    ; Signed Integer                            ;
++----------------+-------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "register_Nbit:out_reg"                                                                      ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; outp[31..24] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 115                         ;
+;     CLR               ; 13                          ;
+;     CLR SCLR          ; 30                          ;
+;     ENA CLR           ; 72                          ;
+; arriav_io_obuf        ; 36                          ;
+; arriav_lcell_comb     ; 220                         ;
+;     arith             ; 84                          ;
+;         1 data inputs ; 83                          ;
+;         2 data inputs ; 1                           ;
+;     normal            ; 136                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 54                          ;
+;         4 data inputs ; 32                          ;
+;         5 data inputs ; 4                           ;
+;         6 data inputs ; 13                          ;
+; arriav_mac            ; 1                           ;
+; boundary_port         ; 93                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.18                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
+    Info: Processing started: Mon Apr 15 20:45:33 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROXIMITY_test -c PROXIMITY_test
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file register_nbit.vhd
+    Info (12022): Found design unit 1: register_Nbit-beh File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/register_Nbit.vhd Line: 21
+    Info (12023): Found entity 1: register_Nbit File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/register_Nbit.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file start_counter.vhd
+    Info (12022): Found design unit 1: start_counter-beh File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/start_counter.vhd Line: 16
+    Info (12023): Found entity 1: start_counter File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/start_counter.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file prox_sensor.vhd
+    Info (12022): Found design unit 1: prox_sensor-beh File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 28
+    Info (12023): Found entity 1: prox_sensor File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file proximity_test.vhd
+    Info (12022): Found design unit 1: PROXIMITY_test-test File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 31
+    Info (12023): Found entity 1: PROXIMITY_test File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file measure_counter.vhd
+    Info (12022): Found design unit 1: measure_counter-beh File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/measure_counter.vhd Line: 16
+    Info (12023): Found entity 1: measure_counter File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/measure_counter.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file hexdisp7seg.vhd
+    Info (12022): Found design unit 1: hexdisp7seg-rtl File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/hexdisp7seg.vhd Line: 11
+    Info (12023): Found entity 1: hexdisp7seg File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/hexdisp7seg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
+    Info (12022): Found design unit 1: clk_div-beh File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 15
+    Info (12023): Found entity 1: clk_div File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 6
+Info (12127): Elaborating entity "PROXIMITY_test" for the top level hierarchy
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:clk_divisor" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 138
+Warning (10631): VHDL Process Statement warning at clk_div.vhd(23): inferring latch(es) for signal or variable "DIV", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[0]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[1]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[2]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[3]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[4]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[5]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[6]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[7]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[8]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[9]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[10]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[11]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[12]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[13]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[14]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[15]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[16]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[17]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[18]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[19]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[20]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[21]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[22]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[23]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[24]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[25]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[26]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[27]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[28]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[29]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[30]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (10041): Inferred latch for "DIV[31]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 23
+Info (12128): Elaborating entity "prox_sensor" for hierarchy "prox_sensor:sensor" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 144
+Warning (10492): VHDL Process Statement warning at prox_sensor.vhd(148): signal "dist_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 148
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "distance", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "init_start", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "start_en", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "init_measure", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "measure_en", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "trigger", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "terminated", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Warning (10631): VHDL Process Statement warning at prox_sensor.vhd(48): inferring latch(es) for signal or variable "dist_value", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[11]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[12]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[13]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[14]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[15]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[16]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[17]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[18]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[19]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[20]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[21]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[22]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[23]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[24]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[25]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[26]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[27]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[28]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[29]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[30]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[31]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[32]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[33]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[34]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[35]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[36]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[37]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[38]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[39]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[40]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "dist_value[41]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "terminated" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "trigger" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "measure_en" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "init_measure" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "start_en" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "init_start" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[0]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[1]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[2]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[3]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[4]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[5]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[6]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[7]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[8]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[9]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[10]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[11]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[12]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[13]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[14]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[15]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[16]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[17]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[18]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[19]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[20]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[21]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[22]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[23]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[24]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[25]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[26]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[27]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[28]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[29]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[30]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (10041): Inferred latch for "distance[31]" at prox_sensor.vhd(48) File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+Info (12128): Elaborating entity "measure_counter" for hierarchy "measure_counter:measure" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 160
+Warning (10492): VHDL Process Statement warning at measure_counter.vhd(26): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/measure_counter.vhd Line: 26
+Info (12128): Elaborating entity "start_counter" for hierarchy "start_counter:start_count" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 167
+Warning (10492): VHDL Process Statement warning at start_counter.vhd(27): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/start_counter.vhd Line: 27
+Info (12128): Elaborating entity "register_Nbit" for hierarchy "register_Nbit:out_reg" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 174
+Warning (10492): VHDL Process Statement warning at register_Nbit.vhd(28): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/register_Nbit.vhd Line: 28
+Info (12128): Elaborating entity "hexdisp7seg" for hierarchy "hexdisp7seg:h0" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 184
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_0[0]" and its non-tri-state driver. File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13035): Inserted always-enabled tri-state buffer between "GPIO_0[35]" and its non-tri-state driver. File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "GPIO_0[1]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[2]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[3]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[4]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[5]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[6]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[7]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[8]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[9]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[10]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[11]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[12]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[13]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[14]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[15]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[16]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[17]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[18]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[19]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[20]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[21]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[22]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[23]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[24]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[25]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[26]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[27]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[28]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[29]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[30]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[31]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[32]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[33]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13040): bidirectional pin "GPIO_0[34]" has no driver File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "prox_sensor:sensor|start_en" merged with LATCH primitive "prox_sensor:sensor|trigger" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 18
+Warning (13012): Latch prox_sensor:sensor|distance[0] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[1] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[2] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[3] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[4] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[5] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[6] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[7] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[8] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[9] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[10] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[11] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[12] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[13] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[14] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[15] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[17] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[16] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13012): Latch prox_sensor:sensor|distance[18] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/prox_sensor.vhd Line: 31
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "GPIO_0[0]~synth" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+    Warning (13010): Node "GPIO_0[35]~synth" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 25
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX5_N[0]" is stuck at GND File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 16
+    Warning (13410): Pin "HEX5_N[1]" is stuck at GND File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 16
+    Warning (13410): Pin "HEX5_N[2]" is stuck at GND File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 16
+    Warning (13410): Pin "HEX5_N[3]" is stuck at GND File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 16
+    Warning (13410): Pin "HEX5_N[4]" is stuck at GND File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 16
+    Warning (13410): Pin "HEX5_N[5]" is stuck at GND File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 16
+    Warning (13410): Pin "HEX5_N[6]" is stuck at VCC File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 16
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register clk_div:clk_divisor|count[31] will power up to Low File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 25
+    Critical Warning (18010): Register clk_div:clk_divisor|count[0] will power up to Low File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/clk_div.vhd Line: 25
+    Critical Warning (18010): Register start_counter:start_count|value[0] will power up to Low File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/start_counter.vhd Line: 24
+    Critical Warning (18010): Register start_counter:start_count|value[1] will power up to High File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/start_counter.vhd Line: 24
+    Critical Warning (18010): Register start_counter:start_count|value[31] will power up to Low File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/start_counter.vhd Line: 24
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY_N[2]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 19
+    Warning (15610): No output dependent on input pin "KEY_N[3]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 19
+    Warning (15610): No output dependent on input pin "SW[0]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[1]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[2]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[3]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[4]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[5]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[6]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[7]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[8]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+    Warning (15610): No output dependent on input pin "SW[9]" File: D:/Documenti/GitHub/EFES_project/tests/Proximity_test/PROXIMITY_test.vhd Line: 22
+Info (21057): Implemented 329 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 15 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21060): Implemented 36 bidirectional pins
+    Info (21061): Implemented 235 logic cells
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 120 warnings
+    Info: Peak virtual memory: 4935 megabytes
+    Info: Processing ended: Mon Apr 15 20:45:43 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:07
+
+

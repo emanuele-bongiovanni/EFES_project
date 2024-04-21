@@ -1,0 +1,277 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -5.310
+TNS   : -98.482
+
+Type  : Slow 1100mV 85C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : -2.926
+TNS   : -19.572
+
+Type  : Slow 1100mV 85C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -2.906
+TNS   : -116.054
+
+Type  : Slow 1100mV 85C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : -1.700
+TNS   : -1.700
+
+Type  : Slow 1100mV 85C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : -0.892
+TNS   : -5.673
+
+Type  : Slow 1100mV 85C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.872
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -2.092
+TNS   : -114.581
+
+Type  : Slow 1100mV 85C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.396
+TNS   : -22.577
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : -0.394
+TNS   : -40.329
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : -0.394
+TNS   : -4.096
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -5.378
+TNS   : -95.975
+
+Type  : Slow 1100mV 0C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -2.890
+TNS   : -113.870
+
+Type  : Slow 1100mV 0C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : -2.806
+TNS   : -18.789
+
+Type  : Slow 1100mV 0C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : -1.633
+TNS   : -1.633
+
+Type  : Slow 1100mV 0C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : -0.965
+TNS   : -6.193
+
+Type  : Slow 1100mV 0C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
+Slack : 0.270
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : 0.506
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.735
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -2.000
+TNS   : -109.034
+
+Type  : Slow 1100mV 0C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.439
+TNS   : -24.285
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : -0.394
+TNS   : -40.021
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : -0.394
+TNS   : -4.192
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.431
+TNS   : -42.409
+
+Type  : Fast 1100mV 85C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : -1.576
+TNS   : -10.112
+
+Type  : Fast 1100mV 85C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -1.445
+TNS   : -53.580
+
+Type  : Fast 1100mV 85C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : -1.004
+TNS   : -1.004
+
+Type  : Fast 1100mV 85C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : -0.441
+TNS   : -2.618
+
+Type  : Fast 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.024
+TNS   : -0.029
+
+Type  : Fast 1100mV 85C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.560
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -1.120
+TNS   : -56.812
+
+Type  : Fast 1100mV 85C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.448
+TNS   : -4.220
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : -0.003
+TNS   : -0.037
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.860
+TNS   : -36.064
+
+Type  : Fast 1100mV 0C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : -1.409
+TNS   : -9.052
+
+Type  : Fast 1100mV 0C Model Setup 'clk_div:clk_divisor|internal'
+Slack : -1.256
+TNS   : -45.244
+
+Type  : Fast 1100mV 0C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : -0.863
+TNS   : -0.863
+
+Type  : Fast 1100mV 0C Model Setup 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : -0.423
+TNS   : -2.539
+
+Type  : Fast 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.040
+TNS   : -0.065
+
+Type  : Fast 1100mV 0C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.026
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.196
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.491
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clk_div:clk_divisor|internal'
+Slack : -0.946
+TNS   : -48.106
+
+Type  : Fast 1100mV 0C Model Removal 'clk_div:clk_divisor|internal'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.469
+TNS   : -4.166
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
+Slack : 0.034
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|done'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'SAR_ADC:ADC|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.463
+TNS   : 0.000
+
+------------------------------------------------------------

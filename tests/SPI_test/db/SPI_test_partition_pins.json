@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HEX0_N[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0_N[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1_N[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_N[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_N[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_N[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2_N[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_N[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_N[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_N[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX3_N[6]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[35]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

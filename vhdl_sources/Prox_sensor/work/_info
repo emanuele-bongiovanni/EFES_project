@@ -1,0 +1,174 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor
+Emeasure_counter
+Z1 w1713194282
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/measure_counter.vhd
+Z6 FD:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/measure_counter.vhd
+l0
+L6
+VHgCAl_U_P=B96o[2hbJM23
+!s100 dRHUGg:Kj2^XmXl2IDHc`0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1713196693
+!i10b 1
+Z9 !s108 1713196693.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/measure_counter.vhd|
+Z11 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/measure_counter.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+DEx4 work 15 measure_counter 0 22 HgCAl_U_P=B96o[2hbJM23
+l20
+L16
+VB:?M3`i2zkEEKXAiBz2no3
+!s100 H5Nm12dG336`IzW4kQ1jc0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eprox_sensor
+Z14 w1713198850
+R2
+R3
+R4
+R0
+Z15 8D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_sensor.vhd
+Z16 FD:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_sensor.vhd
+l0
+L7
+VO^hge8gg72[oVH:nJeN[b1
+!s100 Dgk3?P39F9__K@;F:`nZH2
+R7
+32
+Z17 !s110 1713198852
+!i10b 1
+Z18 !s108 1713198852.000000
+Z19 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_sensor.vhd|
+Z20 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_sensor.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+R4
+Z21 DEx4 work 11 prox_sensor 0 22 O^hge8gg72[oVH:nJeN[b1
+l35
+L28
+VGa@7?JaPg>DVoolO0dcJO2
+!s100 >:?z@R:PZ5L6:XA@RP[D61
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R13
+Eprox_test
+Z22 w1713196839
+R2
+R3
+R4
+R0
+Z23 8D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_test.vhd
+Z24 FD:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_test.vhd
+l0
+L6
+VA9Eif`ciSgMeC^i=b>d1L3
+!s100 SBzDOLi@n;8_nPR6IPjJX3
+R7
+32
+Z25 !s110 1713196843
+!i10b 1
+Z26 !s108 1713196842.000000
+Z27 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_test.vhd|
+Z28 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/prox_test.vhd|
+!i113 1
+R12
+R13
+Atest
+R2
+R3
+R4
+DEx4 work 9 prox_test 0 22 A9Eif`ciSgMeC^i=b>d1L3
+l65
+L10
+V1Y6;334[`Ed3KzN:bf`n73
+!s100 b<RZ2AOkgDMh1W0GLNlh30
+R7
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R12
+R13
+Estart_counter
+Z29 w1713191813
+R2
+R3
+R4
+R0
+Z30 8D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/start_counter.vhd
+Z31 FD:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/start_counter.vhd
+l0
+L6
+VP=T5:zdU=^4]GzQ_^Y59@0
+!s100 o<FIf0U7LD1lJhP;gKIMo2
+R7
+32
+Z32 !s110 1713196697
+!i10b 1
+Z33 !s108 1713196697.000000
+Z34 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/start_counter.vhd|
+Z35 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/Prox_sensor/start_counter.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+R4
+DEx4 work 13 start_counter 0 22 P=T5:zdU=^4]GzQ_^Y59@0
+l20
+L16
+VHRmB_T^m3lZNGF;bJjMBa2
+!s100 lk3?3kEzbkZZ]Foi`_@201
+R7
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R12
+R13

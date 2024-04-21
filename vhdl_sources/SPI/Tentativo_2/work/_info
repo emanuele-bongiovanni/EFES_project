@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2
+Espi_interface
+Z1 w1713347777
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd
+Z5 FD:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd
+l0
+L6
+VnWR>SJjbEkz80TH;FZFm@2
+!s100 SeAgCGANGzeAWiMP5f:Cl0
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1713347781
+!i10b 1
+Z8 !s108 1713347781.000000
+Z9 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd|
+Z10 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd|
+!i113 1
+Z11 o-work work
+Z12 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+DEx4 work 13 spi_interface 0 22 nWR>SJjbEkz80TH;FZFm@2
+l31
+L24
+V4@UXP2>Z4Iz`6c=cKO0]E2
+!s100 >jn;k32AkzJIMWG_:zTCe2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Espi_test
+Z13 w1713279910
+R2
+R3
+R0
+Z14 8D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_test.vhd
+Z15 FD:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_test.vhd
+l0
+L5
+VA>Nh;_FP;hPlWeh[Fa]m?2
+!s100 [PSF`jc=o6fJ<5inCoDYj2
+R6
+32
+Z16 !s110 1713347782
+!i10b 1
+Z17 !s108 1713347782.000000
+Z18 !s90 -reportprogress|300|-work|work|D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_test.vhd|
+Z19 !s107 D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_test.vhd|
+!i113 1
+R11
+R12
+Atest
+R2
+R3
+Z20 DEx4 work 8 spi_test 0 22 A>Nh;_FP;hPlWeh[Fa]m?2
+l38
+L9
+Z21 V2Rhi5>mkPHAPic`J`iJa?1
+Z22 !s100 z=m<jgUIBmfHa:9]NzBHb0
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12

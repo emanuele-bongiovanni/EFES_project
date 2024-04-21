@@ -1,0 +1,57 @@
+# vsim . 
+# Start time: 11:55:46 on Apr 17,2024
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+# End time: 11:55:46 on Apr 17,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:55:52 on Apr 17,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity spi_interface
+# -- Compiling architecture beh of spi_interface
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd(38): Illegal target for signal assignment.
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd(38): (vcom-1136) Unknown identifier "for_out".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd(42): (vcom-1136) Unknown identifier "for_out".
+# ** Error: D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd(49): VHDL Compiler exiting
+# End time: 11:55:53 on Apr 17,2024, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:56:21 on Apr 17,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_interface.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity spi_interface
+# -- Compiling architecture beh of spi_interface
+# End time: 11:56:21 on Apr 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:56:22 on Apr 17,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/SPI/Tentativo_2/spi_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity spi_test
+# -- Compiling architecture test of spi_test
+# End time: 11:56:22 on Apr 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_test -t 10ps
+# vsim work.spi_test -t 10ps 
+# Start time: 11:56:34 on Apr 17,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.spi_test(test)
+# Loading work.spi_interface(beh)
+add wave -position insertpoint sim:/spi_test/slave/*
+
+run 380 ns
+# End time: 11:57:38 on Apr 17,2024, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 0

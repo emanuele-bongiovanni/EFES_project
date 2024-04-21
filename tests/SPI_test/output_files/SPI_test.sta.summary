@@ -1,0 +1,133 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'GPIO_0[3]'
+Slack : -4.360
+TNS   : -38.670
+
+Type  : Slow 1100mV 85C Model Setup 'GPIO_0[0]'
+Slack : -2.373
+TNS   : -32.468
+
+Type  : Slow 1100mV 85C Model Hold 'GPIO_0[0]'
+Slack : 0.072
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'GPIO_0[3]'
+Slack : 1.443
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'GPIO_0[0]'
+Slack : -1.578
+TNS   : -12.405
+
+Type  : Slow 1100mV 85C Model Removal 'GPIO_0[0]'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'GPIO_0[0]'
+Slack : -0.394
+TNS   : -10.935
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'GPIO_0[3]'
+Slack : -0.160
+TNS   : -2.369
+
+Type  : Slow 1100mV 0C Model Setup 'GPIO_0[3]'
+Slack : -4.348
+TNS   : -38.727
+
+Type  : Slow 1100mV 0C Model Setup 'GPIO_0[0]'
+Slack : -2.257
+TNS   : -30.373
+
+Type  : Slow 1100mV 0C Model Hold 'GPIO_0[0]'
+Slack : -0.105
+TNS   : -0.905
+
+Type  : Slow 1100mV 0C Model Hold 'GPIO_0[3]'
+Slack : 1.436
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'GPIO_0[0]'
+Slack : -1.393
+TNS   : -10.937
+
+Type  : Slow 1100mV 0C Model Removal 'GPIO_0[0]'
+Slack : -0.027
+TNS   : -0.131
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'GPIO_0[0]'
+Slack : -0.394
+TNS   : -9.920
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'GPIO_0[3]'
+Slack : -0.141
+TNS   : -2.321
+
+Type  : Fast 1100mV 85C Model Setup 'GPIO_0[3]'
+Slack : -2.419
+TNS   : -20.649
+
+Type  : Fast 1100mV 85C Model Setup 'GPIO_0[0]'
+Slack : -1.799
+TNS   : -21.585
+
+Type  : Fast 1100mV 85C Model Hold 'GPIO_0[0]'
+Slack : -0.126
+TNS   : -0.751
+
+Type  : Fast 1100mV 85C Model Hold 'GPIO_0[3]'
+Slack : 0.787
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'GPIO_0[0]'
+Slack : -1.391
+TNS   : -10.856
+
+Type  : Fast 1100mV 85C Model Removal 'GPIO_0[0]'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'GPIO_0[3]'
+Slack : -0.428
+TNS   : -8.328
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'GPIO_0[0]'
+Slack : -0.390
+TNS   : -7.620
+
+Type  : Fast 1100mV 0C Model Setup 'GPIO_0[3]'
+Slack : -2.134
+TNS   : -18.091
+
+Type  : Fast 1100mV 0C Model Setup 'GPIO_0[0]'
+Slack : -1.685
+TNS   : -20.085
+
+Type  : Fast 1100mV 0C Model Hold 'GPIO_0[0]'
+Slack : -0.271
+TNS   : -2.112
+
+Type  : Fast 1100mV 0C Model Hold 'GPIO_0[3]'
+Slack : 0.749
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'GPIO_0[0]'
+Slack : -1.277
+TNS   : -10.002
+
+Type  : Fast 1100mV 0C Model Removal 'GPIO_0[0]'
+Slack : -0.108
+TNS   : -0.758
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'GPIO_0[3]'
+Slack : -0.442
+TNS   : -8.768
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'GPIO_0[0]'
+Slack : -0.429
+TNS   : -9.303
+
+------------------------------------------------------------

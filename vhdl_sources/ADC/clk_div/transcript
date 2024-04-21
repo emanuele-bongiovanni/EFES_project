@@ -1,0 +1,44 @@
+# vsim . 
+# Start time: 13:42:46 on Apr 12,2024
+# ** Error (suppressible): (vsim-19) Failed to access library '' at "".
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+# End time: 13:42:47 on Apr 12,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/clk_div/clk_div.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:42:55 on Apr 12,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/clk_div/clk_div.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity clk_div
+# -- Compiling architecture beh of clk_div
+# End time: 13:42:55 on Apr 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/clk_div/div_test.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:42:56 on Apr 12,2024
+# vcom -reportprogress 300 -work work D:/Documenti/GitHub/EFES_project/vhdl_sources/ADC/clk_div/div_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity div_test
+# -- Compiling architecture test of div_test
+# End time: 13:42:56 on Apr 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.div_test -t 10ps
+# vsim work.div_test -t 10ps 
+# Start time: 13:43:10 on Apr 12,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.div_test(test)
+# Loading work.clk_div(beh)
+add wave -position insertpoint sim:/div_test/*
+run 100 us
+# End time: 14:08:52 on Apr 12,2024, Elapsed time: 0:25:42
+# Errors: 0, Warnings: 0

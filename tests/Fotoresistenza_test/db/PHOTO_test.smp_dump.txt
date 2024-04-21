@@ -1,0 +1,7 @@
+
+State Machine - |PHOTO_test|SAR_ADC:ADC|SAR_CU:control_unit|curr_state
+Name curr_state.UPDATE curr_state.SAMPLING curr_state.IDLE curr_state.RESET 
+curr_state.RESET 0 0 0 0 
+curr_state.IDLE 0 0 1 1 
+curr_state.SAMPLING 0 1 0 1 
+curr_state.UPDATE 1 0 0 1 

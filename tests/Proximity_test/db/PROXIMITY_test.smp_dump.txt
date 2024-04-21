@@ -1,0 +1,10 @@
+
+State Machine - |PROXIMITY_test|prox_sensor:sensor|curr_state
+Name curr_state.FIN_2 curr_state.FIN_1 curr_state.MEASURING curr_state.WAITING_ECHO curr_state.STARTING curr_state.IDLE curr_state.RES 
+curr_state.RES 0 0 0 0 0 0 0 
+curr_state.IDLE 0 0 0 0 0 1 1 
+curr_state.STARTING 0 0 0 0 1 0 1 
+curr_state.WAITING_ECHO 0 0 0 1 0 0 1 
+curr_state.MEASURING 0 0 1 0 0 0 1 
+curr_state.FIN_1 0 1 0 0 0 0 1 
+curr_state.FIN_2 1 0 0 0 0 0 1 
