@@ -1,7 +1,9 @@
-../Core/Src/main.c:84:5:main	1
-../Core/Src/main.c:134:6:SystemClock_Config	3
-../Core/Src/main.c:181:13:MX_SPI1_Init	2
-../Core/Src/main.c:219:13:MX_SPI3_Init	2
-../Core/Src/main.c:257:13:MX_USART2_UART_Init	2
-../Core/Src/main.c:290:13:MX_GPIO_Init	1
-../Core/Src/main.c:340:6:Error_Handler	1
+../Core/Src/main.c:93:5:main	3
+../Core/Src/main.c:332:6:WaitBusyMem	2
+../Core/Src/main.c:345:6:HAL_GPIO_EXTI_Callback	2
+../Core/Src/main.c:357:6:SystemClock_Config	3
+../Core/Src/main.c:404:13:MX_SPI1_Init	2
+../Core/Src/main.c:442:13:MX_SPI3_Init	2
+../Core/Src/main.c:480:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:513:13:MX_GPIO_Init	1
+../Core/Src/main.c:567:6:Error_Handler	1

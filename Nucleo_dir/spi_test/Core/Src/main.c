@@ -121,12 +121,13 @@ int main(void)
 	 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
 	 	  HAL_SPI_Transmit(&hspi1, &dataRq, 1, HAL_MAX_DELAY);
 	 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+	 	 dataRq = 0;
 
 	 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
 	 	  HAL_SPI_Receive(&hspi1, &spi_buf, 1, HAL_MAX_DELAY);
 	 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-	 	  uart_buf_len = sprintf(uart_buf, "New Value Light: %i\r\n", spi_buf);
+	 	  uart_buf_len = sprintf(uart_buf, "New Value Light: %x\r\n", spi_buf);
 	 	  HAL_UART_Transmit(&huart2, (uint8_t *) uart_buf, uart_buf_len, 100);
 
 //	 	  	  dataRq=12;
@@ -154,7 +155,7 @@ int main(void)
 		 HAL_SPI_Receive(&hspi1, &spi_buf, 1, HAL_MAX_DELAY);
 		 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-	 	  uart_buf_len = sprintf(uart_buf, "New Value Dist: %i\r\n", spi_buf);
+	 	  uart_buf_len = sprintf(uart_buf, "New Value Dist: %x\r\n", spi_buf);
 	 	  HAL_UART_Transmit(&huart2, (uint8_t *) uart_buf, uart_buf_len, 100);
 
 	 	 HAL_Delay(1000);

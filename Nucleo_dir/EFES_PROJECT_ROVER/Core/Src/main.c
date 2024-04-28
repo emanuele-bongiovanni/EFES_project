@@ -58,8 +58,16 @@ const uint8_t MEM_WRITE_ENABLE 		= 0x06;
 const uint8_t MEM_WRITE_DISABLE 	= 0x04;
 const uint8_t MEM_READ_DATA	 		= 0x03;
 const uint8_t MEM_PAGE_WRITE		= 0x02;
-const uint8_t MEM_READ_STATUS_REG	= 0x05;
+const uint8_t MEM_READ_STATUS_REG1	= 0x05;
+const uint8_t MEM_READ_STATUS_REG2	= 0x35;
+const uint8_t MEM_READ_STATUS_REG3	= 0x15;
 const uint8_t MEM_CHIP_ERASE 		= 0x60;
+const uint8_t MEM_STAT_REG_1_WRITE  = 0x01;
+const uint8_t MEM_STAT_REG_2_WRITE  = 0x31;
+
+
+uint8_t pressed;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -69,6 +77,7 @@ static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_SPI3_Init(void);
 /* USER CODE BEGIN PFP */
+void WaitBusyMem(void);
 
 /* USER CODE END PFP */
 
@@ -87,14 +96,18 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	char uart_buffer[50];
 	int uart_buffer_lenght;
-	uint8_t spi_buf;
+	uint32_t spi_buf;
 	uint8_t dataRq;
-	uint32_t addr, addr_read;
-	uint16_t blank;
+	uint32_t addr, addr_read, masked_addr;
 	uint64_t write_buffer;
 	uint32_t read_buffer;
-	uint8_t new_dist, new_light;
+	uint32_t data_buffer;
+	uint8_t new_dist1, new_light1, new_dist2, new_light2;
+	uint8_t read_light1, read_light2;
+	uint8_t read_dist1, read_dist2;
 	int data_stored, i;
+	uint16_t status_write;
+	uint8_t from_mem;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -119,101 +132,223 @@ int main(void)
   MX_SPI1_Init();
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
+  //Chip select line of memory is high as default
+  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+  	  //Chip Select of DE1 default low
+  	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-	  //Chip select line of memory is high as default
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
-	  //Chip Select of DE1 default low
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+
+  	//reset the memory
+  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+  	HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_CHIP_ERASE, 1, 100); //should return HAL_OK
+  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+  	//wait for reset
+  	WaitBusyMem();
 
 
-	//reset the memory
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_CHIP_ERASE, 1, 100); //should return HAL_OK
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 
-	//wait for reset
-	do{
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-		  HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_READ_STATUS_REG, 1, 100);
-		  HAL_SPI_Receive(&hspi3, (uint8_t*)spi_buf, 1, 100);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
-	}while((spi_buf & 0x01) != 0); //busy is the rightmost bit of status reg
 
-	//resetting address
-	addr = 0;
-	blank = 0;
-	data_stored = 0;
 
+  	//resetting flags for status regs
+    status_write = 0;
+    status_write = status_write | MEM_STAT_REG_1_WRITE;
+
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+    HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_WRITE_ENABLE, 1, 100); //should return HAL_OK
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+    HAL_SPI_Transmit(&hspi3, (uint8_t *)&status_write, 2, 100); //should return HAL_OK
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+    WaitBusyMem();
+
+    //PROVA
+
+	  masked_addr = 0x00FFFFFF & 65536; //qui non dovrebbe servire, ma lo facciamo lo stesso
+	  read_buffer = 0;
+	  read_buffer = read_buffer | ((uint32_t) masked_addr) << 8;
+	  read_buffer = read_buffer | ((uint32_t) MEM_READ_DATA);
+  //read data
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+	  HAL_SPI_Transmit(&hspi3, (uint8_t *)&read_buffer, 4, 100);
+	  HAL_SPI_Receive(&hspi3, (uint8_t*)&spi_buf, 4, 100);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+
+
+  	//resetting address
+  	addr = 256 *257;		//per qualche motivo sembra che il priumo blocco di memoria sia inaccesibile
+  	data_stored = 0;
+  	pressed = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+	while (1)
+	{
     /* USER CODE END WHILE */
-	  if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == 0){		//PRESSED BLUEBUTTON
-		  //inizio stampa
-		  uart_buf_len = sprintf(uart_buf, "PRINTING MEMORY CONTENT\r\n");
-		  HAL_UART_Transmit(&huart2, (uint8_t *) uart_buf, uart_buf_len, 100);
-		  addr_read = 0;
-		  for (i = 0; i < data_stored; i++) {
+		 if(pressed == 1){		//PRESSED BLUEBUTTON
+				  //inizio stampa
+				  uart_buffer_lenght = sprintf(uart_buffer, "PRINTING MEMORY CONTENT\r\n");
+				  HAL_UART_Transmit(&huart2, (uint8_t *) uart_buffer, uart_buffer_lenght, 100);
+				  addr_read = 256*257;
+				  for (i = 0; i < data_stored; i++) {
+					  //prepare read_buffer with address and constant
 
-		}
+					  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+					  HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_READ_STATUS_REG1, 1, 100);
+					  HAL_SPI_Receive(&hspi3, (uint8_t*)&from_mem, 1, 100);
+					  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 
-	  }
+					  masked_addr = 0x00FFFFFF & addr_read; //qui non dovrebbe servire, ma lo facciamo lo stesso
+					  read_buffer = 0;
+					  read_buffer = read_buffer | ((uint32_t) masked_addr) << 8;
+					  read_buffer = read_buffer | ((uint32_t) MEM_READ_DATA);
+					  spi_buf = 0;
 
-	  //requesting new light measure
-	  dataRq=LIGHT_REQUEST;
+					  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+					  HAL_SPI_Transmit(&hspi3, (uint8_t *)&read_buffer, 4, 100);
+					  HAL_SPI_Receive(&hspi3, (uint8_t*)&spi_buf, 4, 100);
+					  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+					  WaitBusyMem();
 
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-	  HAL_SPI_Transmit(&hspi1, &dataRq, 1, HAL_MAX_DELAY);
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+					  //unchaining data
 
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-	  HAL_SPI_Receive(&hspi1, &new_light, 1, HAL_MAX_DELAY);
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+					  read_light1 = (spi_buf>>24) & 0xFF;
+					  read_dist1 = (spi_buf>>16) & 0xFF;
+					  read_light2 = (spi_buf>>8) & 0xFF;
+					  read_dist2 = (spi_buf) & 0xFF;
 
-	  //requesting new dist measure
-	  dataRq=DISTANCE_REQUEST;
+					  uart_buffer_lenght = sprintf(uart_buffer, "Light: %x; Distance: %x\r\n", (unsigned int)read_light1, (unsigned int)read_dist1);
+					  HAL_UART_Transmit(&huart2, (uint8_t *) uart_buffer, uart_buffer_lenght, 100);
+					  uart_buffer_lenght = sprintf(uart_buffer, "Light: %x; Distance: %x\r\n", (unsigned int)read_light2, (unsigned int)read_dist2);
+					  HAL_UART_Transmit(&huart2, (uint8_t *) uart_buffer, uart_buffer_lenght, 100);
 
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-	  HAL_SPI_Transmit(&hspi1, &dataRq, 1, HAL_MAX_DELAY);
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+					  addr_read+=256;
+					  HAL_Delay(10);
 
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-	  HAL_SPI_Receive(&hspi1, &new_dist, 1, HAL_MAX_DELAY);
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+				}
+				  pressed = 0;
+			  }
 
-	  //writing data to memory
+			  //requesting new light measure
+			  dataRq=LIGHT_REQUEST;
 
-	  //creating data block: MEM_PAGE_WRITE + address + blank + data
-	  write_buffer = 0;
-	  write_buffer = ((uint64_t) new_light) << 56;
-	  write_buffer = write_buffer | ((uint64_t) new_dist) << 48;
-	  write_buffer = write_buffer | ((uint64_t) blank) << 32;
-	  write_buffer = write_buffer | ((uint64_t) addr) << 8;
-	  write_buffer = write_buffer | ((uint64_t) MEM_PAGE_WRITE);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Transmit(&hspi1, &dataRq, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-	  //send write enable
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	  HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_WRITE_ENABLE, 1, 100); //should return HAL_OK
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Receive(&hspi1, &new_light1, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-	  //send data
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	  HAL_SPI_Transmit(&hspi3, (uint8_t *)&write_buffer, 8, 100);
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+			  //requesting new dist measure
+			  dataRq=DISTANCE_REQUEST;
 
-	  //update address
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Transmit(&hspi1, &dataRq, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-	  data_stored++;
-	  addr+=16;
-	  HAL_Delay(200);	// procede con un nuovo ciclo ogni 200 ms
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Receive(&hspi1, &new_dist1, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+
+			  HAL_Delay(500);
+
+			  dataRq=LIGHT_REQUEST;
+
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Transmit(&hspi1, &dataRq, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Receive(&hspi1, &new_light2, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+
+			  //requesting new dist measure
+			  dataRq=DISTANCE_REQUEST;
+
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Transmit(&hspi1, &dataRq, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_SPI_Receive(&hspi1, &new_dist2, 1, HAL_MAX_DELAY);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+
+
+			  //chaining data into a 32 bits var
+			  data_buffer = 0;
+			  data_buffer = data_buffer | ((uint32_t)new_light1) << 24;
+			  data_buffer = data_buffer | ((uint32_t)new_dist1) << 16;
+			  data_buffer = data_buffer | ((uint32_t)new_light2) << 8;
+			  data_buffer = data_buffer | ((uint32_t)new_dist2);
+
+
+			  //writing data to memory
+			  //						8 bits        24 bits   32 bits
+			  //creating data block: MEM_PAGE_WRITE + address + data
+
+			  masked_addr = 0x00FFFFFF & addr;
+			  write_buffer = 0;
+			  write_buffer = ((uint64_t) data_buffer) << 32;
+			  write_buffer = write_buffer | ((uint64_t) masked_addr) << 8;
+			  write_buffer = write_buffer | ((uint64_t) MEM_PAGE_WRITE);
+
+			  //send write enable
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+			  HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_WRITE_ENABLE, 1, 100); //should return HAL_OK
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+
+			  //send data
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+			  HAL_SPI_Transmit(&hspi3, (uint8_t *)&write_buffer, 8, 100);
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+
+			  WaitBusyMem();
+
+			  //PROVA
+
+//			  masked_addr = 0x00FFFFFF & addr; //qui non dovrebbe servire, ma lo facciamo lo stesso
+//			  read_buffer = 0;
+//			  read_buffer = read_buffer | ((uint32_t) masked_addr) << 8;
+//			  read_buffer = read_buffer | ((uint32_t) MEM_READ_DATA);
+//		  //read data
+//			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+//			  HAL_SPI_Transmit(&hspi3, (uint8_t *)&read_buffer, 4, 100);
+//			  HAL_SPI_Receive(&hspi3, (uint8_t*)&spi_buf, 4, 100);
+//			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+//
+//			  //update address
+
+			  data_stored++;
+			  addr+=256;
+			  HAL_Delay(500);	// procede con un nuovo ciclo ogni 200 ms
 
     /* USER CODE BEGIN 3 */
-  }
+	}
   /* USER CODE END 3 */
 }
+
+void WaitBusyMem(void){
+	uint8_t  from_mem;
+	do{
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+		  HAL_SPI_Transmit(&hspi3, (uint8_t *)&MEM_READ_STATUS_REG1, 1, 100);
+		  HAL_SPI_Receive(&hspi3, (uint8_t*)&from_mem, 1, 100);
+		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+		  HAL_Delay(5);
+	  }while((from_mem & 0x01) != 0); //busy is the rightmost bit of status reg
+
+	return;
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+
+	if (GPIO_Pin == GPIO_PIN_13 ) {
+		pressed = 1;
+	}
+}
+
 
 /**
   * @brief System Clock Configuration
@@ -281,10 +416,10 @@ static void MX_SPI1_Init(void)
   hspi1.Init.Mode = SPI_MODE_MASTER;
   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
   hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
-  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
-  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
+  hspi1.Init.CLKPhase = SPI_PHASE_2EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -322,7 +457,7 @@ static void MX_SPI3_Init(void)
   hspi3.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi3.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi3.Init.NSS = SPI_NSS_SOFT;
-  hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+  hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
   hspi3.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi3.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi3.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -393,11 +528,11 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : Blue_button_Pin */
-  GPIO_InitStruct.Pin = Blue_button_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  /*Configure GPIO pin : BlueButton_Pin */
+  GPIO_InitStruct.Pin = BlueButton_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(Blue_button_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(BlueButton_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PA8 */
   GPIO_InitStruct.Pin = GPIO_PIN_8;
@@ -412,6 +547,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

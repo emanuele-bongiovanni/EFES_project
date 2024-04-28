@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Apr 19 20:20:10 2024
+Analysis & Synthesis Status : Successful - Sat Apr 27 18:01:08 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 Revision Name : EFES_PROJECT_ROVER
 Top-level Entity Name : EFES_PROJECT_ROVER
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 325
-Total pins : 150
+Total pins : 136
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 1

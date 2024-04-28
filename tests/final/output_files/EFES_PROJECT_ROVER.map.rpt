@@ -1,5 +1,5 @@
 Analysis & Synthesis report for EFES_PROJECT_ROVER
-Fri Apr 19 20:20:10 2024
+Sat Apr 27 18:01:08 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 
 
@@ -64,14 +64,14 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +---------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Apr 19 20:20:10 2024              ;
+; Analysis & Synthesis Status     ; Successful - Sat Apr 27 18:01:08 2024              ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Standard Edition ;
 ; Revision Name                   ; EFES_PROJECT_ROVER                                 ;
 ; Top-level Entity Name           ; EFES_PROJECT_ROVER                                 ;
 ; Family                          ; Cyclone V                                          ;
 ; Logic utilization (in ALMs)     ; N/A                                                ;
 ; Total registers                 ; 325                                                ;
-; Total pins                      ; 150                                                ;
+; Total pins                      ; 136                                                ;
 ; Total virtual pins              ; 0                                                  ;
 ; Total block memory bits         ; 0                                                  ;
 ; Total DSP Blocks                ; 1                                                  ;
@@ -221,25 +221,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------+
 ; Resource                                    ; Usage                        ;
 +---------------------------------------------+------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 327                          ;
+; Estimate of Logic utilization (ALMs needed) ; 320                          ;
 ;                                             ;                              ;
-; Combinational ALUT usage for logic          ; 610                          ;
+; Combinational ALUT usage for logic          ; 596                          ;
 ;     -- 7 input functions                    ; 0                            ;
 ;     -- 6 input functions                    ; 42                           ;
 ;     -- 5 input functions                    ; 32                           ;
-;     -- 4 input functions                    ; 77                           ;
+;     -- 4 input functions                    ; 63                           ;
 ;     -- <=3 input functions                  ; 459                          ;
 ;                                             ;                              ;
 ; Dedicated logic registers                   ; 325                          ;
 ;                                             ;                              ;
-; I/O pins                                    ; 150                          ;
+; I/O pins                                    ; 136                          ;
 ;                                             ;                              ;
 ; Total DSP Blocks                            ; 1                            ;
 ;                                             ;                              ;
 ; Maximum fan-out node                        ; clk_div:clk_divisor|internal ;
 ; Maximum fan-out                             ; 276                          ;
-; Total fan-out                               ; 3214                         ;
-; Average fan-out                             ; 2.46                         ;
+; Total fan-out                               ; 3130                         ;
+; Average fan-out                             ; 2.47                         ;
 +---------------------------------------------+------------------------------+
 
 
@@ -248,7 +248,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                        ; Entity Name        ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------------+--------------+
-; |EFES_PROJECT_ROVER                       ; 610 (0)             ; 325 (0)                   ; 0                 ; 1          ; 150  ; 0            ; |EFES_PROJECT_ROVER                                                                                        ; EFES_PROJECT_ROVER ; work         ;
+; |EFES_PROJECT_ROVER                       ; 596 (0)             ; 325 (0)                   ; 0                 ; 1          ; 136  ; 0            ; |EFES_PROJECT_ROVER                                                                                        ; EFES_PROJECT_ROVER ; work         ;
 ;    |clk_div:clk_divisor|                  ; 40 (40)             ; 33 (33)                   ; 0                 ; 0          ; 0    ; 0            ; |EFES_PROJECT_ROVER|clk_div:clk_divisor                                                                    ; clk_div            ; work         ;
 ;    |controller:CONTROLLER_INSTANCE|       ; 104 (104)           ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |EFES_PROJECT_ROVER|controller:CONTROLLER_INSTANCE                                                         ; controller         ; work         ;
 ;    |datapath:DATAPATH_INSTANCE|           ; 424 (0)             ; 280 (0)                   ; 0                 ; 1          ; 0    ; 0            ; |EFES_PROJECT_ROVER|datapath:DATAPATH_INSTANCE                                                             ; datapath           ; work         ;
@@ -273,8 +273,6 @@ https://fpgasoftware.intel.com/eula.
 ;    |hexdisp7seg:h1|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |EFES_PROJECT_ROVER|hexdisp7seg:h1                                                                         ; hexdisp7seg        ; work         ;
 ;    |hexdisp7seg:h2|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |EFES_PROJECT_ROVER|hexdisp7seg:h2                                                                         ; hexdisp7seg        ; work         ;
 ;    |hexdisp7seg:h3|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |EFES_PROJECT_ROVER|hexdisp7seg:h3                                                                         ; hexdisp7seg        ; work         ;
-;    |hexdisp7seg:h4|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |EFES_PROJECT_ROVER|hexdisp7seg:h4                                                                         ; hexdisp7seg        ; work         ;
-;    |hexdisp7seg:h5|                       ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |EFES_PROJECT_ROVER|hexdisp7seg:h5                                                                         ; hexdisp7seg        ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -382,14 +380,6 @@ Encoding Type:  One-Hot
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[5]    ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[6]    ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[7]    ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[8]    ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[9]    ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[10]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[11]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[12]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[13]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[14]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[15]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
 ; controller:CONTROLLER_INSTANCE|random_direction                                                ; controller:CONTROLLER_INSTANCE|random_direction                                                  ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|trigger        ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[11] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
@@ -400,14 +390,6 @@ Encoding Type:  One-Hot
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[16] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[17] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[18] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[19] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[20] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[21] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[22] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[23] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[24] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[25] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[26] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
 ; controller:CONTROLLER_INSTANCE|current_distance[5]                                             ; controller:CONTROLLER_INSTANCE|Selector21                                                        ; yes                    ;
 ; controller:CONTROLLER_INSTANCE|current_distance[6]                                             ; controller:CONTROLLER_INSTANCE|Selector21                                                        ; yes                    ;
 ; controller:CONTROLLER_INSTANCE|current_distance[7]                                             ; controller:CONTROLLER_INSTANCE|Selector21                                                        ; yes                    ;
@@ -446,6 +428,14 @@ Encoding Type:  One-Hot
 ; datapath:DATAPATH_INSTANCE|SPI_INTERFACE_ELEM:spi_interface|data_out[7]                        ; GPIO_1[34]                                                                                       ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|SPI_INTERFACE_ELEM:spi_interface|data_out[0]                        ; GPIO_1[34]                                                                                       ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|done                       ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[8]    ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[9]    ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[10]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[11]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[12]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[13]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[14]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[15]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[16]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[17]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[18]   ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|WideOr0          ; yes                    ;
@@ -453,6 +443,14 @@ Encoding Type:  One-Hot
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|init_start     ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|init_measure   ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|measure_en     ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[19] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[20] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[21] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[22] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[23] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[24] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[25] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[26] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[27] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[28] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|dist_value[29] ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; yes                    ;
@@ -653,23 +651,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR           ; 176                         ;
 ;     plain             ; 9                           ;
 ; arriav_io_obuf        ; 72                          ;
-; arriav_lcell_comb     ; 618                         ;
+; arriav_lcell_comb     ; 602                         ;
 ;     arith             ; 244                         ;
 ;         1 data inputs ; 243                         ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 374                         ;
+;     normal            ; 358                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 34                          ;
+;         1 data inputs ; 32                          ;
 ;         2 data inputs ; 78                          ;
 ;         3 data inputs ; 109                         ;
-;         4 data inputs ; 77                          ;
+;         4 data inputs ; 63                          ;
 ;         5 data inputs ; 32                          ;
 ;         6 data inputs ; 42                          ;
 ; arriav_mac            ; 1                           ;
-; boundary_port         ; 150                         ;
+; boundary_port         ; 136                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 2.56                        ;
+; Average LUT depth     ; 2.58                        ;
 +-----------------------+-----------------------------+
 
 
@@ -688,7 +686,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
-    Info: Processing started: Fri Apr 19 20:19:54 2024
+    Info: Processing started: Sat Apr 27 18:00:51 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EFES_PROJECT_ROVER -c EFES_PROJECT_ROVER
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -753,7 +751,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file clk_div
 Info (12127): Elaborating entity "EFES_PROJECT_ROVER" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at EFES_PROJECT_ROVER.vhd(23): used implicit default value for signal "LEDR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 23
 Info (12128): Elaborating entity "hexdisp7seg" for hierarchy "hexdisp7seg:h0" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 198
-Info (12128): Elaborating entity "controller" for hierarchy "controller:CONTROLLER_INSTANCE" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 231
+Info (12128): Elaborating entity "controller" for hierarchy "controller:CONTROLLER_INSTANCE" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 224
 Warning (10492): VHDL Process Statement warning at controller.vhd(60): signal "current_distance" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 60
 Warning (10492): VHDL Process Statement warning at controller.vhd(62): signal "current_light" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 62
 Warning (10492): VHDL Process Statement warning at controller.vhd(135): signal "random_generator" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 135
@@ -807,7 +805,7 @@ Info (10041): Inferred latch for "random_direction" at controller.vhd(82) File: 
 Info (10041): Inferred latch for "speed_dc_int[0]" at controller.vhd(82) File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 82
 Info (10041): Inferred latch for "speed_dc_int[1]" at controller.vhd(82) File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 82
 Info (10041): Inferred latch for "speed_dc_int[2]" at controller.vhd(82) File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 82
-Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DATAPATH_INSTANCE" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 257
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DATAPATH_INSTANCE" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 250
 Info (12128): Elaborating entity "PROX_SENSOR_ELEM" for hierarchy "datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor" File: D:/Documenti/GitHub/EFES_project/tests/final/datapath.vhd Line: 125
 Info (12128): Elaborating entity "prox_sensor" for hierarchy "datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor" File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/PROX_SENSOR_ELEM.vhd Line: 89
 Warning (10492): VHDL Process Statement warning at prox_sensor.vhd(148): signal "dist_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 148
@@ -937,7 +935,7 @@ Info (12128): Elaborating entity "counter" for hierarchy "datapath:DATAPATH_INST
 Warning (10492): VHDL Process Statement warning at counter.vhd(30): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/adc/counter.vhd Line: 30
 Info (12128): Elaborating entity "counter" for hierarchy "datapath:DATAPATH_INSTANCE|counter:motor_counter" File: D:/Documenti/GitHub/EFES_project/tests/final/datapath.vhd Line: 180
 Warning (10492): VHDL Process Statement warning at counter.vhd(30): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/adc/counter.vhd Line: 30
-Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:clk_divisor" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 290
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:clk_divisor" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 283
 Warning (10631): VHDL Process Statement warning at clk_div.vhd(23): inferring latch(es) for signal or variable "DIV", which holds its previous value in one or more paths through the process File: D:/Documenti/GitHub/EFES_project/tests/final/clk_div.vhd Line: 23
 Info (10041): Inferred latch for "DIV[0]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/final/clk_div.vhd Line: 23
 Info (10041): Inferred latch for "DIV[1]" at clk_div.vhd(23) File: D:/Documenti/GitHub/EFES_project/tests/final/clk_div.vhd Line: 23
@@ -1063,22 +1061,6 @@ Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sen
     Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
 Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[7] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
     Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[8] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[9] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[10] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[11] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[12] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[13] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[14] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
-Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[15] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
 Warning (13012): Latch controller:CONTROLLER_INSTANCE|current_distance[5] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 190
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controller:CONTROLLER_INSTANCE|curr_state_DIST.D_MEASURING File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 41
 Warning (13012): Latch controller:CONTROLLER_INSTANCE|current_distance[6] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 190
@@ -1137,6 +1119,22 @@ Warning (13012): Latch controller:CONTROLLER_INSTANCE|current_light[7] has unsaf
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controller:CONTROLLER_INSTANCE|curr_state_LIGHT.L_MEASURING File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 44
 Warning (13012): Latch controller:CONTROLLER_INSTANCE|current_light[0] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 252
     Warning (13013): Ports D and ENA on the latch are fed by the same signal controller:CONTROLLER_INSTANCE|curr_state_LIGHT.L_MEASURING File: D:/Documenti/GitHub/EFES_project/tests/final/controller.vhd Line: 44
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[8] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[9] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[10] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[11] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[12] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[13] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[14] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
+Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[15] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
 Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[16] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
     Warning (13013): Ports D and ENA on the latch are fed by the same signal datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_2 File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 31
 Warning (13012): Latch datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|distance[17] has unsafe behavior File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/prox_sensor.vhd Line: 48
@@ -1228,16 +1226,16 @@ Warning (21074): Design contains 13 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 26
     Warning (15610): No output dependent on input pin "SW[8]" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 26
     Warning (15610): No output dependent on input pin "SW[9]" File: D:/Documenti/GitHub/EFES_project/tests/final/EFES_PROJECT_ROVER.vhd Line: 26
-Info (21057): Implemented 798 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 770 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 63 output pins
+    Info (21059): Implemented 49 output pins
     Info (21060): Implemented 72 bidirectional pins
-    Info (21061): Implemented 647 logic cells
+    Info (21061): Implemented 633 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 291 warnings
     Info: Peak virtual memory: 4935 megabytes
-    Info: Processing ended: Fri Apr 19 20:20:10 2024
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Sat Apr 27 18:01:08 2024
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:06
 
 

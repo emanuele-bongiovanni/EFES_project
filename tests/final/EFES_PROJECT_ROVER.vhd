@@ -13,8 +13,8 @@ entity EFES_PROJECT_ROVER is
          HEX1_N : out std_logic_vector(6 downto 0);
          HEX2_N : out std_logic_vector(6 downto 0);
          HEX3_N : out std_logic_vector(6 downto 0);
-         HEX4_N : out std_logic_vector(6 downto 0);
-         HEX5_N : out std_logic_vector(6 downto 0);
+        -- HEX4_N : out std_logic_vector(6 downto 0);
+        -- HEX5_N : out std_logic_vector(6 downto 0);
  
          -- KEY_N
          KEY_N : in std_logic_vector(3 downto 0);
@@ -205,6 +205,8 @@ begin
         datain          => measured_light_int_s(7 downto 4),
         seg7            => HEX1_N
     );
+
+
     h2 : hexdisp7seg
     port map (
         datain          => measured_distance_int_s(3 downto 0),
@@ -215,16 +217,7 @@ begin
         datain          => measured_distance_int_s(7 downto 4),
         seg7            => HEX3_N
     );
-    h4 : hexdisp7seg
-    port map (
-        datain          => measured_distance_int_s(11 downto 8),
-        seg7            => HEX4_N
-    );
-    h5 : hexdisp7seg
-    port map (
-        datain          => measured_distance_int_s(15 downto 12),
-        seg7            => HEX5_N
-    );
+
 
 
 

@@ -116,62 +116,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "HEX4_N[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4_N[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4_N[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4_N[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4_N[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4_N[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX4_N[6]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5_N[0]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5_N[1]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5_N[2]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5_N[3]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5_N[4]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5_N[5]",
-					"strict" : false
-				},
-				{
-					"name" : "HEX5_N[6]",
-					"strict" : false
-				},
-				{
 					"name" : "VGA_CLK",
 					"strict" : false
 				},

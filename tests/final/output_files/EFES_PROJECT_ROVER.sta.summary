@@ -3,579 +3,579 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'GPIO_1[35]'
-Slack : -10.507
-TNS   : -102.609
+Slack : -13.775
+TNS   : -148.265
 
 Type  : Slow 1100mV 85C Model Setup 'GPIO_1[34]'
-Slack : -8.331
-TNS   : -116.381
-
-Type  : Slow 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : -5.805
-TNS   : -100.969
+Slack : -5.973
+TNS   : -83.306
 
 Type  : Slow 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -5.713
-TNS   : -16.190
+Slack : -5.911
+TNS   : -17.039
+
+Type  : Slow 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
+Slack : -5.860
+TNS   : -104.419
 
 Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -5.618
-TNS   : -110.424
+Slack : -5.218
+TNS   : -111.632
 
 Type  : Slow 1100mV 85C Model Setup 'clk_div:clk_divisor|internal'
-Slack : -4.649
-TNS   : -766.050
+Slack : -4.166
+TNS   : -770.125
 
 Type  : Slow 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -2.646
-TNS   : -99.760
+Slack : -2.990
+TNS   : -119.591
 
 Type  : Slow 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : -1.697
-TNS   : -11.858
-
-Type  : Slow 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : -1.662
-TNS   : -1.662
+Slack : -2.257
+TNS   : -15.772
 
 Type  : Slow 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : -0.163
-TNS   : -0.163
+Slack : -1.931
+TNS   : -1.931
+
+Type  : Slow 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
+Slack : -1.555
+TNS   : -1.555
 
 Type  : Slow 1100mV 85C Model Hold 'GPIO_1[35]'
-Slack : -7.881
-TNS   : -110.490
-
-Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
-Slack : -1.588
-TNS   : -1.588
-
-Type  : Slow 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
-Slack : -1.328
-TNS   : -1.559
-
-Type  : Slow 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : -0.963
-TNS   : -0.963
+Slack : -8.806
+TNS   : -114.955
 
 Type  : Slow 1100mV 85C Model Hold 'GPIO_1[34]'
-Slack : -0.910
-TNS   : -5.274
+Slack : -4.469
+TNS   : -29.809
 
-Type  : Slow 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -0.778
-TNS   : -0.778
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -1.509
+TNS   : -1.509
+
+Type  : Slow 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -1.435
+TNS   : -13.628
 
 Type  : Slow 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -0.642
-TNS   : -1.782
+Slack : -0.084
+TNS   : -0.084
 
-Type  : Slow 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : 0.039
+Type  : Slow 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.288
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.513
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.544
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.831
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 1.494
+Slack : 1.753
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'GPIO_1[35]'
-Slack : -8.847
-TNS   : -52.829
+Slack : -12.121
+TNS   : -95.723
 
 Type  : Slow 1100mV 85C Model Recovery 'clk_div:clk_divisor|internal'
-Slack : -2.094
-TNS   : -450.198
+Slack : -2.115
+TNS   : -416.808
 
 Type  : Slow 1100mV 85C Model Recovery 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -1.763
-TNS   : -3.449
-
-Type  : Slow 1100mV 85C Model Removal 'GPIO_1[35]'
-Slack : -7.685
-TNS   : -15.370
-
-Type  : Slow 1100mV 85C Model Removal 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : 0.073
-TNS   : 0.000
+Slack : -1.758
+TNS   : -3.339
 
 Type  : Slow 1100mV 85C Model Removal 'clk_div:clk_divisor|internal'
-Slack : 0.505
+Slack : -0.344
+TNS   : -6.464
+
+Type  : Slow 1100mV 85C Model Removal 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'GPIO_1[35]'
+Slack : 3.084
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
 Slack : -2.225
-TNS   : -245.829
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.432
-TNS   : -23.715
+TNS   : -254.018
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'GPIO_1[35]'
-Slack : -0.394
-TNS   : -8.977
+Slack : -0.428
+TNS   : -13.762
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : 0.051
-TNS   : 0.000
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.410
+TNS   : -24.121
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'GPIO_1[34]'
-Slack : 0.067
+Slack : -0.027
+TNS   : -0.054
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
+Slack : 0.342
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : 0.295
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 0.304
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : 0.333
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : 0.393
+Slack : 0.348
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.434
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.447
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'GPIO_1[35]'
-Slack : -9.935
-TNS   : -96.765
+Slack : -12.861
+TNS   : -137.190
 
 Type  : Slow 1100mV 0C Model Setup 'GPIO_1[34]'
-Slack : -8.207
-TNS   : -113.456
+Slack : -6.150
+TNS   : -84.186
 
 Type  : Slow 1100mV 0C Model Setup 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : -5.992
-TNS   : -104.020
-
-Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -5.700
-TNS   : -108.937
+Slack : -5.937
+TNS   : -106.990
 
 Type  : Slow 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -5.538
-TNS   : -16.008
+Slack : -5.825
+TNS   : -16.785
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -5.285
+TNS   : -109.958
 
 Type  : Slow 1100mV 0C Model Setup 'clk_div:clk_divisor|internal'
-Slack : -4.592
-TNS   : -765.847
+Slack : -4.163
+TNS   : -770.505
 
 Type  : Slow 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -2.581
-TNS   : -96.701
+Slack : -2.908
+TNS   : -114.982
 
 Type  : Slow 1100mV 0C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : -1.653
-TNS   : -11.653
-
-Type  : Slow 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : -1.605
-TNS   : -1.605
+Slack : -2.214
+TNS   : -15.291
 
 Type  : Slow 1100mV 0C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : -0.202
-TNS   : -0.202
+Slack : -1.905
+TNS   : -1.905
+
+Type  : Slow 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
+Slack : -1.411
+TNS   : -1.411
 
 Type  : Slow 1100mV 0C Model Hold 'GPIO_1[35]'
-Slack : -7.721
-TNS   : -108.553
-
-Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
-Slack : -1.569
-TNS   : -1.569
-
-Type  : Slow 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
-Slack : -1.241
-TNS   : -1.372
-
-Type  : Slow 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : -0.955
-TNS   : -0.955
+Slack : -8.665
+TNS   : -113.307
 
 Type  : Slow 1100mV 0C Model Hold 'GPIO_1[34]'
-Slack : -0.919
-TNS   : -5.297
+Slack : -4.093
+TNS   : -26.899
 
-Type  : Slow 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -0.874
-TNS   : -0.874
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -1.508
+TNS   : -1.508
+
+Type  : Slow 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -1.302
+TNS   : -11.883
 
 Type  : Slow 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -0.752
-TNS   : -2.204
-
-Type  : Slow 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : -0.007
-TNS   : -0.014
+Slack : -0.162
+TNS   : -0.162
 
 Type  : Slow 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.414
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.811
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 1.516
+Slack : 1.833
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'GPIO_1[35]'
-Slack : -8.276
-TNS   : -49.356
+Slack : -11.252
+TNS   : -88.711
 
 Type  : Slow 1100mV 0C Model Recovery 'clk_div:clk_divisor|internal'
-Slack : -1.966
-TNS   : -431.815
+Slack : -2.006
+TNS   : -402.042
 
 Type  : Slow 1100mV 0C Model Recovery 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -1.639
-TNS   : -3.259
-
-Type  : Slow 1100mV 0C Model Removal 'GPIO_1[35]'
-Slack : -7.549
-TNS   : -15.987
-
-Type  : Slow 1100mV 0C Model Removal 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -0.065
-TNS   : -0.065
+Slack : -1.656
+TNS   : -3.155
 
 Type  : Slow 1100mV 0C Model Removal 'clk_div:clk_divisor|internal'
-Slack : 0.518
+Slack : -0.270
+TNS   : -5.069
+
+Type  : Slow 1100mV 0C Model Removal 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'GPIO_1[35]'
+Slack : 2.438
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
 Slack : -2.225
-TNS   : -240.912
+TNS   : -254.362
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.479
-TNS   : -25.600
+Slack : -0.462
+TNS   : -26.321
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'GPIO_1[35]'
 Slack : -0.394
-TNS   : -8.832
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : 0.055
-TNS   : 0.000
+TNS   : -12.606
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'GPIO_1[34]'
-Slack : 0.060
-TNS   : 0.000
+Slack : -0.068
+TNS   : -0.135
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : 0.276
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
+Slack : 0.039
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 0.296
+Slack : 0.345
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : 0.319
+Slack : 0.353
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : 0.387
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.357
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.413
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.438
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'GPIO_1[35]'
-Slack : -8.259
-TNS   : -79.183
+Slack : -10.050
+TNS   : -103.611
 
 Type  : Fast 1100mV 85C Model Setup 'GPIO_1[34]'
-Slack : -5.241
-TNS   : -64.348
-
-Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
-Slack : -3.305
-TNS   : -45.556
+Slack : -3.476
+TNS   : -43.126
 
 Type  : Fast 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -3.116
-TNS   : -8.565
+Slack : -3.156
+TNS   : -9.009
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -3.124
+TNS   : -48.234
 
 Type  : Fast 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : -2.988
-TNS   : -51.346
+Slack : -3.095
+TNS   : -53.336
 
 Type  : Fast 1100mV 85C Model Setup 'clk_div:clk_divisor|internal'
-Slack : -2.350
-TNS   : -354.666
+Slack : -2.075
+TNS   : -362.522
 
 Type  : Fast 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -1.246
-TNS   : -45.613
-
-Type  : Fast 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : -0.802
-TNS   : -4.799
-
-Type  : Fast 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : -0.755
-TNS   : -0.755
+Slack : -1.486
+TNS   : -55.958
 
 Type  : Fast 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : 0.050
-TNS   : 0.000
+Slack : -1.103
+TNS   : -1.103
+
+Type  : Fast 1100mV 85C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : -1.079
+TNS   : -7.541
+
+Type  : Fast 1100mV 85C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
+Slack : -0.764
+TNS   : -0.764
 
 Type  : Fast 1100mV 85C Model Hold 'GPIO_1[35]'
-Slack : -4.404
-TNS   : -61.606
-
-Type  : Fast 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
-Slack : -0.876
-TNS   : -2.787
-
-Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
-Slack : -0.809
-TNS   : -0.809
-
-Type  : Fast 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : -0.636
-TNS   : -0.636
-
-Type  : Fast 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -0.538
-TNS   : -2.802
+Slack : -5.027
+TNS   : -64.302
 
 Type  : Fast 1100mV 85C Model Hold 'GPIO_1[34]'
-Slack : -0.502
-TNS   : -2.998
+Slack : -2.409
+TNS   : -15.929
 
-Type  : Fast 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -0.299
-TNS   : -0.299
+Type  : Fast 1100mV 85C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.931
+TNS   : -10.889
 
-Type  : Fast 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : -0.006
-TNS   : -0.009
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.807
+TNS   : -0.807
+
+Type  : Fast 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
+Slack : -0.037
+TNS   : -0.037
+
+Type  : Fast 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.175
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.332
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.602
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 0.869
+Slack : 0.968
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'GPIO_1[35]'
-Slack : -7.199
-TNS   : -42.763
+Slack : -8.845
+TNS   : -70.074
 
 Type  : Fast 1100mV 85C Model Recovery 'clk_div:clk_divisor|internal'
-Slack : -1.179
-TNS   : -249.272
+Slack : -1.104
+TNS   : -223.959
 
 Type  : Fast 1100mV 85C Model Recovery 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -0.938
-TNS   : -1.787
-
-Type  : Fast 1100mV 85C Model Removal 'GPIO_1[35]'
-Slack : -4.344
-TNS   : -8.688
+Slack : -0.784
+TNS   : -1.422
 
 Type  : Fast 1100mV 85C Model Removal 'clk_div:clk_divisor|internal'
-Slack : 0.117
-TNS   : 0.000
+Slack : -0.320
+TNS   : -6.054
 
 Type  : Fast 1100mV 85C Model Removal 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : 0.156
+Slack : 0.327
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'GPIO_1[35]'
+Slack : 2.547
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
 Slack : -1.702
-TNS   : -39.067
+TNS   : -42.209
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.503
-TNS   : -4.406
+Slack : -0.483
+TNS   : -4.413
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'GPIO_1[35]'
-Slack : -0.289
-TNS   : -4.943
+Slack : -0.454
+TNS   : -9.879
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'GPIO_1[34]'
-Slack : -0.119
-TNS   : -2.061
+Slack : -0.157
+TNS   : -3.402
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : 0.114
+Slack : 0.125
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 0.317
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : 0.329
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : 0.377
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : 0.382
+Slack : 0.324
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.481
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.479
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'GPIO_1[35]'
-Slack : -7.033
-TNS   : -65.992
-
-Type  : Fast 1100mV 0C Model Setup 'GPIO_1[34]'
-Slack : -4.413
-TNS   : -58.268
-
-Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
-Slack : -2.989
-TNS   : -39.614
+Slack : -8.819
+TNS   : -91.454
 
 Type  : Fast 1100mV 0C Model Setup 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : -2.853
-TNS   : -49.248
+Slack : -2.914
+TNS   : -50.889
 
 Type  : Fast 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -2.757
-TNS   : -7.723
+Slack : -2.834
+TNS   : -8.113
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.824
+TNS   : -41.657
+
+Type  : Fast 1100mV 0C Model Setup 'GPIO_1[34]'
+Slack : -2.645
+TNS   : -38.082
 
 Type  : Fast 1100mV 0C Model Setup 'clk_div:clk_divisor|internal'
-Slack : -2.119
-TNS   : -312.431
+Slack : -1.866
+TNS   : -321.410
 
 Type  : Fast 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -1.057
-TNS   : -38.843
+Slack : -1.294
+TNS   : -48.321
 
 Type  : Fast 1100mV 0C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : -0.723
-TNS   : -4.426
-
-Type  : Fast 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : -0.669
-TNS   : -0.669
+Slack : -0.975
+TNS   : -6.783
 
 Type  : Fast 1100mV 0C Model Setup 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : 0.048
-TNS   : 0.000
+Slack : -0.967
+TNS   : -0.967
+
+Type  : Fast 1100mV 0C Model Setup 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
+Slack : -0.664
+TNS   : -0.664
 
 Type  : Fast 1100mV 0C Model Hold 'GPIO_1[35]'
-Slack : -4.361
-TNS   : -61.232
-
-Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
-Slack : -0.869
-TNS   : -0.869
-
-Type  : Fast 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
-Slack : -0.809
-TNS   : -2.802
-
-Type  : Fast 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : -0.605
-TNS   : -0.605
-
-Type  : Fast 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : -0.554
-TNS   : -3.594
+Slack : -4.907
+TNS   : -63.572
 
 Type  : Fast 1100mV 0C Model Hold 'GPIO_1[34]'
-Slack : -0.549
-TNS   : -3.358
+Slack : -2.449
+TNS   : -16.539
 
-Type  : Fast 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -0.331
-TNS   : -0.331
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.864
+TNS   : -0.864
 
-Type  : Fast 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : 0.011
+Type  : Fast 1100mV 0C Model Hold 'clk_div:clk_divisor|internal'
+Slack : -0.845
+TNS   : -10.036
+
+Type  : Fast 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
+Slack : -0.041
+TNS   : -0.120
+
+Type  : Fast 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.100
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.285
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.523
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 0.861
+Slack : 0.971
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'GPIO_1[35]'
-Slack : -6.067
-TNS   : -36.002
+Slack : -7.759
+TNS   : -61.411
 
 Type  : Fast 1100mV 0C Model Recovery 'clk_div:clk_divisor|internal'
-Slack : -0.971
-TNS   : -215.062
+Slack : -0.927
+TNS   : -190.792
 
 Type  : Fast 1100mV 0C Model Recovery 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : -0.791
-TNS   : -1.522
-
-Type  : Fast 1100mV 0C Model Removal 'GPIO_1[35]'
-Slack : -4.249
-TNS   : -8.498
+Slack : -0.685
+TNS   : -1.242
 
 Type  : Fast 1100mV 0C Model Removal 'clk_div:clk_divisor|internal'
-Slack : 0.078
-TNS   : 0.000
+Slack : -0.302
+TNS   : -6.092
 
 Type  : Fast 1100mV 0C Model Removal 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : 0.108
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'GPIO_1[35]'
+Slack : 2.059
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_div:clk_divisor|internal'
 Slack : -1.702
-TNS   : -37.858
+TNS   : -37.902
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -0.517
-TNS   : -4.443
+Slack : -0.503
+TNS   : -4.408
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'GPIO_1[35]'
-Slack : -0.291
-TNS   : -5.010
+Slack : -0.410
+TNS   : -8.466
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'GPIO_1[34]'
-Slack : -0.113
-TNS   : -2.034
+Slack : -0.162
+TNS   : -3.312
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET'
-Slack : 0.181
+Slack : 0.190
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1'
-Slack : 0.343
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
-Slack : 0.362
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
-Slack : 0.378
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
-Slack : 0.402
+Slack : 0.350
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK'
-Slack : 0.488
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'controller:CONTROLLER_INSTANCE|current_distance[10]'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE'
+Slack : 0.475
 TNS   : 0.000
 
 ------------------------------------------------------------

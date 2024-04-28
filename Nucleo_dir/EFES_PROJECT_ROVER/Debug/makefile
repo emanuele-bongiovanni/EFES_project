@@ -60,8 +60,8 @@ all: main-build
 main-build: EFES_PROJECT_ROVER.elf secondary-outputs
 
 # Tool invocations
-EFES_PROJECT_ROVER.elf EFES_PROJECT_ROVER.map: $(OBJS) $(USER_OBJS) C:\Users\emanu\STM32CubeIDE\workspace_1.15.0\EFES_PROJECT_ROVER\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "EFES_PROJECT_ROVER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\emanu\STM32CubeIDE\workspace_1.15.0\EFES_PROJECT_ROVER\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EFES_PROJECT_ROVER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+EFES_PROJECT_ROVER.elf EFES_PROJECT_ROVER.map: $(OBJS) $(USER_OBJS) D:\Documenti\GitHub\EFES_project\Nucleo_dir\EFES_PROJECT_ROVER\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "EFES_PROJECT_ROVER.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Documenti\GitHub\EFES_project\Nucleo_dir\EFES_PROJECT_ROVER\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EFES_PROJECT_ROVER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

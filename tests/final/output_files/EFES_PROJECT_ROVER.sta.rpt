@@ -1,5 +1,5 @@
 Timing Analyzer report for EFES_PROJECT_ROVER
-Fri Apr 19 20:22:20 2024
+Sat Apr 27 18:03:03 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 
 
@@ -107,13 +107,13 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.3%      ;
+;     Processor 2            ;   5.4%      ;
 ;     Processor 3            ;   5.3%      ;
 ;     Processor 4            ;   5.2%      ;
 ;     Processor 5            ;   3.8%      ;
 ;     Processor 6            ;   3.8%      ;
 ;     Processor 7            ;   3.8%      ;
-;     Processor 8            ;   3.8%      ;
+;     Processor 8            ;   3.7%      ;
 ;     Processor 9            ;   3.7%      ;
 ;     Processor 10           ;   3.7%      ;
 ;     Processor 11           ;   3.7%      ;
@@ -144,11 +144,11 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+-----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                          ; Note ;
 +------------+-----------------+-----------------------------------------------------+------+
-; 118.09 MHz ; 118.09 MHz      ; GPIO_1[34]                                          ;      ;
-; 134.92 MHz ; 134.92 MHz      ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
-; 151.1 MHz  ; 151.1 MHz       ; CLOCK_50                                            ;      ;
-; 190.69 MHz ; 190.69 MHz      ; GPIO_1[35]                                          ;      ;
-; 222.12 MHz ; 222.12 MHz      ; clk_div:clk_divisor|internal                        ;      ;
+; 125.19 MHz ; 125.19 MHz      ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
+; 160.82 MHz ; 160.82 MHz      ; CLOCK_50                                            ;      ;
+; 171.14 MHz ; 171.14 MHz      ; GPIO_1[34]                                          ;      ;
+; 197.67 MHz ; 197.67 MHz      ; GPIO_1[35]                                          ;      ;
+; 222.42 MHz ; 222.42 MHz      ; clk_div:clk_divisor|internal                        ;      ;
 +------------+-----------------+-----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -164,16 +164,16 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                            ; Slack   ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+---------+---------------+
-; GPIO_1[35]                                                                                       ; -10.507 ; -102.609      ;
-; GPIO_1[34]                                                                                       ; -8.331  ; -116.381      ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.805  ; -100.969      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.713  ; -16.190       ;
-; CLOCK_50                                                                                         ; -5.618  ; -110.424      ;
-; clk_div:clk_divisor|internal                                                                     ; -4.649  ; -766.050      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -2.646  ; -99.760       ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.697  ; -11.858       ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.662  ; -1.662        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.163  ; -0.163        ;
+; GPIO_1[35]                                                                                       ; -13.775 ; -148.265      ;
+; GPIO_1[34]                                                                                       ; -5.973  ; -83.306       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.911  ; -17.039       ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.860  ; -104.419      ;
+; CLOCK_50                                                                                         ; -5.218  ; -111.632      ;
+; clk_div:clk_divisor|internal                                                                     ; -4.166  ; -770.125      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -2.990  ; -119.591      ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -2.257  ; -15.772       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.931  ; -1.931        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.555  ; -1.555        ;
 +--------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -182,28 +182,28 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -7.881 ; -110.490      ;
-; CLOCK_50                                                                                         ; -1.588 ; -1.588        ;
-; clk_div:clk_divisor|internal                                                                     ; -1.328 ; -1.559        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.963 ; -0.963        ;
-; GPIO_1[34]                                                                                       ; -0.910 ; -5.274        ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -0.778 ; -0.778        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.642 ; -1.782        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.039  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.513  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.494  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -8.806 ; -114.955      ;
+; GPIO_1[34]                                                                                       ; -4.469 ; -29.809       ;
+; CLOCK_50                                                                                         ; -1.509 ; -1.509        ;
+; clk_div:clk_divisor|internal                                                                     ; -1.435 ; -13.628       ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.084 ; -0.084        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.288  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.311  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.544  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.831  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.753  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
-+------------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Recovery Summary                                       ;
-+-----------------------------------------------------+--------+---------------+
-; Clock                                               ; Slack  ; End Point TNS ;
-+-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -8.847 ; -52.829       ;
-; clk_div:clk_divisor|internal                        ; -2.094 ; -450.198      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.763 ; -3.449        ;
-+-----------------------------------------------------+--------+---------------+
++-------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Recovery Summary                                        ;
++-----------------------------------------------------+---------+---------------+
+; Clock                                               ; Slack   ; End Point TNS ;
++-----------------------------------------------------+---------+---------------+
+; GPIO_1[35]                                          ; -12.121 ; -95.723       ;
+; clk_div:clk_divisor|internal                        ; -2.115  ; -416.808      ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.758  ; -3.339        ;
++-----------------------------------------------------+---------+---------------+
 
 
 +------------------------------------------------------------------------------+
@@ -211,9 +211,9 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -7.685 ; -15.370       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.073  ; 0.000         ;
-; clk_div:clk_divisor|internal                        ; 0.505  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.344 ; -6.464        ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.410  ; 0.000         ;
+; GPIO_1[35]                                          ; 3.084  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -222,16 +222,16 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -245.829      ;
-; CLOCK_50                                                                                         ; -0.432 ; -23.715       ;
-; GPIO_1[35]                                                                                       ; -0.394 ; -8.977        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.051  ; 0.000         ;
-; GPIO_1[34]                                                                                       ; 0.067  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.295  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.304  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.333  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.393  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.434  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -254.018      ;
+; GPIO_1[35]                                                                                       ; -0.428 ; -13.762       ;
+; CLOCK_50                                                                                         ; -0.410 ; -24.121       ;
+; GPIO_1[34]                                                                                       ; -0.027 ; -0.054        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.001 ; -0.001        ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.342  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.348  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.364  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.377  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.447  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -246,31 +246,31 @@ No synchronizer chains to report.
 +------------+-----------------+-----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                          ; Note ;
 +------------+-----------------+-----------------------------------------------------+------+
-; 120.9 MHz  ; 120.9 MHz       ; GPIO_1[34]                                          ;      ;
-; 138.93 MHz ; 138.93 MHz      ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
-; 149.25 MHz ; 149.25 MHz      ; CLOCK_50                                            ;      ;
-; 199.36 MHz ; 199.36 MHz      ; GPIO_1[35]                                          ;      ;
-; 224.42 MHz ; 224.42 MHz      ; clk_div:clk_divisor|internal                        ;      ;
+; 126.17 MHz ; 126.17 MHz      ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
+; 159.11 MHz ; 159.11 MHz      ; CLOCK_50                                            ;      ;
+; 172.62 MHz ; 172.62 MHz      ; GPIO_1[34]                                          ;      ;
+; 205.21 MHz ; 205.21 MHz      ; GPIO_1[35]                                          ;      ;
+; 224.32 MHz ; 224.32 MHz      ; clk_div:clk_divisor|internal                        ;      ;
 +------------+-----------------+-----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary                                                                                        ;
-+--------------------------------------------------------------------------------------------------+--------+---------------+
-; Clock                                                                                            ; Slack  ; End Point TNS ;
-+--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -9.935 ; -96.765       ;
-; GPIO_1[34]                                                                                       ; -8.207 ; -113.456      ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.992 ; -104.020      ;
-; CLOCK_50                                                                                         ; -5.700 ; -108.937      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.538 ; -16.008       ;
-; clk_div:clk_divisor|internal                                                                     ; -4.592 ; -765.847      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -2.581 ; -96.701       ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.653 ; -11.653       ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.605 ; -1.605        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.202 ; -0.202        ;
-+--------------------------------------------------------------------------------------------------+--------+---------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary                                                                                         ;
++--------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                            ; Slack   ; End Point TNS ;
++--------------------------------------------------------------------------------------------------+---------+---------------+
+; GPIO_1[35]                                                                                       ; -12.861 ; -137.190      ;
+; GPIO_1[34]                                                                                       ; -6.150  ; -84.186       ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.937  ; -106.990      ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.825  ; -16.785       ;
+; CLOCK_50                                                                                         ; -5.285  ; -109.958      ;
+; clk_div:clk_divisor|internal                                                                     ; -4.163  ; -770.505      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -2.908  ; -114.982      ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -2.214  ; -15.291       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.905  ; -1.905        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.411  ; -1.411        ;
++--------------------------------------------------------------------------------------------------+---------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -278,28 +278,28 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -7.721 ; -108.553      ;
-; CLOCK_50                                                                                         ; -1.569 ; -1.569        ;
-; clk_div:clk_divisor|internal                                                                     ; -1.241 ; -1.372        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.955 ; -0.955        ;
-; GPIO_1[34]                                                                                       ; -0.919 ; -5.297        ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -0.874 ; -0.874        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.752 ; -2.204        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.007 ; -0.014        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.414  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.516  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -8.665 ; -113.307      ;
+; GPIO_1[34]                                                                                       ; -4.093 ; -26.899       ;
+; CLOCK_50                                                                                         ; -1.508 ; -1.508        ;
+; clk_div:clk_divisor|internal                                                                     ; -1.302 ; -11.883       ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.162 ; -0.162        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.151  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.194  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.438  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.811  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.833  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
-+------------------------------------------------------------------------------+
-; Slow 1100mV 0C Model Recovery Summary                                        ;
-+-----------------------------------------------------+--------+---------------+
-; Clock                                               ; Slack  ; End Point TNS ;
-+-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -8.276 ; -49.356       ;
-; clk_div:clk_divisor|internal                        ; -1.966 ; -431.815      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.639 ; -3.259        ;
-+-----------------------------------------------------+--------+---------------+
++-------------------------------------------------------------------------------+
+; Slow 1100mV 0C Model Recovery Summary                                         ;
++-----------------------------------------------------+---------+---------------+
+; Clock                                               ; Slack   ; End Point TNS ;
++-----------------------------------------------------+---------+---------------+
+; GPIO_1[35]                                          ; -11.252 ; -88.711       ;
+; clk_div:clk_divisor|internal                        ; -2.006  ; -402.042      ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.656  ; -3.155        ;
++-----------------------------------------------------+---------+---------------+
 
 
 +------------------------------------------------------------------------------+
@@ -307,9 +307,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -7.549 ; -15.987       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -0.065 ; -0.065        ;
-; clk_div:clk_divisor|internal                        ; 0.518  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.270 ; -5.069        ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.302  ; 0.000         ;
+; GPIO_1[35]                                          ; 2.438  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -318,16 +318,16 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -240.912      ;
-; CLOCK_50                                                                                         ; -0.479 ; -25.600       ;
-; GPIO_1[35]                                                                                       ; -0.394 ; -8.832        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.055  ; 0.000         ;
-; GPIO_1[34]                                                                                       ; 0.060  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.276  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.296  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.319  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.387  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.413  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -254.362      ;
+; CLOCK_50                                                                                         ; -0.462 ; -26.321       ;
+; GPIO_1[35]                                                                                       ; -0.394 ; -12.606       ;
+; GPIO_1[34]                                                                                       ; -0.068 ; -0.135        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.039  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.345  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.353  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.357  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.374  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.438  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -337,22 +337,22 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 No synchronizer chains to report.
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                                                                                       ;
-+--------------------------------------------------------------------------------------------------+--------+---------------+
-; Clock                                                                                            ; Slack  ; End Point TNS ;
-+--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -8.259 ; -79.183       ;
-; GPIO_1[34]                                                                                       ; -5.241 ; -64.348       ;
-; CLOCK_50                                                                                         ; -3.305 ; -45.556       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -3.116 ; -8.565        ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -2.988 ; -51.346       ;
-; clk_div:clk_divisor|internal                                                                     ; -2.350 ; -354.666      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -1.246 ; -45.613       ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.802 ; -4.799        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.755 ; -0.755        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.050  ; 0.000         ;
-+--------------------------------------------------------------------------------------------------+--------+---------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary                                                                                        ;
++--------------------------------------------------------------------------------------------------+---------+---------------+
+; Clock                                                                                            ; Slack   ; End Point TNS ;
++--------------------------------------------------------------------------------------------------+---------+---------------+
+; GPIO_1[35]                                                                                       ; -10.050 ; -103.611      ;
+; GPIO_1[34]                                                                                       ; -3.476  ; -43.126       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -3.156  ; -9.009        ;
+; CLOCK_50                                                                                         ; -3.124  ; -48.234       ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -3.095  ; -53.336       ;
+; clk_div:clk_divisor|internal                                                                     ; -2.075  ; -362.522      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -1.486  ; -55.958       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.103  ; -1.103        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.079  ; -7.541        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.764  ; -0.764        ;
++--------------------------------------------------------------------------------------------------+---------+---------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -360,16 +360,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -4.404 ; -61.606       ;
-; clk_div:clk_divisor|internal                                                                     ; -0.876 ; -2.787        ;
-; CLOCK_50                                                                                         ; -0.809 ; -0.809        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.636 ; -0.636        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.538 ; -2.802        ;
-; GPIO_1[34]                                                                                       ; -0.502 ; -2.998        ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -0.299 ; -0.299        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.006 ; -0.009        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.332  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.869  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -5.027 ; -64.302       ;
+; GPIO_1[34]                                                                                       ; -2.409 ; -15.929       ;
+; clk_div:clk_divisor|internal                                                                     ; -0.931 ; -10.889       ;
+; CLOCK_50                                                                                         ; -0.807 ; -0.807        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.037 ; -0.037        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.175  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.279  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.329  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.602  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.968  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -378,9 +378,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -7.199 ; -42.763       ;
-; clk_div:clk_divisor|internal                        ; -1.179 ; -249.272      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -0.938 ; -1.787        ;
+; GPIO_1[35]                                          ; -8.845 ; -70.074       ;
+; clk_div:clk_divisor|internal                        ; -1.104 ; -223.959      ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -0.784 ; -1.422        ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -389,9 +389,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -4.344 ; -8.688        ;
-; clk_div:clk_divisor|internal                        ; 0.117  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.156  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.320 ; -6.054        ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.327  ; 0.000         ;
+; GPIO_1[35]                                          ; 2.547  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -400,16 +400,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -39.067       ;
-; CLOCK_50                                                                                         ; -0.503 ; -4.406        ;
-; GPIO_1[35]                                                                                       ; -0.289 ; -4.943        ;
-; GPIO_1[34]                                                                                       ; -0.119 ; -2.061        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.114  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.317  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.329  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.377  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.382  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.481  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -42.209       ;
+; CLOCK_50                                                                                         ; -0.483 ; -4.413        ;
+; GPIO_1[35]                                                                                       ; -0.454 ; -9.879        ;
+; GPIO_1[34]                                                                                       ; -0.157 ; -3.402        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.125  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.324  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.376  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.386  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.401  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.479  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -424,16 +424,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -7.033 ; -65.992       ;
-; GPIO_1[34]                                                                                       ; -4.413 ; -58.268       ;
-; CLOCK_50                                                                                         ; -2.989 ; -39.614       ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -2.853 ; -49.248       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -2.757 ; -7.723        ;
-; clk_div:clk_divisor|internal                                                                     ; -2.119 ; -312.431      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -1.057 ; -38.843       ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.723 ; -4.426        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.669 ; -0.669        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.048  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -8.819 ; -91.454       ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -2.914 ; -50.889       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -2.834 ; -8.113        ;
+; CLOCK_50                                                                                         ; -2.824 ; -41.657       ;
+; GPIO_1[34]                                                                                       ; -2.645 ; -38.082       ;
+; clk_div:clk_divisor|internal                                                                     ; -1.866 ; -321.410      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -1.294 ; -48.321       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.975 ; -6.783        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.967 ; -0.967        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.664 ; -0.664        ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -442,16 +442,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -4.361 ; -61.232       ;
-; CLOCK_50                                                                                         ; -0.869 ; -0.869        ;
-; clk_div:clk_divisor|internal                                                                     ; -0.809 ; -2.802        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.605 ; -0.605        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.554 ; -3.594        ;
-; GPIO_1[34]                                                                                       ; -0.549 ; -3.358        ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -0.331 ; -0.331        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.011  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.285  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.861  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -4.907 ; -63.572       ;
+; GPIO_1[34]                                                                                       ; -2.449 ; -16.539       ;
+; CLOCK_50                                                                                         ; -0.864 ; -0.864        ;
+; clk_div:clk_divisor|internal                                                                     ; -0.845 ; -10.036       ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.041 ; -0.120        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.100  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.225  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.289  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.523  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.971  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -460,9 +460,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -6.067 ; -36.002       ;
-; clk_div:clk_divisor|internal                        ; -0.971 ; -215.062      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -0.791 ; -1.522        ;
+; GPIO_1[35]                                          ; -7.759 ; -61.411       ;
+; clk_div:clk_divisor|internal                        ; -0.927 ; -190.792      ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -0.685 ; -1.242        ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -471,9 +471,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -4.249 ; -8.498        ;
-; clk_div:clk_divisor|internal                        ; 0.078  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.108  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.302 ; -6.092        ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.294  ; 0.000         ;
+; GPIO_1[35]                                          ; 2.059  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -482,16 +482,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -37.858       ;
-; CLOCK_50                                                                                         ; -0.517 ; -4.443        ;
-; GPIO_1[35]                                                                                       ; -0.291 ; -5.010        ;
-; GPIO_1[34]                                                                                       ; -0.113 ; -2.034        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.181  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.343  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.362  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.378  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.402  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.488  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -37.902       ;
+; CLOCK_50                                                                                         ; -0.503 ; -4.408        ;
+; GPIO_1[35]                                                                                       ; -0.410 ; -8.466        ;
+; GPIO_1[34]                                                                                       ; -0.162 ; -3.312        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.190  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.350  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.400  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.405  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.416  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.475  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -506,28 +506,28 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
 ; Clock                                                                                             ; Setup     ; Hold     ; Recovery ; Removal ; Minimum Pulse Width ;
 +---------------------------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
-; Worst-case Slack                                                                                  ; -10.507   ; -7.881   ; -8.847   ; -7.685  ; -2.225              ;
-;  CLOCK_50                                                                                         ; -5.700    ; -1.588   ; N/A      ; N/A     ; -0.517              ;
-;  GPIO_1[34]                                                                                       ; -8.331    ; -0.919   ; N/A      ; N/A     ; -0.119              ;
-;  GPIO_1[35]                                                                                       ; -10.507   ; -7.881   ; -8.847   ; -7.685  ; -0.394              ;
-;  clk_div:clk_divisor|internal                                                                     ; -4.649    ; -1.328   ; -2.094   ; 0.078   ; -2.225              ;
-;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -2.646    ; -0.752   ; N/A      ; N/A     ; 0.051               ;
-;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.662    ; 0.285    ; N/A      ; N/A     ; 0.413               ;
-;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.713    ; -0.874   ; -1.763   ; -0.065  ; 0.276               ;
-;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.992    ; 0.861    ; N/A      ; N/A     ; 0.296               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.202    ; -0.963   ; N/A      ; N/A     ; 0.382               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.697    ; -0.007   ; N/A      ; N/A     ; 0.295               ;
-; Design-wide TNS                                                                                   ; -1326.066 ; -122.434 ; -506.476 ; -16.052 ; -278.521            ;
-;  CLOCK_50                                                                                         ; -110.424  ; -1.588   ; N/A      ; N/A     ; -25.600             ;
-;  GPIO_1[34]                                                                                       ; -116.381  ; -5.297   ; N/A      ; N/A     ; -2.061              ;
-;  GPIO_1[35]                                                                                       ; -102.609  ; -110.490 ; -52.829  ; -15.987 ; -8.977              ;
-;  clk_div:clk_divisor|internal                                                                     ; -766.050  ; -2.802   ; -450.198 ; 0.000   ; -245.829            ;
-;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -99.760   ; -3.594   ; N/A      ; N/A     ; 0.000               ;
-;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.662    ; 0.000    ; N/A      ; N/A     ; 0.000               ;
-;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -16.190   ; -0.874   ; -3.449   ; -0.065  ; 0.000               ;
-;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -104.020  ; 0.000    ; N/A      ; N/A     ; 0.000               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.202    ; -0.963   ; N/A      ; N/A     ; 0.000               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -11.858   ; -0.014   ; N/A      ; N/A     ; 0.000               ;
+; Worst-case Slack                                                                                  ; -13.775   ; -8.806   ; -12.121  ; -0.344  ; -2.225              ;
+;  CLOCK_50                                                                                         ; -5.285    ; -1.509   ; N/A      ; N/A     ; -0.503              ;
+;  GPIO_1[34]                                                                                       ; -6.150    ; -4.469   ; N/A      ; N/A     ; -0.162              ;
+;  GPIO_1[35]                                                                                       ; -13.775   ; -8.806   ; -12.121  ; 2.059   ; -0.454              ;
+;  clk_div:clk_divisor|internal                                                                     ; -4.166    ; -1.435   ; -2.115   ; -0.344  ; -2.225              ;
+;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -2.990    ; -0.162   ; N/A      ; N/A     ; -0.001              ;
+;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.555    ; 0.151    ; N/A      ; N/A     ; 0.364               ;
+;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.911    ; 0.523    ; -1.758   ; 0.294   ; 0.357               ;
+;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.937    ; 0.968    ; N/A      ; N/A     ; 0.324               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.931    ; 0.100    ; N/A      ; N/A     ; 0.438               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -2.257    ; 0.289    ; N/A      ; N/A     ; 0.348               ;
+; Design-wide TNS                                                                                   ; -1373.635 ; -159.985 ; -515.87  ; -6.464  ; -293.424            ;
+;  CLOCK_50                                                                                         ; -111.632  ; -1.509   ; N/A      ; N/A     ; -26.321             ;
+;  GPIO_1[34]                                                                                       ; -84.186   ; -29.809  ; N/A      ; N/A     ; -3.402              ;
+;  GPIO_1[35]                                                                                       ; -148.265  ; -114.955 ; -95.723  ; 0.000   ; -13.762             ;
+;  clk_div:clk_divisor|internal                                                                     ; -770.505  ; -13.628  ; -416.808 ; -6.464  ; -254.362            ;
+;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -119.591  ; -0.162   ; N/A      ; N/A     ; -0.001              ;
+;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.555    ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -17.039   ; 0.000    ; -3.339   ; 0.000   ; 0.000               ;
+;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -106.990  ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.931    ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -15.772   ; 0.000    ; N/A      ; N/A     ; 0.000               ;
 +---------------------------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
 
 
@@ -564,20 +564,6 @@ No synchronizer chains to report.
 ; HEX3_N[4]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; HEX3_N[5]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; HEX3_N[6]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX4_N[0]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX4_N[1]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX4_N[2]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX4_N[3]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX4_N[4]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX4_N[5]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX4_N[6]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX5_N[0]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX5_N[1]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX5_N[2]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX5_N[3]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX5_N[4]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX5_N[5]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
-; HEX5_N[6]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; LEDR[0]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; LEDR[1]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; LEDR[2]     ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
@@ -802,20 +788,6 @@ No synchronizer chains to report.
 ; HEX3_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; HEX3_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; HEX3_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; HEX5_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0557 V           ; 0.175 V                              ; 0.114 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0557 V          ; 0.175 V                             ; 0.114 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
-; HEX5_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.52e-07 V                   ; 2.42 V              ; -0.0568 V           ; 0.173 V                              ; 0.113 V                              ; 4.5e-10 s                   ; 4.35e-10 s                  ; No                         ; No                         ; 2.32 V                      ; 3.52e-07 V                  ; 2.42 V             ; -0.0568 V          ; 0.173 V                             ; 0.113 V                             ; 4.5e-10 s                  ; 4.35e-10 s                 ; No                        ; No                        ;
 ; LEDR[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
@@ -945,20 +917,6 @@ No synchronizer chains to report.
 ; HEX3_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; HEX3_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; HEX3_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; HEX4_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; HEX4_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; HEX4_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; HEX5_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; HEX5_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
-; HEX5_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.037 V            ; 0.188 V                              ; 0.158 V                              ; 4.67e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.037 V           ; 0.188 V                             ; 0.158 V                             ; 4.67e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.88e-05 V                   ; 2.39 V              ; -0.0374 V           ; 0.189 V                              ; 0.158 V                              ; 4.66e-10 s                  ; 4.67e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.88e-05 V                  ; 2.39 V             ; -0.0374 V          ; 0.189 V                             ; 0.158 V                             ; 4.66e-10 s                 ; 4.67e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
 ; LEDR[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
@@ -1088,20 +1046,6 @@ No synchronizer chains to report.
 ; HEX3_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; HEX3_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; HEX3_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; HEX4_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; HEX4_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; HEX4_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; HEX4_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; HEX4_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; HEX4_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; HEX4_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; HEX5_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; HEX5_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; HEX5_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; HEX5_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
-; HEX5_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
-; HEX5_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
-; HEX5_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
 ; LEDR[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
 ; LEDR[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
 ; LEDR[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
@@ -1231,20 +1175,6 @@ No synchronizer chains to report.
 ; HEX3_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; HEX3_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; HEX3_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; HEX4_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; HEX4_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; HEX4_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; HEX4_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; HEX4_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; HEX5_N[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
-; HEX5_N[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
-; HEX5_N[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
-; HEX5_N[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
-; HEX5_N[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
 ; LEDR[0]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
 ; LEDR[1]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
 ; LEDR[2]     ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
@@ -1346,7 +1276,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                       ; To Clock                                                                                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6456     ; 0        ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6084     ; 0        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; clk_div:clk_divisor|internal                                                                     ; 56       ; 81       ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; clk_div:clk_divisor|internal                                                                     ; 2        ; 2        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; clk_div:clk_divisor|internal                                                                     ; 2        ; 5        ; 0        ; 0        ;
@@ -1354,7 +1284,7 @@ No synchronizer chains to report.
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; clk_div:clk_divisor|internal                                                                     ; 4        ; 2        ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; clk_div:clk_divisor|internal                                                                     ; 1        ; 1        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; CLOCK_50                                                                                         ; 1        ; 1        ; 0        ; 0        ;
-; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 2118     ; 0        ; 0        ; 0        ;
+; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 2121     ; 0        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 65       ; 0        ; 5        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 19       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 8        ; 0        ; 0        ;
@@ -1380,7 +1310,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                       ; To Clock                                                                                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6456     ; 0        ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6084     ; 0        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; clk_div:clk_divisor|internal                                                                     ; 56       ; 81       ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; clk_div:clk_divisor|internal                                                                     ; 2        ; 2        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; clk_div:clk_divisor|internal                                                                     ; 2        ; 5        ; 0        ; 0        ;
@@ -1388,7 +1318,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; clk_div:clk_divisor|internal                                                                     ; 4        ; 2        ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; clk_div:clk_divisor|internal                                                                     ; 1        ; 1        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; CLOCK_50                                                                                         ; 1        ; 1        ; 0        ; 0        ;
-; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 2118     ; 0        ; 0        ; 0        ;
+; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 2121     ; 0        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 65       ; 0        ; 5        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 19       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 8        ; 0        ; 0        ;
@@ -1414,8 +1344,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 139      ; 0        ; 0        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 152      ; 227      ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 135      ; 0        ; 0        ; 0        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 148      ; 223      ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                              ; clk_div:clk_divisor|internal                        ; 45       ; 45       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE ; clk_div:clk_divisor|internal                        ; 58       ; 58       ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                        ; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0        ; 0        ; 2        ; 0        ;
@@ -1429,8 +1359,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 139      ; 0        ; 0        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 152      ; 227      ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 135      ; 0        ; 0        ; 0        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 148      ; 223      ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                              ; clk_div:clk_divisor|internal                        ; 45       ; 45       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE ; clk_div:clk_divisor|internal                        ; 58       ; 58       ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                        ; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0        ; 0        ; 2        ; 0        ;
@@ -1459,9 +1389,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 5     ; 5    ;
-; Unconstrained Input Port Paths  ; 156   ; 156  ;
-; Unconstrained Output Ports      ; 59    ; 59   ;
-; Unconstrained Output Port Paths ; 201   ; 201  ;
+; Unconstrained Input Port Paths  ; 154   ; 154  ;
+; Unconstrained Output Ports      ; 45    ; 45   ;
+; Unconstrained Output Port Paths ; 145   ; 145  ;
 +---------------------------------+-------+------+
 
 
@@ -1537,20 +1467,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX3_N[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3_N[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3_N[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_CLK     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1617,20 +1533,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX3_N[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3_N[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3_N[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX4_N[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[3]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[4]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[5]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; HEX5_N[6]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_CLK     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; VGA_R[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -1649,7 +1551,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
-    Info: Processing started: Fri Apr 19 20:22:13 2024
+    Info: Processing started: Sat Apr 27 18:02:57 2024
 Info: Command: quartus_sta EFES_PROJECT_ROVER -c EFES_PROJECT_ROVER
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1665,9 +1567,9 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET
     Info (332105): create_clock -period 1.000 -name GPIO_1[34] GPIO_1[34]
     Info (332105): create_clock -period 1.000 -name datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1
+    Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK
     Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|current_distance[10] controller:CONTROLLER_INSTANCE|current_distance[10]
     Info (332105): create_clock -period 1.000 -name datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE
-    Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK
     Info (332105): create_clock -period 1.000 -name datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE
     Info (332105): create_clock -period 1.000 -name GPIO_1[35] GPIO_1[35]
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -1676,232 +1578,232 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -10.507
+Info (332146): Worst-case setup slack is -13.775
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.507            -102.609 GPIO_1[35] 
-    Info (332119):    -8.331            -116.381 GPIO_1[34] 
-    Info (332119):    -5.805            -100.969 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -5.713             -16.190 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -5.618            -110.424 CLOCK_50 
-    Info (332119):    -4.649            -766.050 clk_div:clk_divisor|internal 
-    Info (332119):    -2.646             -99.760 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -1.697             -11.858 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):    -1.662              -1.662 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):    -0.163              -0.163 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-Info (332146): Worst-case hold slack is -7.881
+    Info (332119):   -13.775            -148.265 GPIO_1[35] 
+    Info (332119):    -5.973             -83.306 GPIO_1[34] 
+    Info (332119):    -5.911             -17.039 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -5.860            -104.419 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -5.218            -111.632 CLOCK_50 
+    Info (332119):    -4.166            -770.125 clk_div:clk_divisor|internal 
+    Info (332119):    -2.990            -119.591 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -2.257             -15.772 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -1.931              -1.931 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -1.555              -1.555 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -8.806
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.881            -110.490 GPIO_1[35] 
-    Info (332119):    -1.588              -1.588 CLOCK_50 
-    Info (332119):    -1.328              -1.559 clk_div:clk_divisor|internal 
-    Info (332119):    -0.963              -0.963 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -0.910              -5.274 GPIO_1[34] 
-    Info (332119):    -0.778              -0.778 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -0.642              -1.782 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.039               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.513               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     1.494               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -8.847
+    Info (332119):    -8.806            -114.955 GPIO_1[35] 
+    Info (332119):    -4.469             -29.809 GPIO_1[34] 
+    Info (332119):    -1.509              -1.509 CLOCK_50 
+    Info (332119):    -1.435             -13.628 clk_div:clk_divisor|internal 
+    Info (332119):    -0.084              -0.084 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.288               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.311               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.544               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.831               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     1.753               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -12.121
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.847             -52.829 GPIO_1[35] 
-    Info (332119):    -2.094            -450.198 clk_div:clk_divisor|internal 
-    Info (332119):    -1.763              -3.449 controller:CONTROLLER_INSTANCE|current_distance[10] 
-Info (332146): Worst-case removal slack is -7.685
+    Info (332119):   -12.121             -95.723 GPIO_1[35] 
+    Info (332119):    -2.115            -416.808 clk_div:clk_divisor|internal 
+    Info (332119):    -1.758              -3.339 controller:CONTROLLER_INSTANCE|current_distance[10] 
+Info (332146): Worst-case removal slack is -0.344
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.685             -15.370 GPIO_1[35] 
-    Info (332119):     0.073               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.505               0.000 clk_div:clk_divisor|internal 
+    Info (332119):    -0.344              -6.464 clk_div:clk_divisor|internal 
+    Info (332119):     0.410               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     3.084               0.000 GPIO_1[35] 
 Info (332146): Worst-case minimum pulse width slack is -2.225
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.225            -245.829 clk_div:clk_divisor|internal 
-    Info (332119):    -0.432             -23.715 CLOCK_50 
-    Info (332119):    -0.394              -8.977 GPIO_1[35] 
-    Info (332119):     0.051               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.067               0.000 GPIO_1[34] 
-    Info (332119):     0.295               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.304               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.333               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.393               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.434               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):    -2.225            -254.018 clk_div:clk_divisor|internal 
+    Info (332119):    -0.428             -13.762 GPIO_1[35] 
+    Info (332119):    -0.410             -24.121 CLOCK_50 
+    Info (332119):    -0.027              -0.054 GPIO_1[34] 
+    Info (332119):    -0.001              -0.001 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.342               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.348               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.364               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.377               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.447               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.935
+Info (332146): Worst-case setup slack is -12.861
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.935             -96.765 GPIO_1[35] 
-    Info (332119):    -8.207            -113.456 GPIO_1[34] 
-    Info (332119):    -5.992            -104.020 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -5.700            -108.937 CLOCK_50 
-    Info (332119):    -5.538             -16.008 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -4.592            -765.847 clk_div:clk_divisor|internal 
-    Info (332119):    -2.581             -96.701 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -1.653             -11.653 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):    -1.605              -1.605 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):    -0.202              -0.202 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-Info (332146): Worst-case hold slack is -7.721
+    Info (332119):   -12.861            -137.190 GPIO_1[35] 
+    Info (332119):    -6.150             -84.186 GPIO_1[34] 
+    Info (332119):    -5.937            -106.990 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -5.825             -16.785 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -5.285            -109.958 CLOCK_50 
+    Info (332119):    -4.163            -770.505 clk_div:clk_divisor|internal 
+    Info (332119):    -2.908            -114.982 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -2.214             -15.291 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -1.905              -1.905 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -1.411              -1.411 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -8.665
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.721            -108.553 GPIO_1[35] 
-    Info (332119):    -1.569              -1.569 CLOCK_50 
-    Info (332119):    -1.241              -1.372 clk_div:clk_divisor|internal 
-    Info (332119):    -0.955              -0.955 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -0.919              -5.297 GPIO_1[34] 
-    Info (332119):    -0.874              -0.874 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -0.752              -2.204 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -0.007              -0.014 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.414               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     1.516               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -8.276
+    Info (332119):    -8.665            -113.307 GPIO_1[35] 
+    Info (332119):    -4.093             -26.899 GPIO_1[34] 
+    Info (332119):    -1.508              -1.508 CLOCK_50 
+    Info (332119):    -1.302             -11.883 clk_div:clk_divisor|internal 
+    Info (332119):    -0.162              -0.162 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.151               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.194               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.438               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.811               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     1.833               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -11.252
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.276             -49.356 GPIO_1[35] 
-    Info (332119):    -1.966            -431.815 clk_div:clk_divisor|internal 
-    Info (332119):    -1.639              -3.259 controller:CONTROLLER_INSTANCE|current_distance[10] 
-Info (332146): Worst-case removal slack is -7.549
+    Info (332119):   -11.252             -88.711 GPIO_1[35] 
+    Info (332119):    -2.006            -402.042 clk_div:clk_divisor|internal 
+    Info (332119):    -1.656              -3.155 controller:CONTROLLER_INSTANCE|current_distance[10] 
+Info (332146): Worst-case removal slack is -0.270
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.549             -15.987 GPIO_1[35] 
-    Info (332119):    -0.065              -0.065 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.518               0.000 clk_div:clk_divisor|internal 
+    Info (332119):    -0.270              -5.069 clk_div:clk_divisor|internal 
+    Info (332119):     0.302               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     2.438               0.000 GPIO_1[35] 
 Info (332146): Worst-case minimum pulse width slack is -2.225
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.225            -240.912 clk_div:clk_divisor|internal 
-    Info (332119):    -0.479             -25.600 CLOCK_50 
-    Info (332119):    -0.394              -8.832 GPIO_1[35] 
-    Info (332119):     0.055               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.060               0.000 GPIO_1[34] 
-    Info (332119):     0.276               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.296               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.319               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.387               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.413               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):    -2.225            -254.362 clk_div:clk_divisor|internal 
+    Info (332119):    -0.462             -26.321 CLOCK_50 
+    Info (332119):    -0.394             -12.606 GPIO_1[35] 
+    Info (332119):    -0.068              -0.135 GPIO_1[34] 
+    Info (332119):     0.039               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.345               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.353               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.357               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.374               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.438               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -8.259
+Info (332146): Worst-case setup slack is -10.050
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.259             -79.183 GPIO_1[35] 
-    Info (332119):    -5.241             -64.348 GPIO_1[34] 
-    Info (332119):    -3.305             -45.556 CLOCK_50 
-    Info (332119):    -3.116              -8.565 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -2.988             -51.346 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -2.350            -354.666 clk_div:clk_divisor|internal 
-    Info (332119):    -1.246             -45.613 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -0.802              -4.799 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):    -0.755              -0.755 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.050               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-Info (332146): Worst-case hold slack is -4.404
+    Info (332119):   -10.050            -103.611 GPIO_1[35] 
+    Info (332119):    -3.476             -43.126 GPIO_1[34] 
+    Info (332119):    -3.156              -9.009 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -3.124             -48.234 CLOCK_50 
+    Info (332119):    -3.095             -53.336 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -2.075            -362.522 clk_div:clk_divisor|internal 
+    Info (332119):    -1.486             -55.958 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -1.103              -1.103 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -1.079              -7.541 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -0.764              -0.764 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -5.027
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.404             -61.606 GPIO_1[35] 
-    Info (332119):    -0.876              -2.787 clk_div:clk_divisor|internal 
-    Info (332119):    -0.809              -0.809 CLOCK_50 
-    Info (332119):    -0.636              -0.636 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -0.538              -2.802 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -0.502              -2.998 GPIO_1[34] 
-    Info (332119):    -0.299              -0.299 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -0.006              -0.009 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.332               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.869               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -7.199
+    Info (332119):    -5.027             -64.302 GPIO_1[35] 
+    Info (332119):    -2.409             -15.929 GPIO_1[34] 
+    Info (332119):    -0.931             -10.889 clk_div:clk_divisor|internal 
+    Info (332119):    -0.807              -0.807 CLOCK_50 
+    Info (332119):    -0.037              -0.037 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.175               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.279               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.329               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.602               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.968               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -8.845
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.199             -42.763 GPIO_1[35] 
-    Info (332119):    -1.179            -249.272 clk_div:clk_divisor|internal 
-    Info (332119):    -0.938              -1.787 controller:CONTROLLER_INSTANCE|current_distance[10] 
-Info (332146): Worst-case removal slack is -4.344
+    Info (332119):    -8.845             -70.074 GPIO_1[35] 
+    Info (332119):    -1.104            -223.959 clk_div:clk_divisor|internal 
+    Info (332119):    -0.784              -1.422 controller:CONTROLLER_INSTANCE|current_distance[10] 
+Info (332146): Worst-case removal slack is -0.320
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.344              -8.688 GPIO_1[35] 
-    Info (332119):     0.117               0.000 clk_div:clk_divisor|internal 
-    Info (332119):     0.156               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -0.320              -6.054 clk_div:clk_divisor|internal 
+    Info (332119):     0.327               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     2.547               0.000 GPIO_1[35] 
 Info (332146): Worst-case minimum pulse width slack is -1.702
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.702             -39.067 clk_div:clk_divisor|internal 
-    Info (332119):    -0.503              -4.406 CLOCK_50 
-    Info (332119):    -0.289              -4.943 GPIO_1[35] 
-    Info (332119):    -0.119              -2.061 GPIO_1[34] 
-    Info (332119):     0.114               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.317               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.329               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.377               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.382               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.481               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):    -1.702             -42.209 clk_div:clk_divisor|internal 
+    Info (332119):    -0.483              -4.413 CLOCK_50 
+    Info (332119):    -0.454              -9.879 GPIO_1[35] 
+    Info (332119):    -0.157              -3.402 GPIO_1[34] 
+    Info (332119):     0.125               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.324               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.376               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.386               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.401               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.479               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -7.033
+Info (332146): Worst-case setup slack is -8.819
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.033             -65.992 GPIO_1[35] 
-    Info (332119):    -4.413             -58.268 GPIO_1[34] 
-    Info (332119):    -2.989             -39.614 CLOCK_50 
-    Info (332119):    -2.853             -49.248 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -2.757              -7.723 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -2.119            -312.431 clk_div:clk_divisor|internal 
-    Info (332119):    -1.057             -38.843 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -0.723              -4.426 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):    -0.669              -0.669 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.048               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-Info (332146): Worst-case hold slack is -4.361
+    Info (332119):    -8.819             -91.454 GPIO_1[35] 
+    Info (332119):    -2.914             -50.889 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -2.834              -8.113 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -2.824             -41.657 CLOCK_50 
+    Info (332119):    -2.645             -38.082 GPIO_1[34] 
+    Info (332119):    -1.866            -321.410 clk_div:clk_divisor|internal 
+    Info (332119):    -1.294             -48.321 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -0.975              -6.783 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -0.967              -0.967 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -0.664              -0.664 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -4.907
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.361             -61.232 GPIO_1[35] 
-    Info (332119):    -0.869              -0.869 CLOCK_50 
-    Info (332119):    -0.809              -2.802 clk_div:clk_divisor|internal 
-    Info (332119):    -0.605              -0.605 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -0.554              -3.594 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -0.549              -3.358 GPIO_1[34] 
-    Info (332119):    -0.331              -0.331 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.011               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.285               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.861               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -6.067
+    Info (332119):    -4.907             -63.572 GPIO_1[35] 
+    Info (332119):    -2.449             -16.539 GPIO_1[34] 
+    Info (332119):    -0.864              -0.864 CLOCK_50 
+    Info (332119):    -0.845             -10.036 clk_div:clk_divisor|internal 
+    Info (332119):    -0.041              -0.120 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.100               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.225               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.289               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.523               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.971               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -7.759
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.067             -36.002 GPIO_1[35] 
-    Info (332119):    -0.971            -215.062 clk_div:clk_divisor|internal 
-    Info (332119):    -0.791              -1.522 controller:CONTROLLER_INSTANCE|current_distance[10] 
-Info (332146): Worst-case removal slack is -4.249
+    Info (332119):    -7.759             -61.411 GPIO_1[35] 
+    Info (332119):    -0.927            -190.792 clk_div:clk_divisor|internal 
+    Info (332119):    -0.685              -1.242 controller:CONTROLLER_INSTANCE|current_distance[10] 
+Info (332146): Worst-case removal slack is -0.302
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.249              -8.498 GPIO_1[35] 
-    Info (332119):     0.078               0.000 clk_div:clk_divisor|internal 
-    Info (332119):     0.108               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -0.302              -6.092 clk_div:clk_divisor|internal 
+    Info (332119):     0.294               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     2.059               0.000 GPIO_1[35] 
 Info (332146): Worst-case minimum pulse width slack is -1.702
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.702             -37.858 clk_div:clk_divisor|internal 
-    Info (332119):    -0.517              -4.443 CLOCK_50 
-    Info (332119):    -0.291              -5.010 GPIO_1[35] 
-    Info (332119):    -0.113              -2.034 GPIO_1[34] 
-    Info (332119):     0.181               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.343               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.362               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.378               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.402               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.488               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):    -1.702             -37.902 clk_div:clk_divisor|internal 
+    Info (332119):    -0.503              -4.408 CLOCK_50 
+    Info (332119):    -0.410              -8.466 GPIO_1[35] 
+    Info (332119):    -0.162              -3.312 GPIO_1[34] 
+    Info (332119):     0.190               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.350               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.400               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.405               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.416               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.475               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5275 megabytes
-    Info: Processing ended: Fri Apr 19 20:22:20 2024
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 5289 megabytes
+    Info: Processing ended: Sat Apr 27 18:03:03 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:06
 
 

@@ -1,0 +1,60 @@
+!SESSION 2024-04-27 10:54:44.521 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-27 10:55:25.852
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-27 10:55:25.857
+!MESSAGE Log4j2 initialized with config file D:\Documenti\GitHub\EFES_project\Nucleo_dir\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-27 10:55:36.583
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-27 10:58:02.302
+!MESSAGE Indexed 'EFES_PROJECT_ROVER' (23 sources, 120 headers) in 4.95 sec: 12,245 declarations; 47,265 references; 7 unresolved inclusions; 1,150 syntax errors; 1,330 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-27 10:58:23.495
+!MESSAGE Indexed 'Memory_test' (23 sources, 124 headers) in 3.17 sec: 12,444 declarations; 49,466 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.39%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-27 10:58:31.781
+!MESSAGE Indexed 'spi_test' (23 sources, 124 headers) in 2.4 sec: 12,433 declarations; 49,340 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.39%)
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-04-27 15:09:54.284
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2024-04-27 16:14:50.062 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-27 16:15:16.830
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-27 16:15:16.852
+!MESSAGE Log4j2 initialized with config file D:\Documenti\GitHub\EFES_project\Nucleo_dir\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-27 16:15:32.729
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-27 20:48:22.261
+!MESSAGE Indexed 'blink_test' (22 sources, 119 headers) in 3.14 sec: 11,566 declarations; 43,415 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.43%)
+!SESSION 2024-04-28 11:10:28.650 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=it_IT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-28 11:10:53.112
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-28 11:10:53.134
+!MESSAGE Log4j2 initialized with config file D:\Documenti\GitHub\EFES_project\Nucleo_dir\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-28 11:11:12.260
+!MESSAGE Started RMI Server, listening on port 41337
