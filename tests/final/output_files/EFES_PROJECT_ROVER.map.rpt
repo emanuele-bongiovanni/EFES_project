@@ -1,5 +1,5 @@
 Analysis & Synthesis report for EFES_PROJECT_ROVER
-Sat Apr 27 18:01:08 2024
+Sun Apr 28 18:46:30 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 
 
@@ -64,7 +64,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +---------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Apr 27 18:01:08 2024              ;
+; Analysis & Synthesis Status     ; Successful - Sun Apr 28 18:46:30 2024              ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Standard Edition ;
 ; Revision Name                   ; EFES_PROJECT_ROVER                                 ;
 ; Top-level Entity Name           ; EFES_PROJECT_ROVER                                 ;
@@ -686,7 +686,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
-    Info: Processing started: Sat Apr 27 18:00:51 2024
+    Info: Processing started: Sun Apr 28 18:46:20 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EFES_PROJECT_ROVER -c EFES_PROJECT_ROVER
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -889,7 +889,7 @@ Info (10041): Inferred latch for "distance[31]" at prox_sensor.vhd(48) File: D:/
 Info (12128): Elaborating entity "measure_counter" for hierarchy "datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|measure_counter:measure" File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/PROX_SENSOR_ELEM.vhd Line: 105
 Warning (10492): VHDL Process Statement warning at measure_counter.vhd(26): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/measure_counter.vhd Line: 26
 Info (12128): Elaborating entity "start_counter" for hierarchy "datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|start_counter:start_count" File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/PROX_SENSOR_ELEM.vhd Line: 112
-Warning (10492): VHDL Process Statement warning at start_counter.vhd(27): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/start_counter.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at start_counter.vhd(28): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/start_counter.vhd Line: 28
 Info (12128): Elaborating entity "register_Nbit" for hierarchy "datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|register_Nbit:out_reg" File: D:/Documenti/GitHub/EFES_project/tests/final/prox_sensor/PROX_SENSOR_ELEM.vhd Line: 119
 Warning (10492): VHDL Process Statement warning at register_Nbit.vhd(28): signal "enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Documenti/GitHub/EFES_project/tests/final/register_Nbit.vhd Line: 28
 Info (12128): Elaborating entity "SAR_ADC_ELEM" for hierarchy "datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc" File: D:/Documenti/GitHub/EFES_project/tests/final/datapath.vhd Line: 135
@@ -1233,9 +1233,9 @@ Info (21057): Implemented 770 device resources after synthesis - the final resou
     Info (21061): Implemented 633 logic cells
     Info (21062): Implemented 1 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 291 warnings
-    Info: Peak virtual memory: 4935 megabytes
-    Info: Processing ended: Sat Apr 27 18:01:08 2024
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4939 megabytes
+    Info: Processing ended: Sun Apr 28 18:46:30 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:07
 
 

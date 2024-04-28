@@ -22,7 +22,7 @@ architecture beh of start_counter is
         count: process(clk, rst)
         begin
             if (rst = '1') then
-                value <= 2200;                  --avendo una frequenza di 200KHz, quindi un periodo di 5 ns, per avere il segnale di trigger di 10 us bisogna aspettare 2000 cicli; aspettiamo 2200 per sicurezza
+                value <= 2200;                  
                 zero <= '0';  
             elsif( rising_edge(clk) and enable = '1') then
                 value  <= value-1;
