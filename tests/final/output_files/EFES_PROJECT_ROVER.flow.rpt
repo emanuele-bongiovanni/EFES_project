@@ -1,5 +1,5 @@
 Flow report for EFES_PROJECT_ROVER
-Mon Apr 29 14:18:30 2024
+Mon Apr 29 16:32:24 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +---------------------------------+----------------------------------------------------+
-; Flow Status                     ; Successful - Mon Apr 29 14:18:30 2024              ;
+; Flow Status                     ; Successful - Mon Apr 29 16:32:24 2024              ;
 ; Quartus Prime Version           ; 23.1std.0 Build 991 11/28/2023 SC Standard Edition ;
 ; Revision Name                   ; EFES_PROJECT_ROVER                                 ;
 ; Top-level Entity Name           ; EFES_PROJECT_ROVER                                 ;
 ; Family                          ; Cyclone V                                          ;
 ; Device                          ; 5CSEMA5F31C6                                       ;
 ; Timing Models                   ; Final                                              ;
-; Logic utilization (in ALMs)     ; 327 / 32,070 ( 1 % )                               ;
-; Total registers                 ; 400                                                ;
+; Logic utilization (in ALMs)     ; 326 / 32,070 ( 1 % )                               ;
+; Total registers                 ; 397                                                ;
 ; Total pins                      ; 136 / 457 ( 30 % )                                 ;
 ; Total virtual pins              ; 0                                                  ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                              ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/29/2024 14:16:29 ;
+; Start date & time ; 04/29/2024 16:29:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; EFES_PROJECT_ROVER  ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 185410946755369.171439298815936        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 185410946755369.171440099611964        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -101,12 +101,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4951 MB             ; 00:00:07                           ;
-; Fitter               ; 00:01:31     ; 1.1                     ; 7447 MB             ; 00:05:48                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4883 MB             ; 00:00:04                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.4                     ; 5274 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4740 MB             ; 00:00:01                           ;
-; Total                ; 00:01:53     ; --                      ; --                  ; 00:06:06                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4935 MB             ; 00:00:09                           ;
+; Fitter               ; 00:01:39     ; 1.1                     ; 7379 MB             ; 00:06:31                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4868 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.4                     ; 5259 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4740 MB             ; 00:00:01                           ;
+; Total                ; 00:02:11     ; --                      ; --                  ; 00:06:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

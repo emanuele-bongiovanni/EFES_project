@@ -1,5 +1,5 @@
 Timing Analyzer report for EFES_PROJECT_ROVER
-Mon Apr 29 14:18:28 2024
+Mon Apr 29 16:32:22 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 
 
@@ -102,22 +102,22 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.42        ;
+; Average used               ; 1.43        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.0%      ;
-;     Processor 3            ;   5.0%      ;
-;     Processor 4            ;   4.9%      ;
-;     Processor 5            ;   3.4%      ;
-;     Processor 6            ;   3.4%      ;
-;     Processor 7            ;   3.4%      ;
-;     Processor 8            ;   3.4%      ;
-;     Processor 9            ;   3.4%      ;
-;     Processor 10           ;   3.4%      ;
-;     Processor 11           ;   3.4%      ;
-;     Processor 12           ;   3.4%      ;
+;     Processor 2            ;   5.2%      ;
+;     Processor 3            ;   5.1%      ;
+;     Processor 4            ;   5.0%      ;
+;     Processor 5            ;   3.5%      ;
+;     Processor 6            ;   3.5%      ;
+;     Processor 7            ;   3.5%      ;
+;     Processor 8            ;   3.5%      ;
+;     Processor 9            ;   3.5%      ;
+;     Processor 10           ;   3.5%      ;
+;     Processor 11           ;   3.5%      ;
+;     Processor 12           ;   3.5%      ;
 +----------------------------+-------------+
 
 
@@ -144,11 +144,11 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+-----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                          ; Note ;
 +------------+-----------------+-----------------------------------------------------+------+
-; 132.7 MHz  ; 132.7 MHz       ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
-; 186.29 MHz ; 186.29 MHz      ; GPIO_1[34]                                          ;      ;
-; 231.59 MHz ; 231.59 MHz      ; clk_div:clk_divisor|internal                        ;      ;
-; 278.78 MHz ; 278.78 MHz      ; CLOCK_50                                            ;      ;
-; 333.44 MHz ; 333.44 MHz      ; GPIO_1[35]                                          ;      ;
+; 119.86 MHz ; 119.86 MHz      ; GPIO_1[34]                                          ;      ;
+; 158.48 MHz ; 158.48 MHz      ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
+; 189.57 MHz ; 189.57 MHz      ; GPIO_1[35]                                          ;      ;
+; 233.1 MHz  ; 233.1 MHz       ; clk_div:clk_divisor|internal                        ;      ;
+; 261.51 MHz ; 261.51 MHz      ; CLOCK_50                                            ;      ;
 +------------+-----------------+-----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -164,16 +164,16 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                            ; Slack   ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+---------+---------------+
-; GPIO_1[35]                                                                                       ; -11.310 ; -111.042      ;
-; GPIO_1[34]                                                                                       ; -8.901  ; -103.880      ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -6.182  ; -110.990      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.860  ; -17.505       ;
-; clk_div:clk_divisor|internal                                                                     ; -4.665  ; -727.560      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -3.886  ; -112.181      ;
-; CLOCK_50                                                                                         ; -2.587  ; -114.463      ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.928  ; -1.928        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.853  ; -1.853        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.762  ; -12.733       ;
+; GPIO_1[35]                                                                                       ; -10.765 ; -125.987      ;
+; GPIO_1[34]                                                                                       ; -9.037  ; -121.629      ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.725  ; -101.538      ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.005  ; -14.107       ;
+; clk_div:clk_divisor|internal                                                                     ; -4.064  ; -768.836      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -3.483  ; -117.271      ;
+; CLOCK_50                                                                                         ; -2.824  ; -108.962      ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -2.150  ; -14.095       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.730  ; -1.730        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.832  ; -0.832        ;
 +--------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -182,16 +182,16 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -8.771 ; -125.930      ;
-; CLOCK_50                                                                                         ; -3.962 ; -3.962        ;
-; GPIO_1[34]                                                                                       ; -1.253 ; -6.463        ;
-; clk_div:clk_divisor|internal                                                                     ; -1.090 ; -4.923        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.333 ; -1.314        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.089  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.269  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.698  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.777  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 2.030  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -9.104 ; -127.474      ;
+; CLOCK_50                                                                                         ; -3.812 ; -3.812        ;
+; GPIO_1[34]                                                                                       ; -1.304 ; -8.525        ;
+; clk_div:clk_divisor|internal                                                                     ; -1.188 ; -6.827        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.575 ; -0.575        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.024  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.298  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.533  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.718  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.787  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -200,9 +200,9 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -8.757 ; -14.370       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -2.512 ; -4.770        ;
-; clk_div:clk_divisor|internal                        ; -2.303 ; -440.939      ;
+; GPIO_1[35]                                          ; -8.911 ; -70.167       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -2.922 ; -5.700        ;
+; clk_div:clk_divisor|internal                        ; -2.091 ; -434.865      ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -211,9 +211,9 @@ HTML report is unavailable in plain text report export.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -7.984 ; -49.458       ;
-; clk_div:clk_divisor|internal                        ; 0.006  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.883  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.344 ; -4.679        ;
+; GPIO_1[35]                                          ; 0.040  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.214  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -222,16 +222,16 @@ HTML report is unavailable in plain text report export.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -256.240      ;
-; GPIO_1[35]                                                                                       ; -0.425 ; -13.748       ;
-; CLOCK_50                                                                                         ; -0.400 ; -25.191       ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.134 ; -0.134        ;
-; GPIO_1[34]                                                                                       ; 0.062  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.250  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.276  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.388  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.403  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.448  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -246.822      ;
+; GPIO_1[35]                                                                                       ; -0.421 ; -13.614       ;
+; CLOCK_50                                                                                         ; -0.394 ; -22.592       ;
+; GPIO_1[34]                                                                                       ; 0.100  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.175  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.213  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.332  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.346  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.415  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.418  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -246,11 +246,11 @@ No synchronizer chains to report.
 +------------+-----------------+-----------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                          ; Note ;
 +------------+-----------------+-----------------------------------------------------+------+
-; 130.72 MHz ; 130.72 MHz      ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
-; 188.47 MHz ; 188.47 MHz      ; GPIO_1[34]                                          ;      ;
-; 234.85 MHz ; 234.85 MHz      ; clk_div:clk_divisor|internal                        ;      ;
-; 262.67 MHz ; 262.67 MHz      ; CLOCK_50                                            ;      ;
-; 339.1 MHz  ; 339.1 MHz       ; GPIO_1[35]                                          ;      ;
+; 123.59 MHz ; 123.59 MHz      ; GPIO_1[34]                                          ;      ;
+; 158.33 MHz ; 158.33 MHz      ; controller:CONTROLLER_INSTANCE|current_distance[10] ;      ;
+; 197.86 MHz ; 197.86 MHz      ; GPIO_1[35]                                          ;      ;
+; 235.85 MHz ; 235.85 MHz      ; clk_div:clk_divisor|internal                        ;      ;
+; 256.15 MHz ; 256.15 MHz      ; CLOCK_50                                            ;      ;
 +------------+-----------------+-----------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -260,16 +260,16 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                            ; Slack   ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+---------+---------------+
-; GPIO_1[35]                                                                                       ; -10.694 ; -104.527      ;
-; GPIO_1[34]                                                                                       ; -8.725  ; -101.961      ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -6.315  ; -113.381      ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.871  ; -17.438       ;
-; clk_div:clk_divisor|internal                                                                     ; -4.700  ; -728.677      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -3.726  ; -107.863      ;
-; CLOCK_50                                                                                         ; -2.807  ; -113.907      ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.898  ; -1.898        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.790  ; -1.790        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.725  ; -12.357       ;
+; GPIO_1[35]                                                                                       ; -10.219 ; -118.873      ;
+; GPIO_1[34]                                                                                       ; -8.841  ; -118.555      ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.881  ; -104.065      ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -4.982  ; -14.101       ;
+; clk_div:clk_divisor|internal                                                                     ; -4.045  ; -762.366      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -3.301  ; -112.563      ;
+; CLOCK_50                                                                                         ; -2.904  ; -107.817      ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -2.036  ; -13.633       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.752  ; -1.752        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.727  ; -0.727        ;
 +--------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -278,16 +278,16 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -8.495 ; -123.249      ;
-; CLOCK_50                                                                                         ; -3.759 ; -3.759        ;
-; GPIO_1[34]                                                                                       ; -1.270 ; -6.548        ;
-; clk_div:clk_divisor|internal                                                                     ; -1.013 ; -3.859        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.486 ; -2.059        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.007  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.166  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.591  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.733  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 2.054  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -8.933 ; -125.342      ;
+; CLOCK_50                                                                                         ; -3.628 ; -3.628        ;
+; GPIO_1[34]                                                                                       ; -1.336 ; -8.838        ;
+; clk_div:clk_divisor|internal                                                                     ; -1.074 ; -5.539        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.662 ; -0.662        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.051 ; -0.051        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.185  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.466  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.713  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.847  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -296,9 +296,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -8.162 ; -13.365       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -2.381 ; -4.501        ;
-; clk_div:clk_divisor|internal                        ; -2.174 ; -427.388      ;
+; GPIO_1[35]                                          ; -8.364 ; -65.835       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -2.784 ; -5.468        ;
+; clk_div:clk_divisor|internal                        ; -1.966 ; -417.198      ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -307,9 +307,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -7.844 ; -49.232       ;
-; clk_div:clk_divisor|internal                        ; 0.049  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.642  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.282 ; -3.808        ;
+; GPIO_1[35]                                          ; -0.257 ; -1.001        ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.132  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -318,16 +318,16 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -249.480      ;
-; CLOCK_50                                                                                         ; -0.434 ; -27.177       ;
-; GPIO_1[35]                                                                                       ; -0.394 ; -12.383       ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.121 ; -0.121        ;
-; GPIO_1[34]                                                                                       ; 0.066  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.268  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.285  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.391  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.395  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.439  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -2.225 ; -244.979      ;
+; CLOCK_50                                                                                         ; -0.442 ; -24.431       ;
+; GPIO_1[35]                                                                                       ; -0.394 ; -12.590       ;
+; GPIO_1[34]                                                                                       ; 0.139  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.192  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.198  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.329  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.335  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.413  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.414  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -342,16 +342,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -8.666 ; -85.986       ;
-; GPIO_1[34]                                                                                       ; -5.325 ; -53.910       ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -3.286 ; -58.154       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -3.079 ; -9.131        ;
-; clk_div:clk_divisor|internal                                                                     ; -2.471 ; -336.129      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -2.180 ; -53.250       ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.125 ; -1.125        ;
-; CLOCK_50                                                                                         ; -1.087 ; -46.324       ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.838 ; -5.819        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.831 ; -0.831        ;
+; GPIO_1[35]                                                                                       ; -8.484 ; -100.915      ;
+; GPIO_1[34]                                                                                       ; -5.235 ; -65.873       ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -3.001 ; -52.040       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -2.575 ; -7.137        ;
+; clk_div:clk_divisor|internal                                                                     ; -2.348 ; -366.388      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -1.776 ; -53.753       ;
+; CLOCK_50                                                                                         ; -1.337 ; -48.509       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.075 ; -6.477        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.956 ; -0.956        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.232 ; -0.232        ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -360,16 +360,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -5.026 ; -70.361       ;
-; CLOCK_50                                                                                         ; -2.332 ; -2.332        ;
-; clk_div:clk_divisor|internal                                                                     ; -0.772 ; -5.599        ;
-; GPIO_1[34]                                                                                       ; -0.690 ; -3.460        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.357 ; -3.104        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.057  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.170  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.334  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.690  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.253  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -5.057 ; -70.889       ;
+; CLOCK_50                                                                                         ; -2.220 ; -2.220        ;
+; clk_div:clk_divisor|internal                                                                     ; -0.780 ; -6.340        ;
+; GPIO_1[34]                                                                                       ; -0.730 ; -4.806        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.351 ; -0.351        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.075 ; -0.242        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.184  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.244  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.367  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.007  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -378,9 +378,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -7.216 ; -11.972       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.408 ; -2.664        ;
-; clk_div:clk_divisor|internal                        ; -1.229 ; -243.461      ;
+; GPIO_1[35]                                          ; -7.244 ; -57.189       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.577 ; -2.717        ;
+; clk_div:clk_divisor|internal                        ; -1.109 ; -242.321      ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -389,9 +389,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -4.486 ; -27.170       ;
-; clk_div:clk_divisor|internal                        ; -0.173 ; -1.549        ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.715  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.374 ; -5.179        ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.241  ; 0.000         ;
+; GPIO_1[35]                                          ; 0.980  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -400,16 +400,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -44.436       ;
-; GPIO_1[35]                                                                                       ; -0.453 ; -9.872        ;
-; CLOCK_50                                                                                         ; -0.445 ; -4.589        ;
-; GPIO_1[34]                                                                                       ; -0.121 ; -2.713        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.001  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.273  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.294  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.395  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.417  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.481  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -40.883       ;
+; CLOCK_50                                                                                         ; -0.474 ; -4.225        ;
+; GPIO_1[35]                                                                                       ; -0.454 ; -9.894        ;
+; GPIO_1[34]                                                                                       ; -0.073 ; -1.346        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.212  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.228  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.364  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.369  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.395  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.448  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -424,16 +424,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -7.352 ; -72.346       ;
-; GPIO_1[34]                                                                                       ; -4.505 ; -49.621       ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -3.106 ; -55.138       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -2.769 ; -8.263        ;
-; clk_div:clk_divisor|internal                                                                     ; -2.216 ; -297.490      ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -1.914 ; -45.491       ;
-; CLOCK_50                                                                                         ; -1.027 ; -40.143       ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.981 ; -0.981        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.762 ; -5.284        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.759 ; -0.759        ;
+; GPIO_1[35]                                                                                       ; -7.231 ; -85.506       ;
+; GPIO_1[34]                                                                                       ; -4.424 ; -59.909       ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -2.839 ; -49.655       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -2.330 ; -6.465        ;
+; clk_div:clk_divisor|internal                                                                     ; -2.107 ; -323.093      ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -1.507 ; -45.721       ;
+; CLOCK_50                                                                                         ; -1.195 ; -42.128       ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -0.945 ; -5.836        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -0.853 ; -0.853        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.185 ; -0.185        ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -442,16 +442,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                                                                       ; -4.901 ; -68.942       ;
-; CLOCK_50                                                                                         ; -2.180 ; -2.180        ;
-; GPIO_1[34]                                                                                       ; -0.732 ; -3.942        ;
-; clk_div:clk_divisor|internal                                                                     ; -0.719 ; -5.384        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.390 ; -3.933        ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.057  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.094  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.333  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.557  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.205  ; 0.000         ;
+; GPIO_1[35]                                                                                       ; -4.959 ; -69.921       ;
+; CLOCK_50                                                                                         ; -2.078 ; -2.078        ;
+; GPIO_1[34]                                                                                       ; -0.774 ; -5.277        ;
+; clk_div:clk_divisor|internal                                                                     ; -0.709 ; -6.025        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.332 ; -0.332        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -0.104 ; -0.522        ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.154  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.163  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.341  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 1.016  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -460,9 +460,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -6.076 ; -10.058       ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.208 ; -2.278        ;
-; clk_div:clk_divisor|internal                        ; -1.028 ; -213.402      ;
+; GPIO_1[35]                                          ; -6.128 ; -48.343       ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; -1.385 ; -2.371        ;
+; clk_div:clk_divisor|internal                        ; -0.941 ; -209.112      ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -471,9 +471,9 @@ No synchronizer chains to report.
 +-----------------------------------------------------+--------+---------------+
 ; Clock                                               ; Slack  ; End Point TNS ;
 +-----------------------------------------------------+--------+---------------+
-; GPIO_1[35]                                          ; -4.364 ; -26.853       ;
-; clk_div:clk_divisor|internal                        ; -0.175 ; -1.562        ;
-; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.595  ; 0.000         ;
+; clk_div:clk_divisor|internal                        ; -0.349 ; -4.824        ;
+; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0.214  ; 0.000         ;
+; GPIO_1[35]                                          ; 0.487  ; 0.000         ;
 +-----------------------------------------------------+--------+---------------+
 
 
@@ -482,16 +482,16 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                            ; Slack  ; End Point TNS ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
-; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -37.865       ;
-; CLOCK_50                                                                                         ; -0.460 ; -4.547        ;
-; GPIO_1[35]                                                                                       ; -0.412 ; -8.510        ;
-; GPIO_1[34]                                                                                       ; -0.111 ; -2.364        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.084  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.320  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.332  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.413  ; 0.000         ;
-; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.414  ; 0.000         ;
-; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.476  ; 0.000         ;
+; clk_div:clk_divisor|internal                                                                     ; -1.702 ; -37.616       ;
+; CLOCK_50                                                                                         ; -0.489 ; -4.227        ;
+; GPIO_1[35]                                                                                       ; -0.413 ; -8.574        ;
+; GPIO_1[34]                                                                                       ; -0.062 ; -1.127        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0.264  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0.267  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; 0.378  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0.386  ; 0.000         ;
+; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 0.412  ; 0.000         ;
+; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0.452  ; 0.000         ;
 +--------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -506,28 +506,28 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
 ; Clock                                                                                             ; Setup     ; Hold     ; Recovery ; Removal ; Minimum Pulse Width ;
 +---------------------------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
-; Worst-case Slack                                                                                  ; -11.310   ; -8.771   ; -8.757   ; -7.984  ; -2.225              ;
-;  CLOCK_50                                                                                         ; -2.807    ; -3.962   ; N/A      ; N/A     ; -0.460              ;
-;  GPIO_1[34]                                                                                       ; -8.901    ; -1.270   ; N/A      ; N/A     ; -0.121              ;
-;  GPIO_1[35]                                                                                       ; -11.310   ; -8.771   ; -8.757   ; -7.984  ; -0.453              ;
-;  clk_div:clk_divisor|internal                                                                     ; -4.700    ; -1.090   ; -2.303   ; -0.175  ; -2.225              ;
-;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -3.886    ; -0.486   ; N/A      ; N/A     ; -0.134              ;
-;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.853    ; 0.333    ; N/A      ; N/A     ; 0.273               ;
-;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.871    ; 0.557    ; -2.512   ; 0.595   ; 0.395               ;
-;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -6.315    ; 1.205    ; N/A      ; N/A     ; 0.388               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.928    ; 0.094    ; N/A      ; N/A     ; 0.439               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -1.762    ; 0.007    ; N/A      ; N/A     ; 0.250               ;
-; Design-wide TNS                                                                                   ; -1314.135 ; -142.592 ; -460.079 ; -49.458 ; -295.313            ;
-;  CLOCK_50                                                                                         ; -114.463  ; -3.962   ; N/A      ; N/A     ; -27.177             ;
-;  GPIO_1[34]                                                                                       ; -103.880  ; -6.548   ; N/A      ; N/A     ; -2.713              ;
-;  GPIO_1[35]                                                                                       ; -111.042  ; -125.930 ; -14.370  ; -49.458 ; -13.748             ;
-;  clk_div:clk_divisor|internal                                                                     ; -728.677  ; -5.599   ; -440.939 ; -1.562  ; -256.240            ;
-;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -112.181  ; -3.933   ; N/A      ; N/A     ; -0.134              ;
-;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -1.853    ; 0.000    ; N/A      ; N/A     ; 0.000               ;
-;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -17.505   ; 0.000    ; -4.770   ; 0.000   ; 0.000               ;
-;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -113.381  ; 0.000    ; N/A      ; N/A     ; 0.000               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.928    ; 0.000    ; N/A      ; N/A     ; 0.000               ;
-;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -12.733   ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+; Worst-case Slack                                                                                  ; -10.765   ; -9.104   ; -8.911   ; -0.374  ; -2.225              ;
+;  CLOCK_50                                                                                         ; -2.904    ; -3.812   ; N/A      ; N/A     ; -0.489              ;
+;  GPIO_1[34]                                                                                       ; -9.037    ; -1.336   ; N/A      ; N/A     ; -0.073              ;
+;  GPIO_1[35]                                                                                       ; -10.765   ; -9.104   ; -8.911   ; -0.257  ; -0.454              ;
+;  clk_div:clk_divisor|internal                                                                     ; -4.064    ; -1.188   ; -2.091   ; -0.374  ; -2.225              ;
+;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -3.483    ; -0.104   ; N/A      ; N/A     ; 0.175               ;
+;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.832    ; -0.662   ; N/A      ; N/A     ; 0.198               ;
+;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -5.005    ; 0.341    ; -2.922   ; 0.132   ; 0.414               ;
+;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -5.881    ; 1.007    ; N/A      ; N/A     ; 0.329               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.752    ; 0.163    ; N/A      ; N/A     ; 0.395               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -2.150    ; 0.154    ; N/A      ; N/A     ; 0.335               ;
+; Design-wide TNS                                                                                   ; -1374.987 ; -147.213 ; -510.732 ; -5.179  ; -283.028            ;
+;  CLOCK_50                                                                                         ; -108.962  ; -3.812   ; N/A      ; N/A     ; -24.431             ;
+;  GPIO_1[34]                                                                                       ; -121.629  ; -8.838   ; N/A      ; N/A     ; -1.346              ;
+;  GPIO_1[35]                                                                                       ; -125.987  ; -127.474 ; -70.167  ; -1.001  ; -13.614             ;
+;  clk_div:clk_divisor|internal                                                                     ; -768.836  ; -6.827   ; -434.865 ; -5.179  ; -246.822            ;
+;  controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; -117.271  ; -0.522   ; N/A      ; N/A     ; 0.000               ;
+;  controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; -0.832    ; -0.662   ; N/A      ; N/A     ; 0.000               ;
+;  controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; -14.107   ; 0.000    ; -5.700   ; 0.000   ; 0.000               ;
+;  datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; -104.065  ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; -1.752    ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+;  datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; -14.095   ; 0.000    ; N/A      ; N/A     ; 0.000               ;
 +---------------------------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
 
 
@@ -1276,7 +1276,7 @@ No synchronizer chains to report.
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                       ; To Clock                                                                                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6387     ; 0        ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6189     ; 0        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; clk_div:clk_divisor|internal                                                                     ; 56       ; 81       ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; clk_div:clk_divisor|internal                                                                     ; 2        ; 2        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; clk_div:clk_divisor|internal                                                                     ; 2        ; 5        ; 0        ; 0        ;
@@ -1284,13 +1284,12 @@ No synchronizer chains to report.
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; clk_div:clk_divisor|internal                                                                     ; 4        ; 2        ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; clk_div:clk_divisor|internal                                                                     ; 1        ; 1        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; CLOCK_50                                                                                         ; 1        ; 1        ; 0        ; 0        ;
-; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 2143     ; 0        ; 0        ; 0        ;
+; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 1955     ; 0        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 65       ; 0        ; 5        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 19       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 8        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0        ; 0        ; 1        ; 0        ;
-; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 1        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 92       ; 1        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 91       ; 0        ;
 ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 3        ; 3        ;
 ; clk_div:clk_divisor|internal                                                                     ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0        ; 0        ; 19       ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 1        ; 1        ; 0        ; 0        ;
@@ -1310,7 +1309,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                       ; To Clock                                                                                         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +--------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6387     ; 0        ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                                     ; clk_div:clk_divisor|internal                                                                     ; 6189     ; 0        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; clk_div:clk_divisor|internal                                                                     ; 56       ; 81       ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; clk_div:clk_divisor|internal                                                                     ; 2        ; 2        ; 0        ; 0        ;
 ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; clk_div:clk_divisor|internal                                                                     ; 2        ; 5        ; 0        ; 0        ;
@@ -1318,13 +1317,12 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; clk_div:clk_divisor|internal                                                                     ; 4        ; 2        ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; clk_div:clk_divisor|internal                                                                     ; 1        ; 1        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; CLOCK_50                                                                                         ; 1        ; 1        ; 0        ; 0        ;
-; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 2143     ; 0        ; 0        ; 0        ;
+; CLOCK_50                                                                                         ; CLOCK_50                                                                                         ; 1955     ; 0        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 65       ; 0        ; 5        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 19       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; 0        ; 8        ; 0        ; 0        ;
 ; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                                           ; 0        ; 0        ; 1        ; 0        ;
-; clk_div:clk_divisor|internal                                                                     ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 1        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 92       ; 1        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                                           ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 91       ; 0        ;
 ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; controller:CONTROLLER_INSTANCE|current_distance[10]                                              ; 0        ; 0        ; 3        ; 3        ;
 ; clk_div:clk_divisor|internal                                                                     ; datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 ; 0        ; 0        ; 19       ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE            ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE              ; 1        ; 1        ; 0        ; 0        ;
@@ -1344,11 +1342,11 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 130      ; 0        ; 0        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 151      ; 226      ; 0        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                              ; clk_div:clk_divisor|internal                        ; 42       ; 42       ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 135      ; 0        ; 0        ; 0        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 153      ; 228      ; 0        ; 0        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                              ; clk_div:clk_divisor|internal                        ; 45       ; 45       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE ; clk_div:clk_divisor|internal                        ; 63       ; 63       ; 0        ; 0        ;
-; clk_div:clk_divisor|internal                                                        ; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0        ; 0        ; 2        ; 0        ;
+; clk_div:clk_divisor|internal                                                        ; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0        ; 0        ; 3        ; 0        ;
 ; GPIO_1[34]                                                                          ; GPIO_1[35]                                          ; 8        ; 8        ; 0        ; 0        ;
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -1359,11 +1357,11 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                          ; To Clock                                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
-; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 130      ; 0        ; 0        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 151      ; 226      ; 0        ; 0        ;
-; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                              ; clk_div:clk_divisor|internal                        ; 42       ; 42       ; 0        ; 0        ;
+; clk_div:clk_divisor|internal                                                        ; clk_div:clk_divisor|internal                        ; 135      ; 0        ; 0        ; 0        ;
+; controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET                              ; clk_div:clk_divisor|internal                        ; 153      ; 228      ; 0        ; 0        ;
+; controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK                              ; clk_div:clk_divisor|internal                        ; 45       ; 45       ; 0        ; 0        ;
 ; datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE ; clk_div:clk_divisor|internal                        ; 63       ; 63       ; 0        ; 0        ;
-; clk_div:clk_divisor|internal                                                        ; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0        ; 0        ; 2        ; 0        ;
+; clk_div:clk_divisor|internal                                                        ; controller:CONTROLLER_INSTANCE|current_distance[10] ; 0        ; 0        ; 3        ; 0        ;
 ; GPIO_1[34]                                                                          ; GPIO_1[35]                                          ; 8        ; 8        ; 0        ; 0        ;
 +-------------------------------------------------------------------------------------+-----------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -1389,7 +1387,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 6     ; 6    ;
-; Unconstrained Input Port Paths  ; 160   ; 160  ;
+; Unconstrained Input Port Paths  ; 152   ; 152  ;
 ; Unconstrained Output Ports      ; 45    ; 45   ;
 ; Unconstrained Output Port Paths ; 147   ; 147  ;
 +---------------------------------+-------+------+
@@ -1553,7 +1551,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Standard Edition
-    Info: Processing started: Mon Apr 29 14:18:22 2024
+    Info: Processing started: Mon Apr 29 16:32:15 2024
 Info: Command: quartus_sta EFES_PROJECT_ROVER -c EFES_PROJECT_ROVER
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1569,8 +1567,8 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET
     Info (332105): create_clock -period 1.000 -name GPIO_1[34] GPIO_1[34]
     Info (332105): create_clock -period 1.000 -name datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1
-    Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|current_distance[10] controller:CONTROLLER_INSTANCE|current_distance[10]
     Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK
+    Info (332105): create_clock -period 1.000 -name controller:CONTROLLER_INSTANCE|current_distance[10] controller:CONTROLLER_INSTANCE|current_distance[10]
     Info (332105): create_clock -period 1.000 -name datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE
     Info (332105): create_clock -period 1.000 -name datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE
     Info (332105): create_clock -period 1.000 -name GPIO_1[35] GPIO_1[35]
@@ -1580,232 +1578,232 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -11.310
+Info (332146): Worst-case setup slack is -10.765
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -11.310            -111.042 GPIO_1[35] 
-    Info (332119):    -8.901            -103.880 GPIO_1[34] 
-    Info (332119):    -6.182            -110.990 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -5.860             -17.505 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -4.665            -727.560 clk_div:clk_divisor|internal 
-    Info (332119):    -3.886            -112.181 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -2.587            -114.463 CLOCK_50 
-    Info (332119):    -1.928              -1.928 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -1.853              -1.853 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):    -1.762             -12.733 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-Info (332146): Worst-case hold slack is -8.771
+    Info (332119):   -10.765            -125.987 GPIO_1[35] 
+    Info (332119):    -9.037            -121.629 GPIO_1[34] 
+    Info (332119):    -5.725            -101.538 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -5.005             -14.107 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -4.064            -768.836 clk_div:clk_divisor|internal 
+    Info (332119):    -3.483            -117.271 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -2.824            -108.962 CLOCK_50 
+    Info (332119):    -2.150             -14.095 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -1.730              -1.730 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -0.832              -0.832 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -9.104
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.771            -125.930 GPIO_1[35] 
-    Info (332119):    -3.962              -3.962 CLOCK_50 
-    Info (332119):    -1.253              -6.463 GPIO_1[34] 
-    Info (332119):    -1.090              -4.923 clk_div:clk_divisor|internal 
-    Info (332119):    -0.333              -1.314 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.089               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.269               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.698               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.777               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     2.030               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -8.757
+    Info (332119):    -9.104            -127.474 GPIO_1[35] 
+    Info (332119):    -3.812              -3.812 CLOCK_50 
+    Info (332119):    -1.304              -8.525 GPIO_1[34] 
+    Info (332119):    -1.188              -6.827 clk_div:clk_divisor|internal 
+    Info (332119):    -0.575              -0.575 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.024               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.298               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.533               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.718               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     1.787               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -8.911
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.757             -14.370 GPIO_1[35] 
-    Info (332119):    -2.512              -4.770 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -2.303            -440.939 clk_div:clk_divisor|internal 
-Info (332146): Worst-case removal slack is -7.984
+    Info (332119):    -8.911             -70.167 GPIO_1[35] 
+    Info (332119):    -2.922              -5.700 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -2.091            -434.865 clk_div:clk_divisor|internal 
+Info (332146): Worst-case removal slack is -0.344
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.984             -49.458 GPIO_1[35] 
-    Info (332119):     0.006               0.000 clk_div:clk_divisor|internal 
-    Info (332119):     0.883               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -0.344              -4.679 clk_div:clk_divisor|internal 
+    Info (332119):     0.040               0.000 GPIO_1[35] 
+    Info (332119):     0.214               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
 Info (332146): Worst-case minimum pulse width slack is -2.225
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.225            -256.240 clk_div:clk_divisor|internal 
-    Info (332119):    -0.425             -13.748 GPIO_1[35] 
-    Info (332119):    -0.400             -25.191 CLOCK_50 
-    Info (332119):    -0.134              -0.134 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.062               0.000 GPIO_1[34] 
-    Info (332119):     0.250               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.276               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.388               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.403               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.448               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -2.225            -246.822 clk_div:clk_divisor|internal 
+    Info (332119):    -0.421             -13.614 GPIO_1[35] 
+    Info (332119):    -0.394             -22.592 CLOCK_50 
+    Info (332119):     0.100               0.000 GPIO_1[34] 
+    Info (332119):     0.175               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.213               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.332               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.346               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.415               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.418               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -10.694
+Info (332146): Worst-case setup slack is -10.219
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -10.694            -104.527 GPIO_1[35] 
-    Info (332119):    -8.725            -101.961 GPIO_1[34] 
-    Info (332119):    -6.315            -113.381 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -5.871             -17.438 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -4.700            -728.677 clk_div:clk_divisor|internal 
-    Info (332119):    -3.726            -107.863 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -2.807            -113.907 CLOCK_50 
-    Info (332119):    -1.898              -1.898 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -1.790              -1.790 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):    -1.725             -12.357 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-Info (332146): Worst-case hold slack is -8.495
+    Info (332119):   -10.219            -118.873 GPIO_1[35] 
+    Info (332119):    -8.841            -118.555 GPIO_1[34] 
+    Info (332119):    -5.881            -104.065 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -4.982             -14.101 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -4.045            -762.366 clk_div:clk_divisor|internal 
+    Info (332119):    -3.301            -112.563 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -2.904            -107.817 CLOCK_50 
+    Info (332119):    -2.036             -13.633 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -1.752              -1.752 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -0.727              -0.727 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -8.933
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.495            -123.249 GPIO_1[35] 
-    Info (332119):    -3.759              -3.759 CLOCK_50 
-    Info (332119):    -1.270              -6.548 GPIO_1[34] 
-    Info (332119):    -1.013              -3.859 clk_div:clk_divisor|internal 
-    Info (332119):    -0.486              -2.059 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.007               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.166               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.591               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.733               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     2.054               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -8.162
+    Info (332119):    -8.933            -125.342 GPIO_1[35] 
+    Info (332119):    -3.628              -3.628 CLOCK_50 
+    Info (332119):    -1.336              -8.838 GPIO_1[34] 
+    Info (332119):    -1.074              -5.539 clk_div:clk_divisor|internal 
+    Info (332119):    -0.662              -0.662 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):    -0.051              -0.051 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.185               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.466               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.713               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     1.847               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -8.364
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.162             -13.365 GPIO_1[35] 
-    Info (332119):    -2.381              -4.501 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -2.174            -427.388 clk_div:clk_divisor|internal 
-Info (332146): Worst-case removal slack is -7.844
+    Info (332119):    -8.364             -65.835 GPIO_1[35] 
+    Info (332119):    -2.784              -5.468 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -1.966            -417.198 clk_div:clk_divisor|internal 
+Info (332146): Worst-case removal slack is -0.282
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.844             -49.232 GPIO_1[35] 
-    Info (332119):     0.049               0.000 clk_div:clk_divisor|internal 
-    Info (332119):     0.642               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -0.282              -3.808 clk_div:clk_divisor|internal 
+    Info (332119):    -0.257              -1.001 GPIO_1[35] 
+    Info (332119):     0.132               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
 Info (332146): Worst-case minimum pulse width slack is -2.225
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.225            -249.480 clk_div:clk_divisor|internal 
-    Info (332119):    -0.434             -27.177 CLOCK_50 
-    Info (332119):    -0.394             -12.383 GPIO_1[35] 
-    Info (332119):    -0.121              -0.121 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.066               0.000 GPIO_1[34] 
-    Info (332119):     0.268               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.285               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.391               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.395               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.439               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -2.225            -244.979 clk_div:clk_divisor|internal 
+    Info (332119):    -0.442             -24.431 CLOCK_50 
+    Info (332119):    -0.394             -12.590 GPIO_1[35] 
+    Info (332119):     0.139               0.000 GPIO_1[34] 
+    Info (332119):     0.192               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.198               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.329               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.335               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.413               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.414               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -8.666
+Info (332146): Worst-case setup slack is -8.484
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.666             -85.986 GPIO_1[35] 
-    Info (332119):    -5.325             -53.910 GPIO_1[34] 
-    Info (332119):    -3.286             -58.154 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -3.079              -9.131 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -2.471            -336.129 clk_div:clk_divisor|internal 
-    Info (332119):    -2.180             -53.250 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -1.125              -1.125 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -1.087             -46.324 CLOCK_50 
-    Info (332119):    -0.838              -5.819 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):    -0.831              -0.831 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-Info (332146): Worst-case hold slack is -5.026
+    Info (332119):    -8.484            -100.915 GPIO_1[35] 
+    Info (332119):    -5.235             -65.873 GPIO_1[34] 
+    Info (332119):    -3.001             -52.040 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -2.575              -7.137 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -2.348            -366.388 clk_div:clk_divisor|internal 
+    Info (332119):    -1.776             -53.753 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -1.337             -48.509 CLOCK_50 
+    Info (332119):    -1.075              -6.477 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -0.956              -0.956 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -0.232              -0.232 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -5.057
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.026             -70.361 GPIO_1[35] 
-    Info (332119):    -2.332              -2.332 CLOCK_50 
-    Info (332119):    -0.772              -5.599 clk_div:clk_divisor|internal 
-    Info (332119):    -0.690              -3.460 GPIO_1[34] 
-    Info (332119):    -0.357              -3.104 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.057               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.170               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.334               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.690               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     1.253               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -7.216
+    Info (332119):    -5.057             -70.889 GPIO_1[35] 
+    Info (332119):    -2.220              -2.220 CLOCK_50 
+    Info (332119):    -0.780              -6.340 clk_div:clk_divisor|internal 
+    Info (332119):    -0.730              -4.806 GPIO_1[34] 
+    Info (332119):    -0.351              -0.351 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):    -0.075              -0.242 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.184               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.244               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.367               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     1.007               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -7.244
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.216             -11.972 GPIO_1[35] 
-    Info (332119):    -1.408              -2.664 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -1.229            -243.461 clk_div:clk_divisor|internal 
-Info (332146): Worst-case removal slack is -4.486
+    Info (332119):    -7.244             -57.189 GPIO_1[35] 
+    Info (332119):    -1.577              -2.717 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -1.109            -242.321 clk_div:clk_divisor|internal 
+Info (332146): Worst-case removal slack is -0.374
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.486             -27.170 GPIO_1[35] 
-    Info (332119):    -0.173              -1.549 clk_div:clk_divisor|internal 
-    Info (332119):     0.715               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -0.374              -5.179 clk_div:clk_divisor|internal 
+    Info (332119):     0.241               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.980               0.000 GPIO_1[35] 
 Info (332146): Worst-case minimum pulse width slack is -1.702
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.702             -44.436 clk_div:clk_divisor|internal 
-    Info (332119):    -0.453              -9.872 GPIO_1[35] 
-    Info (332119):    -0.445              -4.589 CLOCK_50 
-    Info (332119):    -0.121              -2.713 GPIO_1[34] 
-    Info (332119):     0.001               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.273               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.294               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.395               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.417               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.481               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -1.702             -40.883 clk_div:clk_divisor|internal 
+    Info (332119):    -0.474              -4.225 CLOCK_50 
+    Info (332119):    -0.454              -9.894 GPIO_1[35] 
+    Info (332119):    -0.073              -1.346 GPIO_1[34] 
+    Info (332119):     0.212               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.228               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.364               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.369               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.395               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.448               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -7.352
+Info (332146): Worst-case setup slack is -7.231
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.352             -72.346 GPIO_1[35] 
-    Info (332119):    -4.505             -49.621 GPIO_1[34] 
-    Info (332119):    -3.106             -55.138 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):    -2.769              -8.263 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -2.216            -297.490 clk_div:clk_divisor|internal 
-    Info (332119):    -1.914             -45.491 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):    -1.027             -40.143 CLOCK_50 
-    Info (332119):    -0.981              -0.981 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):    -0.762              -5.284 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):    -0.759              -0.759 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-Info (332146): Worst-case hold slack is -4.901
+    Info (332119):    -7.231             -85.506 GPIO_1[35] 
+    Info (332119):    -4.424             -59.909 GPIO_1[34] 
+    Info (332119):    -2.839             -49.655 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):    -2.330              -6.465 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -2.107            -323.093 clk_div:clk_divisor|internal 
+    Info (332119):    -1.507             -45.721 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):    -1.195             -42.128 CLOCK_50 
+    Info (332119):    -0.945              -5.836 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):    -0.853              -0.853 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -0.185              -0.185 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+Info (332146): Worst-case hold slack is -4.959
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.901             -68.942 GPIO_1[35] 
-    Info (332119):    -2.180              -2.180 CLOCK_50 
-    Info (332119):    -0.732              -3.942 GPIO_1[34] 
-    Info (332119):    -0.719              -5.384 clk_div:clk_divisor|internal 
-    Info (332119):    -0.390              -3.933 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.057               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.094               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
-    Info (332119):     0.333               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.557               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     1.205               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-Info (332146): Worst-case recovery slack is -6.076
+    Info (332119):    -4.959             -69.921 GPIO_1[35] 
+    Info (332119):    -2.078              -2.078 CLOCK_50 
+    Info (332119):    -0.774              -5.277 GPIO_1[34] 
+    Info (332119):    -0.709              -6.025 clk_div:clk_divisor|internal 
+    Info (332119):    -0.332              -0.332 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):    -0.104              -0.522 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.154               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.163               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.341               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     1.016               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+Info (332146): Worst-case recovery slack is -6.128
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.076             -10.058 GPIO_1[35] 
-    Info (332119):    -1.208              -2.278 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):    -1.028            -213.402 clk_div:clk_divisor|internal 
-Info (332146): Worst-case removal slack is -4.364
+    Info (332119):    -6.128             -48.343 GPIO_1[35] 
+    Info (332119):    -1.385              -2.371 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -0.941            -209.112 clk_div:clk_divisor|internal 
+Info (332146): Worst-case removal slack is -0.349
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.364             -26.853 GPIO_1[35] 
-    Info (332119):    -0.175              -1.562 clk_div:clk_divisor|internal 
-    Info (332119):     0.595               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):    -0.349              -4.824 clk_div:clk_divisor|internal 
+    Info (332119):     0.214               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
+    Info (332119):     0.487               0.000 GPIO_1[35] 
 Info (332146): Worst-case minimum pulse width slack is -1.702
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.702             -37.865 clk_div:clk_divisor|internal 
-    Info (332119):    -0.460              -4.547 CLOCK_50 
-    Info (332119):    -0.412              -8.510 GPIO_1[35] 
-    Info (332119):    -0.111              -2.364 GPIO_1[34] 
-    Info (332119):     0.084               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
-    Info (332119):     0.320               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
-    Info (332119):     0.332               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
-    Info (332119):     0.413               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
-    Info (332119):     0.414               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
-    Info (332119):     0.476               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):    -1.702             -37.616 clk_div:clk_divisor|internal 
+    Info (332119):    -0.489              -4.227 CLOCK_50 
+    Info (332119):    -0.413              -8.574 GPIO_1[35] 
+    Info (332119):    -0.062              -1.127 GPIO_1[34] 
+    Info (332119):     0.264               0.000 controller:CONTROLLER_INSTANCE|curr_state_MOTOR.M_BACK 
+    Info (332119):     0.267               0.000 controller:CONTROLLER_INSTANCE|curr_state_DIST.D_RESET 
+    Info (332119):     0.378               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.UPDATE 
+    Info (332119):     0.386               0.000 datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state.FIN_1 
+    Info (332119):     0.412               0.000 datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state.IDLE 
+    Info (332119):     0.452               0.000 controller:CONTROLLER_INSTANCE|current_distance[10] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5274 megabytes
-    Info: Processing ended: Mon Apr 29 14:18:28 2024
-    Info: Elapsed time: 00:00:06
+    Info: Peak virtual memory: 5259 megabytes
+    Info: Processing ended: Mon Apr 29 16:32:22 2024
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:06
 
 
