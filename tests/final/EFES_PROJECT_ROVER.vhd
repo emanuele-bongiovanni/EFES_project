@@ -163,17 +163,29 @@ architecture top of EFES_PROJECT_ROVER is
     signal to_dac_ext_s                     : std_logic_vector(NBIT - 1 downto 0);
     signal pwm_motor_en_ext_s               : std_logic;
     signal miso_ext_s                       : std_logic;
+    signal motor_enable                     : std_logic;
 
   --  signal result                           : std_logic_vector(3 downto 0);
 
 begin
 
+
+    process (CLOCK_50)
+    begin
+        if SW(0) = '0' then
+            motor_enable <= pwm_motor_en_ext_s;
+        else
+            motor_enable <= '0';
+        end if ;
+        
+    end process;
+
     reset_button            <= not KEY_N(0);
     --motor
     GPIO_1(1 downto 0)      <= motor_l_s;
     GPIO_1(3 downto 2)      <= motor_r_s;
-    GPIO_1(4)               <= pwm_motor_en_ext_s;
-    GPIO_1(5)               <= pwm_motor_en_ext_s;
+    GPIO_1(4)               <= motor_enable;
+    GPIO_1(5)               <= motor_enable;
 
 
     --prox

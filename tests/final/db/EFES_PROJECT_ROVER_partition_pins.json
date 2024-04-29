@@ -210,6 +210,10 @@
 				{
 					"name" : "KEY_N[0]",
 					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
 				}
 			]
 		}

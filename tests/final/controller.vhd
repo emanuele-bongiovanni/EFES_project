@@ -124,6 +124,7 @@ architecture rtl of controller is
                     end if ;
 
                 when M_BACK => 
+                    speed_dc_int <= "000";                  --durante la manovra, la velocità è fissa al massimo
                     motor_r                     <= "10";        --indietro
                     motor_l                     <= "10";
                     speed_dc_int                <= "001";
