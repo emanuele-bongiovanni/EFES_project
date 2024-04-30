@@ -1,0 +1,39 @@
+
+State Machine - |EFES_PROJECT_ROVER|datapath:DATAPATH_INSTANCE|SAR_ADC_ELEM:sar_adc|SAR_CU:control_unit|curr_state
+Name curr_state.UPDATE curr_state.SAMPLING curr_state.IDLE curr_state.RESET 
+curr_state.RESET 0 0 0 0 
+curr_state.IDLE 0 0 1 1 
+curr_state.SAMPLING 0 1 0 1 
+curr_state.UPDATE 1 0 0 1 
+
+State Machine - |EFES_PROJECT_ROVER|datapath:DATAPATH_INSTANCE|PROX_SENSOR_ELEM:proximity_sensor|prox_sensor:sensor|curr_state
+Name curr_state.FIN_2 curr_state.FIN_1 curr_state.MEASURING curr_state.WAITING_ECHO curr_state.STARTING curr_state.IDLE curr_state.RES 
+curr_state.RES 0 0 0 0 0 0 0 
+curr_state.IDLE 0 0 0 0 0 1 1 
+curr_state.STARTING 0 0 0 0 1 0 1 
+curr_state.WAITING_ECHO 0 0 0 1 0 0 1 
+curr_state.MEASURING 0 0 1 0 0 0 1 
+curr_state.FIN_1 0 1 0 0 0 0 1 
+curr_state.FIN_2 1 0 0 0 0 0 1 
+
+State Machine - |EFES_PROJECT_ROVER|controller:CONTROLLER_INSTANCE|curr_state_LIGHT
+Name curr_state_LIGHT.L_MEASURING curr_state_LIGHT.L_START curr_state_LIGHT.L_IDLE curr_state_LIGHT.L_RESET 
+curr_state_LIGHT.L_RESET 0 0 0 0 
+curr_state_LIGHT.L_IDLE 0 0 1 1 
+curr_state_LIGHT.L_START 0 1 0 1 
+curr_state_LIGHT.L_MEASURING 1 0 0 1 
+
+State Machine - |EFES_PROJECT_ROVER|controller:CONTROLLER_INSTANCE|curr_state_DIST
+Name curr_state_DIST.D_MEASURING curr_state_DIST.D_START curr_state_DIST.D_IDLE curr_state_DIST.D_RESET 
+curr_state_DIST.D_RESET 0 0 0 0 
+curr_state_DIST.D_IDLE 0 0 1 1 
+curr_state_DIST.D_START 0 1 0 1 
+curr_state_DIST.D_MEASURING 1 0 0 1 
+
+State Machine - |EFES_PROJECT_ROVER|controller:CONTROLLER_INSTANCE|curr_state_MOTOR
+Name curr_state_MOTOR.M_TURN curr_state_MOTOR.M_BACK_R curr_state_MOTOR.M_BACK curr_state_MOTOR.M_RUN curr_state_MOTOR.M_RESET 
+curr_state_MOTOR.M_RESET 0 0 0 0 0 
+curr_state_MOTOR.M_RUN 0 0 0 1 1 
+curr_state_MOTOR.M_BACK 0 0 1 0 1 
+curr_state_MOTOR.M_BACK_R 0 1 0 0 1 
+curr_state_MOTOR.M_TURN 1 0 0 0 1 

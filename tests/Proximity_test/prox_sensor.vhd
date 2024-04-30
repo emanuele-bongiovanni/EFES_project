@@ -129,7 +129,12 @@ architecture beh of prox_sensor is
 
                     --dist_value <= std_logic_vector(unsigned(measure_value) * 439); 
                     --prova
-                    dist_value <= std_logic_vector(unsigned(measure_value) * 449); --divisione extra
+                    --dist_value <= std_logic_vector(unsigned(measure_value) * 449); --divisione extra
+
+                    --nuovo approccio: dopo diverse misure, la nuova frazione è 3/16 (approssimazione, verrà spiegata durante l'esposizione)
+
+                    dist_value <= std_logic_vector(unsigned(measure_value) * 3); --motiplico per 3
+
                     
                     next_state <= FIN_2;
                 
@@ -145,7 +150,10 @@ architecture beh of prox_sensor is
 
                     --distance <= dist_value(41 downto 10);        -- da 0 a 8 non li prendiamo per la divisione, prendiamo tutti i più alti 
                     --approx 3
-                    distance <= '0' & dist_value(41 downto 11);
+                    --distance <= '0' & dist_value(41 downto 11);
+
+                    distance <= dist_value(35 downto 4);  --divido per 16, ovvero 2^4 = 16: shift di 4
+
                     
                     next_state <= IDLE;
             

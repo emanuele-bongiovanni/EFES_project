@@ -1,4 +1,4 @@
-12:00:15 **** Incremental Build of configuration Debug for project EFES_PROJECT_ROVER ****
+16:05:55 **** Incremental Build of configuration Debug for project EFES_PROJECT_ROVER ****
 make -j12 all 
 arm-none-eabi-size  EFES_PROJECT_ROVER.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  EFES_PROJECT_ROVER.elf
 Finished building: default.size.stdout
  
 
-12:00:16 Build Finished. 0 errors, 0 warnings. (took 648ms)
+16:05:56 Build Finished. 0 errors, 0 warnings. (took 642ms)
 

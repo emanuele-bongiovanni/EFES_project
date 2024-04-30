@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Mon Apr 15 20:45:43 2024
+Analysis & Synthesis Status : Successful - Tue Apr 30 15:07:44 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Standard Edition
 Revision Name : PROXIMITY_test
 Top-level Entity Name : PROXIMITY_test
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 115
-Total pins : 93
+Total pins : 129
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 1
+Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0

@@ -2559,3 +2559,17 @@ arm-none-eabi-size  EFES_PROJECT_ROVER.elf
   16140	     92	   2156	  18388	   47d4	EFES_PROJECT_ROVER.elf
 Finished building: default.size.stdout
  
+15:57:35 **** Build of configuration Debug for project EFES_PROJECT_ROVER ****
+make -j12 all 
+arm-none-eabi-size  EFES_PROJECT_ROVER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16140	     92	   2156	  18388	   47d4	EFES_PROJECT_ROVER.elf
+Finished building: default.size.stdout
+ 
+16:05:55 **** Incremental Build of configuration Debug for project EFES_PROJECT_ROVER ****
+make -j12 all 
+arm-none-eabi-size  EFES_PROJECT_ROVER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16140	     92	   2156	  18388	   47d4	EFES_PROJECT_ROVER.elf
+Finished building: default.size.stdout
+ 

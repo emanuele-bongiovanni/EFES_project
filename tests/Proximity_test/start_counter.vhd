@@ -22,7 +22,7 @@ architecture beh of start_counter is
         count: process(clk, rst)
         begin
             if (rst = '1') then
-                value <= 2;                  
+                value <= 80;                  
                 zero <= '0';  
             elsif( rising_edge(clk) and enable = '1') then
                 value  <= value-1;

@@ -22,7 +22,9 @@ entity PROXIMITY_test is
          SW : in std_logic_vector(9 downto 0);
  
          -- GPIO_0
-         GPIO_0 : inout std_logic_vector(35 downto 0)
+         GPIO_0 : inout std_logic_vector(35 downto 0);
+         GPIO_1 : inout std_logic_vector(35 downto 0)
+
  
     );
 end PROXIMITY_test;
@@ -128,8 +130,9 @@ architecture test of PROXIMITY_test is
         reset_button <= not KEY_N(1);
 
 
-        GPIO_0(0) <= trigger_s;
-        echo_s <= GPIO_0(1);
+        echo_s              <= GPIO_1(14);
+        GPIO_1(15)          <= trigger_s;
+
         GPIO_0(35) <= slow_clock;
 
 
@@ -180,6 +183,35 @@ architecture test of PROXIMITY_test is
             outp => result
         );
 
+        -- h0 : hexdisp7seg
+        -- port map (
+        --     datain          => measure_value_s(3 downto 0),
+        --     seg7            => HEX0_N
+        -- );
+
+        -- h1 : hexdisp7seg
+        -- port map (
+        --     datain          => measure_value_s(7 downto 4),
+        --     seg7            => HEX1_N
+        -- );
+
+        -- h2 : hexdisp7seg
+        -- port map (
+        --     datain          => measure_value_s(11 downto 8),
+        --     seg7            => HEX2_N
+        -- );
+
+        -- h3 : hexdisp7seg
+        -- port map (
+        --     datain          => measure_value_s(15 downto 12),
+        --     seg7            => HEX3_N
+        -- );
+
+        -- h4 : hexdisp7seg
+        -- port map (
+        --     datain          => measure_value_s(19 downto 16),
+        --     seg7            => HEX4_N
+        -- );
 
         h0 : hexdisp7seg
         port map (

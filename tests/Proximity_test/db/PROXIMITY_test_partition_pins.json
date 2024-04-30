@@ -144,15 +144,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "GPIO_0[0]",
-					"strict" : false
-				},
-				{
-					"name" : "GPIO_0[1]",
-					"strict" : false
-				},
-				{
 					"name" : "GPIO_0[35]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_1[15]",
 					"strict" : false
 				},
 				{
